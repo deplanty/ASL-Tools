@@ -2,8 +2,8 @@ import sys
 
 from fbs_runtime.application_context.PySide2 import ApplicationContext
 
+import resources
 from frames.controller import MainWindow
-
 
 class Application(ApplicationContext):
     def __init__(self, *args, **kwargs):

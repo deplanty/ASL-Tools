@@ -17,14 +17,14 @@ class Ui_MainWindow():
 
         MainWindow = MainWindow
         MainWindow.setWindowTitle("ASL Tools")
-        icon = QIcon(MainWindow.ctx.get_resource("images/icon.png"))
+        icon = QIcon(":/images/icon.png")
         MainWindow.setWindowIcon(icon)
         MainWindow.resize(400, 300)
 
         frame = QWidget()
 
         self.btn_1 = QToolButton()
-        icon = QIcon(MainWindow.ctx.get_resource("images/icon.png"))
+        icon = QIcon(":/images/icon.png")
         self.btn_1.setIcon(icon)
         self.btn_1.setIconSize(QSize(32, 32))
         self.btn_2 = QToolButton()
