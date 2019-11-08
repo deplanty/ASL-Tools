@@ -2,5 +2,11 @@
   <qresource>
     <file>images/icon.png</file>
     <file>images/icon.ico</file>
+    <file>images/dashboard.svg</file>
+    <file>images/script.svg</file>
+    <file>images/model-vr3.svg</file>
+  </qresource>
+  <qresource>
+    <file>styles/style.qss</file>
   </qresource>
 </RCC>

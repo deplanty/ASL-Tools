@@ -17,18 +17,20 @@ class Ui_MainWindow():
 
         MainWindow = MainWindow
         MainWindow.setWindowTitle("ASL Tools")
-        icon = QIcon(":/images/icon.png")
-        MainWindow.setWindowIcon(icon)
+        MainWindow.setWindowIcon(QIcon(":/images/icon.png"))
         MainWindow.resize(400, 300)
 
         frame = QWidget()
 
         self.btn_1 = QToolButton()
-        icon = QIcon(":/images/icon.png")
-        self.btn_1.setIcon(icon)
+        self.btn_1.setIcon(QIcon(":/images/model-vr3.svg"))
         self.btn_1.setIconSize(QSize(32, 32))
         self.btn_2 = QToolButton()
+        self.btn_2.setIcon(QIcon(":/images/script.svg"))
+        self.btn_2.setIconSize(QSize(32, 32))
         self.btn_3 = QToolButton()
+        self.btn_3.setIcon(QIcon(":/images/dashboard.svg"))
+        self.btn_3.setIconSize(QSize(32, 32))
 
         self.h_layout = QVBoxLayout()
         self.h_layout.addWidget(self.btn_1)
