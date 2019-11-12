@@ -1,0 +1,19 @@
+{
+    "extpmus": "",
+    "name": "Default",
+    "n": 20,
+    "vr3": {
+        "C": 60,
+        "R": 5,
+        "BR": 25,
+        "I_Pmus": 5,
+        "I_increase": 30,
+        "I_hold": 0,
+        "I_release": 15,
+        "E_Pmus": 0,
+        "E_increase": 0,
+        "E_hold": 0,
+        "E_release": 0,
+        "CRF": 0.5
+    }
+}

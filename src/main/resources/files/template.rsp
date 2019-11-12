@@ -1,0 +1,1818 @@
+ASL RespiSim preferences file version 1.0
+This is a LabVIEW schema XML file.  The first line is the file type name.  The second line is the format description.  The remaining lines are XML.
+<Cluster>
+	<Name>RespiSim File Type Def</Name>
+	<NumElts>3</NumElts>
+	<I32>
+		<Name>Current Vent Name Index</Name>
+		<Val>0</Val>
+	</I32>
+	<String>
+		<Name>File Type</Name>
+		<Val>ASL RespiSim preferences file version 1.0</Val>
+	</String>
+	<Cluster>
+		<Name>SimSkin User Preferences</Name>
+		<NumElts>7</NumElts>
+		<Array>
+			<Name>SimSkin User Channel Display Preferences Array</Name>
+			<Dimsize>18</Dimsize>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) I Time (s)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) E Time (s)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) I/E</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) Patient Exp Vt (mL)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) Breath Number</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) P_peak (cmH2O)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) P_pause (cmH2O)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) PEEP (cmH2O)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) P_mean (cmH2O)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) Breath Rate (BPM)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>11468680</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) Breath Rate (BPM)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>8454143</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) Peak Insp. Flow (L/min)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>8454143</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(VITAL) SpO2</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>16777088</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) Peak Exp. Flow (L/min)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>0</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) P_mean Insp (cmH2O)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>0</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) P_peak (cmH2O)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>0</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) P_mean Exp (cmH2O)</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>0</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin User Channel Display Preferences</Name>
+				<NumElts>8</NumElts>
+				<String>
+					<Name>Alias</Name>
+					<Val>(ASL) I/E</Val>
+				</String>
+				<U32>
+					<Name>Color</Name>
+					<Val>0</Val>
+				</U32>
+				<DBL>
+					<Name>Plot Scale Factor</Name>
+					<Val>1.00000000000000</Val>
+				</DBL>
+				<String>
+					<Name>Plot Scale Text</Name>
+					<Val>x 1</Val>
+				</String>
+				<U16>
+					<Name>Plot Scale Factor Ring</Name>
+					<Val>3</Val>
+				</U16>
+				<I32>
+					<Name>PrefFIleIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<I32>
+					<Name>CurrentVentIndex</Name>
+					<Val>69</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Array>
+		<Array>
+			<Name>ASL Event Array</Name>
+			<Dimsize>5</Dimsize>
+			<Cluster>
+				<Name>SimSkin Display Event</Name>
+				<NumElts>7</NumElts>
+				<String>
+					<Name>EventName</Name>
+					<Val>Recognize hypercapnea</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>0</Val>
+				</U16>
+				<Boolean>
+					<Name>Latch Event?</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Event Text</Name>
+					<Val/>
+				</String>
+				<Boolean>
+					<Name>Enable/Disable</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin Display Event</Name>
+				<NumElts>7</NumElts>
+				<String>
+					<Name>EventName</Name>
+					<Val>Recognize hypoxemia</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>1</Val>
+				</U16>
+				<Boolean>
+					<Name>Latch Event?</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Event Text</Name>
+					<Val/>
+				</String>
+				<Boolean>
+					<Name>Enable/Disable</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin Display Event</Name>
+				<NumElts>7</NumElts>
+				<String>
+					<Name>EventName</Name>
+					<Val>Increase O2%</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>2</Val>
+				</U16>
+				<Boolean>
+					<Name>Latch Event?</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Event Text</Name>
+					<Val/>
+				</String>
+				<Boolean>
+					<Name>Enable/Disable</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin Display Event</Name>
+				<NumElts>7</NumElts>
+				<String>
+					<Name>EventName</Name>
+					<Val>Adjust ventilator parameters</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>3</Val>
+				</U16>
+				<Boolean>
+					<Name>Latch Event?</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Event Text</Name>
+					<Val/>
+				</String>
+				<Boolean>
+					<Name>Enable/Disable</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin Display Event</Name>
+				<NumElts>7</NumElts>
+				<String>
+					<Name>EventName</Name>
+					<Val>Suction</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>4</Val>
+				</U16>
+				<Boolean>
+					<Name>Latch Event?</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Event Text</Name>
+					<Val/>
+				</String>
+				<Boolean>
+					<Name>Enable/Disable</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+		</Array>
+		<Array>
+			<Name>SimSkin Display Alarm Array</Name>
+			<Dimsize>5</Dimsize>
+			<Cluster>
+				<Name>SimSkin Display Alarm</Name>
+				<NumElts>6</NumElts>
+				<String>
+					<Name>ASL Alias</Name>
+					<Val>(ASL) Breath Number</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>10</Val>
+				</U16>
+				<I32>
+					<Name>AliasIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin Display Alarm</Name>
+				<NumElts>6</NumElts>
+				<String>
+					<Name>ASL Alias</Name>
+					<Val>(ASL) Breath Number</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>4</Val>
+				</U16>
+				<I32>
+					<Name>AliasIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin Display Alarm</Name>
+				<NumElts>6</NumElts>
+				<String>
+					<Name>ASL Alias</Name>
+					<Val>(ASL) Breath Number</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>11</Val>
+				</U16>
+				<I32>
+					<Name>AliasIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin Display Alarm</Name>
+				<NumElts>6</NumElts>
+				<String>
+					<Name>ASL Alias</Name>
+					<Val>(ASL) Breath Number</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>1</Val>
+				</U16>
+				<I32>
+					<Name>AliasIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>SimSkin Display Alarm</Name>
+				<NumElts>6</NumElts>
+				<String>
+					<Name>ASL Alias</Name>
+					<Val>(ASL) Breath Number</Val>
+				</String>
+				<Timestamp>
+					<Name>Start Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<Timestamp>
+					<Name>Stop Time</Name>
+					<Cluster>
+						<Name/>
+						<NumElts>4</NumElts>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+						<I32>
+							<Name/>
+							<Val>0</Val>
+						</I32>
+					</Cluster>
+				</Timestamp>
+				<U16>
+					<Name>Color</Name>
+					<Val>4</Val>
+				</U16>
+				<I32>
+					<Name>AliasIndex</Name>
+					<Val>0</Val>
+				</I32>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Array>
+		<Array>
+			<Name>Channel Aliases</Name>
+			<Dimsize>103</Dimsize>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Breath Number</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Breath Type</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Insp Breath Type</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Breath Rate (BPM)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) I Time (s)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Insp %</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pause Time (s)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pause %</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) E Time (s)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) I/E</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Trig Resp Time (ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Time to P_min after Start of Effort (ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Time between P_min and PEEP (ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Insp T90 (ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Exp T90 (ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Insp Settling Time (ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Exp Settling Time (ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Peak Insp. Flow (L/min)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Peak Exp. Flow (L/min)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Median Flow (L/min)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Mean Flow (L/min)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Max Flow Acc (L/s**2)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Min Flow Acc (L/s**2)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Perc of Peak Flow at Start of Exp (%)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_peak (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_min (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_pause (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mean (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mean Insp (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mean Exp (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mean Ch 1 (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mean Ch 1 Insp (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mean Ch 1 Exp (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mean Ch 2 (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mean Ch 2 Insp (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mean Ch 2 Exp (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) PEEP (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Auto-PEEP 1 (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Auto-PEEP 2 (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total PEEP 1 (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total PEEP 2 (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_0.1 (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Max Pres Drop During Trig (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Insp Target (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Exp Target (cmH2O)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Insp Overshoot (%)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Exp Overshoot (%)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Insp Mean Sq Error (cmH2O**2)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Exp Mean Sq Error (cmH2O**2)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Patient Insp Vt (mL)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Patient Exp Vt (mL)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Patient Vt 1 (mL)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Patient Vt 2 (mL)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Vent Insp Vt (mL)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Vent Exp Vt (mL)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) SD Exp Res (cmH2O/L/s)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Median Exp Res (cmH2O/L/s)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Insp Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Insp Elastic Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Insp Res Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Trig Work to PEEP (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Trig Work SoE to P_min (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Trig Work P_min to PEEP (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Exp Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Exp Res Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Exp Active Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Heat Production (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Pat Total Res Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Ext Insp Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Ext Insp Elastic Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Ext Insp Res Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Ext Exp Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Ext Exp Res Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Ext Exp Active Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Ext Exp Heat Production (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total Insp Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total Insp Elastic Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total Insp Res Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total Exp Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total Exp Res Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total Exp Active Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total Heat Production (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Total Res Work (mJ)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_aw Time Product (cmH2O*ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_aw Time Product Trig (cmH2O*ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_aw Time Product 300 (cmH2O*ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_aw Time Product 500 (cmH2O*ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_mus Time Product (cmH2O*ms)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) P_baro (kPa)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Gas Temp (C)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Wall Temp (C)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Oxygen (%)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Aux 1 (V)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(ASL) Aux 2 (V)</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(VITAL) HR</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(VITAL) BP</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(VITAL) SpO2</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(VITAL) pH</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(VITAL) CO2</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(VITAL) O2</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(VITAL) HCO3</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(VITAL) BE</Val>
+			</String>
+			<String>
+				<Name>String</Name>
+				<Val>(VITAL) SaO2</Val>
+			</String>
+		</Array>
+		<Path>
+			<Name>Module Inventory Path</Name>
+			<Val>C:\Program Files (x86)\ASL Software 3.6\RespiSim_Modules\{name}\{name} support files</Val>
+		</Path>
+		<Array>
+			<Name>Scans</Name>
+			<Dimsize>2</Dimsize>
+			<Cluster>
+				<Name>Scans</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>String</Name>
+					<Val>Auto Scan</Val>
+				</String>
+				<U16>
+					<Name>Color</Name>
+					<Val>18</Val>
+				</U16>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Scans</Name>
+				<NumElts>3</NumElts>
+				<String>
+					<Name>String</Name>
+					<Val>Student Scan</Val>
+				</String>
+				<U16>
+					<Name>Color</Name>
+					<Val>6</Val>
+				</U16>
+				<Boolean>
+					<Name>Enabled/Disabled</Name>
+					<Val>1</Val>
+				</Boolean>
+			</Cluster>
+		</Array>
+		<String>
+			<Name>Module Description</Name>
+			<Val>Mechanical Ventilation Module</Val>
+		</String>
+	</Cluster>
+</Cluster>

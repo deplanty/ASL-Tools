@@ -1,0 +1,16 @@
+{
+    "folders": {
+        "home": ["src"],
+        "resources": ["src", "main", "resources"],
+        "r_config": ["src", "main", "resources", "config"],
+        "r_files": ["src", "main", "resources", "files"],
+        "r_images": ["src", "main", "resouces", "images"]
+    },
+    "files": {
+        "new_dash": ["r_files", "new_dash.json"],
+        "new_script": ["r_files", "new_script.json"],
+        "template_rsp": ["r_files", "template.rsp"],
+        "template_vr3": ["r_files", "template.vr3"],
+        "template_xml": ["r_files", "template.xml"]
+    }
+}

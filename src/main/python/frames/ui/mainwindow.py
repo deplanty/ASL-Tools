@@ -19,7 +19,9 @@ class Ui_MainWindow():
         # Set main window parameters
         MainWindow.setWindowTitle("ASL Tools")
         MainWindow.setWindowIcon(QIcon(":/images/icon.png"))
-        MainWindow.setWindowFlags(Qt.FramelessWindowHint)
+        MainWindow.setWindowFlag(Qt.FramelessWindowHint)
+        MainWindow.setWindowFlag(Qt.Tool)
+        MainWindow.setWindowFlag(Qt.WindowStaysOnTopHint)
         MainWindow.setAttribute(Qt.WA_TranslucentBackground)
 
         # Main frame
@@ -50,15 +52,14 @@ class Ui_MainWindow():
         self.btn_dashboard.setObjectName("tool")
         self.btn_dashboard.setCursor(Qt.CursorShape.PointingHandCursor)
         # Set the buttons in a vertical layout
-        self.h_layout = QVBoxLayout()
+        self.h_layout = QVBoxLayout(frame)
         self.h_layout.addWidget(self.btn_quit, alignment=Qt.AlignRight)
         self.h_layout.addWidget(self.btn_model_vr3)
         self.h_layout.addWidget(self.btn_script)
         self.h_layout.addWidget(self.btn_dashboard)
         # Window fit the layout
-        frame.setLayout(self.h_layout)
         MainWindow.setCentralWidget(frame)
-        MainWindow.setFixedSize(self.h_layout.sizeHint())
+        MainWindow.setFixedSize(frame.sizeHint())
 
         # Set the window in the top right corner
         w_w, _ = MainWindow.size().toTuple()

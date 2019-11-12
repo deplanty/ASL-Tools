@@ -1,0 +1,5364 @@
+<Cluster>
+	<Name>output cluster</Name>
+	<NumElts>6</NumElts>
+	<Cluster>
+		<Name>Instructor Dashboard File Structure</Name>
+		<NumElts>5</NumElts>
+		<Array>
+			<Name>Instructor Settings 1</Name>
+			<Dimsize>6</Dimsize>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[1][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[1][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[1][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[1][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[1][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[1][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[1][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[1][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[1][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[1][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[1][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[1][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[1][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[1][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[1][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[2][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>1</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[2][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[2][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[2][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[2][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[2][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[2][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[2][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[2][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[2][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[2][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[2][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[2][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[2][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[2][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[3][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>1</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[3][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[3][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[3][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[3][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[3][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[3][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[3][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[3][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[3][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[3][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[3][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[3][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[3][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[3][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[4][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>1</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[4][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[4][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[4][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[4][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[4][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[4][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[4][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[4][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[4][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[4][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[4][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[4][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[4][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[4][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[5][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[5][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[5][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[5][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[5][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[5][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[5][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[5][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[5][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[5][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[5][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[5][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[5][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[5][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[5][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[6][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>1</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[6][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[6][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[6][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[6][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[6][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[6][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[6][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[6][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[6][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[6][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[6][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[6][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[6][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[6][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Array>
+		<Array>
+			<Name>Instructor Settings 2</Name>
+			<Dimsize>6</Dimsize>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[7][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[7][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[7][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[7][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[7][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[7][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[7][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[7][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[7][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[7][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[7][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[7][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[7][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[7][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[7][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[8][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[8][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[8][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[8][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[8][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[8][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[8][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[8][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[8][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[8][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[8][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[8][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[8][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[8][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[8][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[9][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[9][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[9][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[9][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[9][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[9][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[9][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[9][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[9][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[9][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[9][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[9][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[9][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[9][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[9][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[10][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[10][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[10][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[10][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[10][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[10][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[10][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[10][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[10][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[10][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[10][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[10][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[10][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[10][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[10][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[11][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[11][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[11][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[11][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[11][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[11][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[11][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[11][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[11][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[11][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[11][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[11][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[11][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[11][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[11][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[12][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>1</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[12][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[12][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[12][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[12][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[12][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[12][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[12][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[12][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[12][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[12][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[12][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[12][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[12][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[12][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Array>
+		<Array>
+			<Name>Instructor Settings 3</Name>
+			<Dimsize>6</Dimsize>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[13][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[13][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[13][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[13][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[13][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[13][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[13][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[13][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[13][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[13][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[13][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[13][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[13][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[13][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[13][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[14][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[14][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[14][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[14][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[14][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[14][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[14][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[14][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[14][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[14][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[14][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[14][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[14][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[14][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[14][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[15][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[15][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[15][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[15][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[15][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[15][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[15][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[15][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[15][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[15][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[15][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[15][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[15][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[15][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[15][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[16][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[16][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[16][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[16][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[16][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[16][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[16][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[16][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[16][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[16][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[16][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[16][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[16][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[16][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[16][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[17][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[17][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[17][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[17][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[17][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[17][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[17][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[17][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[17][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[17][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[17][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[17][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[17][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[17][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[17][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[18][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[18][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[18][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[18][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[18][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[18][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[18][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[18][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[18][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[18][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[18][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[18][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[18][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[18][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[18][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Array>
+		<Array>
+			<Name>Instructor Settings 4</Name>
+			<Dimsize>6</Dimsize>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[19][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[19][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[19][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[19][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[19][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[19][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[19][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[19][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[19][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[19][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[19][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[19][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[19][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[19][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[19][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[20][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[20][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[20][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[20][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[20][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[20][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[20][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[20][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[20][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[20][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[20][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[20][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[20][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[20][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[20][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[21][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[21][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[21][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[21][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[21][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[21][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[21][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[21][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[21][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[21][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[21][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[21][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[21][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[21][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[21][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[22][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[22][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[22][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[22][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[22][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[22][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[22][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[22][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[22][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[22][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[22][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[22][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[22][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[22][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[22][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[23][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[23][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[23][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[23][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[23][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[23][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[23][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[23][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[23][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[23][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[23][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[23][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[23][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[23][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[23][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[24][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[24][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[24][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[24][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[24][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[24][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[24][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[24][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[24][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[24][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[24][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[24][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[24][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[24][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[24][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Array>
+		<Array>
+			<Name>Initial Settings</Name>
+			<Dimsize>6</Dimsize>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val>{d[0][vr3]}</Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>1</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val>{d[0][Mode]}</Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val>{d[0][Vt]}</Val>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val>{d[0][Rate]}</Val>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val>{d[0][Trig_insp]}</Val>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val>{d[0][PEEP]}</Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val>{d[0][FiO2]}</Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val>{d[0][HR]}</Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val>{d[0][BR]}</Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val>{d[0][BP_sys]}</Val>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val>{d[0][BP_dia]}</Val>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val>{d[0][SpO2]}</Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val>{d[0][EtCO2]}</Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val>{d[0][comment]}</Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val>{d[0][vr3path]}</Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val></Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val></Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val></Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val></Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+			<Cluster>
+				<Name>Vital Signs Config</Name>
+				<NumElts>31</NumElts>
+				<Path>
+					<Name>Module:</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>Show Lung Model</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Instructor Actions</Name>
+					<Val>0</Val>
+				</Boolean>
+				<String>
+					<Name>Mode</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>Set Vt</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Peak Flow</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Set Rate</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Tinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Pinsp</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PSV</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>PEEP</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>FiO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>P/F Trigger</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>P-Limit</Name>
+					<Val/>
+				</String>
+				<U16>
+					<Name>EKG Pattern</Name>
+					<Val>0</Val>
+				</U16>
+				<String>
+					<Name>HR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>RR</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>BP</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BP1</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SpO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>etCO2</Name>
+					<Val></Val>
+				</String>
+				<String>
+					<Name>pH</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>CO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>O2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>HCO3</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>BE</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>SaO2</Name>
+					<Val/>
+				</String>
+				<String>
+					<Name>Instructor Actions:</Name>
+					<Val></Val>
+				</String>
+				<Path>
+					<Name>VarPath</Name>
+					<Val></Val>
+				</Path>
+				<Boolean>
+					<Name>L Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>R Pneumo</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Array>
+	</Cluster>
+	<Array>
+		<Name>Sounds and Paths Array</Name>
+		<Dimsize>5</Dimsize>
+		<Cluster>
+			<Name>Cluster</Name>
+			<NumElts>8</NumElts>
+			<String>
+				<Name>Lung Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Lung Sound Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Heart Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Heart Sounds Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Lab Results file Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Assessment Image</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Xray Full Screen Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Change Rationale</Name>
+				<Val/>
+			</String>
+		</Cluster>
+		<Cluster>
+			<Name>Cluster</Name>
+			<NumElts>8</NumElts>
+			<String>
+				<Name>Lung Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Lung Sound Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Heart Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Heart Sounds Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Lab Results file Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Assessment Image</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Xray Full Screen Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Change Rationale</Name>
+				<Val/>
+			</String>
+		</Cluster>
+		<Cluster>
+			<Name>Cluster</Name>
+			<NumElts>8</NumElts>
+			<String>
+				<Name>Lung Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Lung Sound Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Heart Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Heart Sounds Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Lab Results file Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Assessment Image</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Xray Full Screen Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Change Rationale</Name>
+				<Val/>
+			</String>
+		</Cluster>
+		<Cluster>
+			<Name>Cluster</Name>
+			<NumElts>8</NumElts>
+			<String>
+				<Name>Lung Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Lung Sound Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Heart Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Heart Sounds Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Lab Results file Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Assessment Image</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Xray Full Screen Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Change Rationale</Name>
+				<Val/>
+			</String>
+		</Cluster>
+		<Cluster>
+			<Name>Cluster</Name>
+			<NumElts>8</NumElts>
+			<String>
+				<Name>Lung Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Lung Sound Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Heart Sounds Description</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>Heart Sounds Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Lab Results file Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Assessment Image</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<Path>
+				<Name>Xray Full Screen Path</Name>
+				<Val>&lt;Not A Path&gt;</Val>
+			</Path>
+			<String>
+				<Name>Change Rationale</Name>
+				<Val/>
+			</String>
+		</Cluster>
+	</Array>
+	<Path>
+		<Name>Worksheet Path</Name>
+		<Val/>
+	</Path>
+	<Array>
+		<Name>RespiSim Drop Down Values</Name>
+		<Dimsize>6</Dimsize>
+		<U16>
+			<Name>DropDownRing6</Name>
+			<Val>0</Val>
+		</U16>
+		<U16>
+			<Name>DropDownRing6</Name>
+			<Val>0</Val>
+		</U16>
+		<U16>
+			<Name>DropDownRing6</Name>
+			<Val>0</Val>
+		</U16>
+		<U16>
+			<Name>DropDownRing6</Name>
+			<Val>0</Val>
+		</U16>
+		<U16>
+			<Name>DropDownRing6</Name>
+			<Val>0</Val>
+		</U16>
+		<U16>
+			<Name>DropDownRing6</Name>
+			<Val>0</Val>
+		</U16>
+	</Array>
+	<Path>
+		<Name>RespiSIM Preferences File</Name>
+		<Val>{d[rsppath]}</Val>
+	</Path>
+	<Array>
+		<Name>Highlight Information</Name>
+		<Dimsize>6</Dimsize>
+		<Cluster>
+			<Name>Highlight Vital Signs Settings</Name>
+			<NumElts>28</NumElts>
+			<Path>
+				<Name>Module:</Name>
+				<Val/>
+			</Path>
+			<String>
+				<Name>Mode</Name>
+				<Val></Val>
+			</String>
+			<String>
+				<Name>Set Vt</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Peak Flow</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Set Rate</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Tinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Pinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PSV</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PEEP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>FiO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P/F Trigger</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P-Limit</Name>
+				<Val/>
+			</String>
+			<U16>
+				<Name>EKG Pattern</Name>
+				<Val>0</Val>
+			</U16>
+			<String>
+				<Name>HR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>RR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP1</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name>pH</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>CO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>O2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>HCO3</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BE</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>SaO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Instructor Actions:</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>VarPath</Name>
+				<Val/>
+			</Path>
+			<Cluster>
+				<Name>Highlighting cluster</Name>
+				<NumElts>24</NumElts>
+				<Boolean>
+					<Name>Boolean 1</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 2</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 3</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 4</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 5</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 6</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 7</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 8</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 9</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 10</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 11</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 12</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 13</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 14</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 15</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 16</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 17</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 18</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 19</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 20</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 21</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 22</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 23</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 24</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Cluster>
+		<Cluster>
+			<Name>Highlight Vital Signs Settings</Name>
+			<NumElts>28</NumElts>
+			<Path>
+				<Name>Module:</Name>
+				<Val/>
+			</Path>
+			<String>
+				<Name>Mode</Name>
+				<Val></Val>
+			</String>
+			<String>
+				<Name>Set Vt</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Peak Flow</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Set Rate</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Tinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Pinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PSV</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PEEP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>FiO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P/F Trigger</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P-Limit</Name>
+				<Val/>
+			</String>
+			<U16>
+				<Name>EKG Pattern</Name>
+				<Val>0</Val>
+			</U16>
+			<String>
+				<Name>HR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>RR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP1</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name>pH</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>CO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>O2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>HCO3</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BE</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>SaO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Instructor Actions:</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>VarPath</Name>
+				<Val/>
+			</Path>
+			<Cluster>
+				<Name>Highlighting cluster</Name>
+				<NumElts>24</NumElts>
+				<Boolean>
+					<Name>Boolean 1</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 2</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 3</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 4</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 5</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 6</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 7</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 8</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 9</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 10</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 11</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 12</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 13</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 14</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 15</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 16</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 17</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 18</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 19</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 20</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 21</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 22</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 23</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 24</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Cluster>
+		<Cluster>
+			<Name>Highlight Vital Signs Settings</Name>
+			<NumElts>28</NumElts>
+			<Path>
+				<Name>Module:</Name>
+				<Val/>
+			</Path>
+			<String>
+				<Name>Mode</Name>
+				<Val></Val>
+			</String>
+			<String>
+				<Name>Set Vt</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Peak Flow</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Set Rate</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Tinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Pinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PSV</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PEEP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>FiO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P/F Trigger</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P-Limit</Name>
+				<Val/>
+			</String>
+			<U16>
+				<Name>EKG Pattern</Name>
+				<Val>0</Val>
+			</U16>
+			<String>
+				<Name>HR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>RR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP1</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name>pH</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>CO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>O2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>HCO3</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BE</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>SaO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Instructor Actions:</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>VarPath</Name>
+				<Val/>
+			</Path>
+			<Cluster>
+				<Name>Highlighting cluster</Name>
+				<NumElts>24</NumElts>
+				<Boolean>
+					<Name>Boolean 1</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 2</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 3</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 4</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 5</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 6</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 7</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 8</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 9</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 10</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 11</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 12</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 13</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 14</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 15</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 16</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 17</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 18</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 19</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 20</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 21</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 22</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 23</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 24</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Cluster>
+		<Cluster>
+			<Name>Highlight Vital Signs Settings</Name>
+			<NumElts>28</NumElts>
+			<Path>
+				<Name>Module:</Name>
+				<Val/>
+			</Path>
+			<String>
+				<Name>Mode</Name>
+				<Val></Val>
+			</String>
+			<String>
+				<Name>Set Vt</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Peak Flow</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Set Rate</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Tinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Pinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PSV</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PEEP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>FiO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P/F Trigger</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P-Limit</Name>
+				<Val/>
+			</String>
+			<U16>
+				<Name>EKG Pattern</Name>
+				<Val>0</Val>
+			</U16>
+			<String>
+				<Name>HR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>RR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP1</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name>pH</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>CO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>O2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>HCO3</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BE</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>SaO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Instructor Actions:</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>VarPath</Name>
+				<Val/>
+			</Path>
+			<Cluster>
+				<Name>Highlighting cluster</Name>
+				<NumElts>24</NumElts>
+				<Boolean>
+					<Name>Boolean 1</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 2</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 3</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 4</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 5</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 6</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 7</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 8</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 9</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 10</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 11</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 12</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 13</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 14</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 15</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 16</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 17</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 18</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 19</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 20</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 21</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 22</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 23</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 24</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Cluster>
+		<Cluster>
+			<Name>Highlight Vital Signs Settings</Name>
+			<NumElts>28</NumElts>
+			<Path>
+				<Name>Module:</Name>
+				<Val/>
+			</Path>
+			<String>
+				<Name>Mode</Name>
+				<Val></Val>
+			</String>
+			<String>
+				<Name>Set Vt</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Peak Flow</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Set Rate</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Tinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Pinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PSV</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PEEP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>FiO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P/F Trigger</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P-Limit</Name>
+				<Val/>
+			</String>
+			<U16>
+				<Name>EKG Pattern</Name>
+				<Val>0</Val>
+			</U16>
+			<String>
+				<Name>HR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>RR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP1</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name>pH</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>CO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>O2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>HCO3</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BE</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>SaO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Instructor Actions:</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>VarPath</Name>
+				<Val/>
+			</Path>
+			<Cluster>
+				<Name>Highlighting cluster</Name>
+				<NumElts>24</NumElts>
+				<Boolean>
+					<Name>Boolean 1</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 2</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 3</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 4</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 5</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 6</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 7</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 8</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 9</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 10</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 11</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 12</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 13</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 14</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 15</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 16</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 17</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 18</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 19</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 20</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 21</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 22</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 23</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 24</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Cluster>
+		<Cluster>
+			<Name>Highlight Vital Signs Settings</Name>
+			<NumElts>28</NumElts>
+			<Path>
+				<Name>Module:</Name>
+				<Val/>
+			</Path>
+			<String>
+				<Name>Mode</Name>
+				<Val></Val>
+			</String>
+			<String>
+				<Name>Set Vt</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Peak Flow</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Set Rate</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Tinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Pinsp</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PSV</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>PEEP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>FiO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P/F Trigger</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>P-Limit</Name>
+				<Val/>
+			</String>
+			<U16>
+				<Name>EKG Pattern</Name>
+				<Val>0</Val>
+			</U16>
+			<String>
+				<Name>HR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>RR</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BP1</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name/>
+				<Val/>
+			</String>
+			<String>
+				<Name>pH</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>CO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>O2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>HCO3</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>BE</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>SaO2</Name>
+				<Val/>
+			</String>
+			<String>
+				<Name>Instructor Actions:</Name>
+				<Val/>
+			</String>
+			<Path>
+				<Name>VarPath</Name>
+				<Val/>
+			</Path>
+			<Cluster>
+				<Name>Highlighting cluster</Name>
+				<NumElts>24</NumElts>
+				<Boolean>
+					<Name>Boolean 1</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 2</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 3</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 4</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 5</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 6</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 7</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 8</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 9</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 10</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 11</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 12</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 13</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 14</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 15</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 16</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 17</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 18</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 19</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 20</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 21</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 22</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 23</Name>
+					<Val>0</Val>
+				</Boolean>
+				<Boolean>
+					<Name>Boolean 24</Name>
+					<Val>0</Val>
+				</Boolean>
+			</Cluster>
+		</Cluster>
+	</Array>
+</Cluster>
