@@ -19,20 +19,14 @@ class Ui_MainWindow():
         # Set main window parameters
         MainWindow.setWindowTitle("ASL Tools")
         MainWindow.setWindowIcon(QIcon(":/images/icon.png"))
-        MainWindow.setWindowFlag(Qt.FramelessWindowHint)
         MainWindow.setWindowFlag(Qt.Tool)
         MainWindow.setWindowFlag(Qt.WindowStaysOnTopHint)
+        MainWindow.setAttribute(Qt.WA_QuitOnClose)
         MainWindow.setAttribute(Qt.WA_TranslucentBackground)
 
         # Main frame
         frame = QWidget()
         frame.setObjectName("mainwindow")
-        # Button quit
-        self.btn_quit = QToolButton()
-        self.btn_quit.setIcon(QIcon(":/images/quit.svg"))
-        self.btn_quit.setIconSize(QSize(16, 16))
-        self.btn_quit.setObjectName("quit")
-        self.btn_quit.setCursor(Qt.CursorShape.PointingHandCursor)
         # Button create vr3 model
         self.btn_model_vr3 = QToolButton()
         self.btn_model_vr3.setIcon(QIcon(":/images/model-vr3.svg"))
@@ -53,7 +47,6 @@ class Ui_MainWindow():
         self.btn_dashboard.setCursor(Qt.CursorShape.PointingHandCursor)
         # Set the buttons in a vertical layout
         self.h_layout = QVBoxLayout(frame)
-        self.h_layout.addWidget(self.btn_quit, alignment=Qt.AlignRight)
         self.h_layout.addWidget(self.btn_model_vr3)
         self.h_layout.addWidget(self.btn_script)
         self.h_layout.addWidget(self.btn_dashboard)

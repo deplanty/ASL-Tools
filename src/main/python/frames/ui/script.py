@@ -1,7 +1,10 @@
 from PySide2 import QtCore, QtGui, QtWidgets
 
 from PySide2.QtCore import (
-    Qt
+    Qt,
+)
+from PySide2.QtGui import (
+    QIcon,
 )
 from PySide2.QtWidgets import (
     QHBoxLayout,
@@ -14,8 +17,9 @@ class Ui_Script:
     def __init__(self, Script:QWidget):
 
         # Set window parameters
-        Script.setWindowFlag(Qt.Window)
         Script.setWindowTitle("ASL Tools - Script")
+        Script.setWindowIcon(QIcon(":/images/icon.png"))
+        Script.setWindowFlag(Qt.Window)
         Script.resize(800, 540)
         Script.move(0, 0)
 

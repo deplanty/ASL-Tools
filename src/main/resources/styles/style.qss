@@ -1,11 +1,8 @@
 QWidget#mainwindow {
     background-color: #f0f0f0;
     border-radius: 10px;
+    border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-}
-
-QWidget#mainwindow > QToolButton#quit {
-    border: 0px;
 }
 
 QWidget#mainwindow > QToolButton#tool {

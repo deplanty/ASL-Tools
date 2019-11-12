@@ -1,6 +1,3 @@
-from PySide2.QtCore import (
-    QCoreApplication
-)
 from PySide2.QtWidgets import (
     QMainWindow
 )
@@ -16,15 +13,7 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow(self)
         self.script = Script(self)
 
-        self.ui.btn_quit.clicked.connect(self.btn_quit)
         self.ui.btn_script.clicked.connect(self.btn_script)
-
-    def btn_quit(self):
-        """
-        Quit application
-        """
-
-        QCoreApplication.quit()
 
     def btn_script(self):
         self.script.show()
