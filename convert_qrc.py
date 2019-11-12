@@ -1,4 +1,9 @@
 import os
 
 
-os.system("pyside2-rcc.exe src\\main\\resources\\resources.qrc -o src\\main\\python\\resources.py")
+dir_this = os.path.dirname(__file__)
+rcc = os.path.join(dir_this, "venv\\Scripts\\pyside2-rcc.exe")
+qrc = os.path.join(dir_this, "src\\main\\resources\\resources.qrc")
+py = os.path.join(dir_this, "src\\main\\python\\resources.py")
+cmd = f"{rcc} {qrc} -o {py}"
+os.system(cmd)

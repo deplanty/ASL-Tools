@@ -1,10 +1,11 @@
 <RCC>
   <qresource>
-    <file>images/icon.png</file>
-    <file>images/icon.ico</file>
     <file>images/dashboard.svg</file>
-    <file>images/script.svg</file>
+    <file>images/icon.ico</file>
+    <file>images/icon.png</file>
     <file>images/model-vr3.svg</file>
+    <file>images/quit.svg</file>
+    <file>images/script.svg</file>
   </qresource>
   <qresource>
     <file>styles/style.qss</file>

@@ -1,3 +1,25 @@
-QToolButton {
-    background-color: #ff2525;
+QWidget#mainwindow {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+}
+
+QWidget#mainwindow > QToolButton#quit {
+    border: 0px;
+}
+
+QWidget#mainwindow > QToolButton#tool {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+QWidget#mainwindow > QToolButton#tool:hover {
+    border-color: gray;
+    background-color: #f0f0ff;
+}
+
+QWidget#mainwindow > QToolButton#tool:pressed {
+    border-color: gray;
+    background-color: #e0e0f0;
 }

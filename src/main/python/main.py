@@ -1,10 +1,14 @@
 import sys
 
 from fbs_runtime.application_context.PySide2 import ApplicationContext
-from PySide2.QtCore import QFile
+from PySide2.QtCore import (
+    QByteArray,
+    QFile
+)
 
 import resources
 from frames.controller import MainWindow
+
 
 class Application(ApplicationContext):
     def __init__(self, *args, **kwargs):
@@ -12,7 +16,8 @@ class Application(ApplicationContext):
 
         file = QFile(":/styles/style.qss")
         file.open(QFile.ReadOnly)
-        style = bytes(file.readAll()).decode()
+        style = file.readAll()
+        style = style.data().decode()
         file.close()
         self.app.setStyleSheet(style)
         self.window = MainWindow()

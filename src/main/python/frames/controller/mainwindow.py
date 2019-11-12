@@ -1,6 +1,7 @@
 from PySide2.QtWidgets import (
     QMainWindow
 )
+from PySide2.QtCore import QCoreApplication
 
 from frames.ui import Ui_MainWindow
 
@@ -11,7 +12,11 @@ class MainWindow(QMainWindow):
 
         self.ui = Ui_MainWindow(self)
 
-        self.ui.btn_1.clicked.connect(self.btn_1)
+        self.ui.btn_quit.clicked.connect(self.btn_quit)
 
-    def btn_1(self):
-        print("BOUTON 1")
+    def btn_quit(self):
+        """
+        Quit application
+        """
+
+        QCoreApplication.quit()
