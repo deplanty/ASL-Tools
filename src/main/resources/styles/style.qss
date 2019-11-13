@@ -1,19 +1,19 @@
 QWidget#mainwindow {
     background-color: #f0f0f0;
-    border-radius: 10px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 QWidget#mainwindow > QToolButton#tool {
+    background-color: #f0f0f0;
     border: 1px solid black;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 5px;
 }
 
 QWidget#mainwindow > QToolButton#tool:hover {
-    border-color: gray;
-    background-color: #f0f0ff;
+    border-color: #507090;
+    background-color: #f8f8ff;
 }
 
 QWidget#mainwindow > QToolButton#tool:pressed {
