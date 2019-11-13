@@ -8,9 +8,12 @@
     <file>images/icon.ico</file>
     <file>images/icon.png</file>
     <file>images/model-vr3.svg</file>
-    <file>images/open_file.svg</file>
+    <file>images/new-file.svg</file>
+    <file>images/open-file.svg</file>
+    <file>images/quit.svg</file>
     <file>images/remove.svg</file>
     <file>images/save.svg</file>
+    <file>images/save-as.svg</file>
     <file>images/script.svg</file>
   </qresource>
   <qresource>
