@@ -1,9 +1,9 @@
 {
     "folders": {
         "home": ["src"],
-        "resources": ["src", "main", "resources"],
-        "r_config": ["src", "main", "resources", "config"],
-        "r_files": ["src", "main", "resources", "files"],
+        "resources": ["src", "main", "resources", "base"],
+        "r_config": ["src", "main", "resources", "base", "config"],
+        "r_files": ["src", "main", "resources", "base", "files"],
         "r_images": ["src", "main", "resouces", "images"]
     },
     "files": {
