@@ -53,6 +53,8 @@ class Application(QApplication):
 
 
 if __name__ == '__main__':
-    app = Application(sys.argv)
-    exit_code = app.run()
-    sys.exit(exit_code)
+    with open("ASL-Tools.traceback.log", "w") as log:
+        sys.stderr = log
+        app = Application(sys.argv)
+        exit_code = app.run()
+        sys.exit(exit_code)
