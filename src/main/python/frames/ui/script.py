@@ -28,7 +28,6 @@ class Ui_Script:
 
         # Main frame
         frame = QWidget(Script)
-        frame.setObjectName("scriptwindow")
         self.h_layout = QHBoxLayout(frame)
 
         # Menubar
