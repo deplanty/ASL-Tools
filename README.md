@@ -10,7 +10,7 @@ It is mainly used for educational purpose, developing products and testing venti
 The ASL 5000 comes with a software to manage the simulator.
 As the ASL 5000 can simulate very complex patients, the software has a lot of tabs, settings and it takes quite a long time to create the desired scripts.
 
-**The goal of this tool is to create a friendly interface with the most used parameters.**
+&rArr; **The goal of this tool is to create a friendly interface with the most used parameters.**
 
 With the ASL 5000 software, and this tool, 3 different kind of simulations can be developed:
 - a single simulation file (`vr3`): the simulation will run indefinitely, until the user ends it;
