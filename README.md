@@ -10,12 +10,12 @@ It is mainly used for educational purpose, developing products and testing venti
 The ASL 5000 comes with a software to manage the simulator.
 As the ASL 5000 can simulate very complex patients, the software has a lot of tabs, settings and it takes quite a long time to create the desired scripts.
 
-&rArr; **The goal of this tool is to create a friendly interface with the most used parameters.**
+**&rArr; The goal of this tool is to create a friendly interface with the most used parameters.**
 
 With the ASL 5000 software, and this tool, 3 different kind of simulations can be developed:
 - a single simulation file (`vr3`): the simulation will run indefinitely, until the user ends it;
 - a script: runs a bunch of `vr3` with an explicit amount of cycles for each simulation file;
-- a dashboard: 25 predefined `vr3` that can be easily launched;
+- a dashboard: 25 predefined `vr3` that can be easily launched.
 
 # Installation
 
@@ -25,6 +25,7 @@ Initializing the environment:
 ```cmd
 pip install virtualenv
 virtualenv venv
+venv/Scripts/activate
 ```
 
 Loading the packages:
@@ -39,4 +40,10 @@ Launch ASL-Tools:
 python main.py
 ```
 
-If you want to "compile" this tool, you can use [PyInstaller](https://www.pyinstaller.org).
+If you want to "compile" this tool, you can use [PyInstaller](https://www.pyinstaller.org) on `ASL-Tools.spec`:
+```cmd
+pip install PyInstaller
+pyinstaller ASL-Tools.spec
+```
+
+The output executable will be released in `target/ASL-Tools/ASL-Tools.exe`.
