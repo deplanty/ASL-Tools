@@ -7,12 +7,15 @@ from PySide2.QtCore import (
 )
 
 import resources
+from config import Paths
 from frames.controller import MainWindow
 
 
 class Application(ApplicationContext):
     def __init__(self, *args, **kwargs):
         ApplicationContext.__init__(self, *args, **kwargs)
+
+        Paths.initialize("src/main/resources/base/config/paths.json")
 
         file = QFile(":/styles/style.qss")
         file.open(QFile.ReadOnly)
