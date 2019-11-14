@@ -1,4 +1,4 @@
-from config import Paths
+from src.config import Paths
 
 
 class Vr3:

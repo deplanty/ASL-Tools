@@ -5,8 +5,8 @@ A script object to load, save and show data
 import os
 import re
 
-from common import io
-from config import Paths
+from src.common import io
+from src.config import Paths
 from .vr3 import Vr3
 
 

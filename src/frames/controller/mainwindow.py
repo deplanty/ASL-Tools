@@ -2,11 +2,11 @@ from PySide2.QtWidgets import (
     QMainWindow
 )
 
-from frames.controller import (
+from src.frames.controller import (
     Script,
     Dashboard
 )
-from frames.ui import Ui_MainWindow
+from src.frames.ui import Ui_MainWindow
 
 
 class MainWindow(QMainWindow):
