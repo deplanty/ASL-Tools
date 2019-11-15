@@ -1,3 +1,4 @@
+import os
 import sys
 
 from PySide2.QtCore import QFile
@@ -53,8 +54,16 @@ class Application(QApplication):
 
 
 if __name__ == '__main__':
-    with open("ASL-Tools.traceback.log", "w") as log:
+    import time
+    # Create log in AppData/Local
+    local = os.getenv("LOCALAPPDATA")
+    dirpath = os.path.join(local, "ASL-Tools")
+    os.makedirs(dirpath, exist_ok=True)
+    with open(f"{dirpath}/traceback.log", "w") as log:
+        log.write(time.strftime("Start application the %d/%m/%Y at %H:%M:%S\n"))
         sys.stderr = log
+
+        # Start application
         app = Application(sys.argv)
         exit_code = app.run()
         sys.exit(exit_code)
