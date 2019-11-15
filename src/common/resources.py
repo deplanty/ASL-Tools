@@ -2,7 +2,7 @@
 
 # Resource object code
 #
-# Created: ven. nov. 15 15:24:12 2019
+# Created: ven. nov. 15 17:19:56 2019
 #      by: The Resource Compiler for PySide2 (Qt v5.13.2)
 #
 # WARNING! All changes made in this file will be lost!
@@ -10,265 +10,39 @@
 from PySide2 import QtCore
 
 qt_resource_data = b"\
-\x00\x00\x03\xfb\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22iso\
--8859-1\x22?>\x0a<!-- \
-Generator: Adobe\
- Illustrator 18.\
-0.0, SVG Export \
-Plug-In . SVG Ve\
-rsion: 6.00 Buil\
-d 0)  -->\x0a<!DOCT\
-YPE svg PUBLIC \x22\
--//W3C//DTD SVG \
-1.1//EN\x22 \x22http:/\
-/www.w3.org/Grap\
-hics/SVG/1.1/DTD\
-/svg11.dtd\x22>\x0a<sv\
-g version=\x221.1\x22 \
-id=\x22Capa_1\x22 xmln\
-s=\x22http://www.w3\
-.org/2000/svg\x22 x\
-mlns:xlink=\x22http\
-://www.w3.org/19\
-99/xlink\x22 x=\x220px\
-\x22 y=\x220px\x22\x0a\x09 view\
-Box=\x220 0 58 58\x22 \
-style=\x22enable-ba\
-ckground:new 0 0\
- 58 58;\x22 xml:spa\
-ce=\x22preserve\x22>\x0a<\
-g>\x0a\x09<rect x=\x2228\x22\
- y=\x2217\x22 style=\x22f\
-ill:#556080;\x22 wi\
-dth=\x222\x22 height=\x22\
-24\x22/>\x0a\x09<polygon \
-style=\x22fill:#556\
-080;\x22 points=\x2252\
-,41 50,41 50,30 \
-8,30 8,41 6,41 6\
-,28 52,28 \x09\x22/>\x0a\x09\
-<rect y=\x2241\x22 sty\
-le=\x22fill:#F0C419\
-;\x22 width=\x2214\x22 he\
-ight=\x2214\x22/>\x0a\x09<re\
-ct x=\x2244\x22 y=\x2241\x22\
- style=\x22fill:#F1\
-8D46;\x22 width=\x2214\
-\x22 height=\x2214\x22/>\x0a\
-\x09<rect x=\x2222\x22 y=\
-\x2241\x22 style=\x22fill\
-:#F29C1F;\x22 width\
-=\x2214\x22 height=\x2214\
-\x22/>\x0a\x09<rect x=\x2222\
-\x22 y=\x223\x22 style=\x22f\
-ill:#0096E6;\x22 wi\
-dth=\x2214\x22 height=\
-\x2214\x22/>\x0a</g>\x0a<g>\x0a\
-</g>\x0a<g>\x0a</g>\x0a<g\
->\x0a</g>\x0a<g>\x0a</g>\x0a\
-<g>\x0a</g>\x0a<g>\x0a</g\
->\x0a<g>\x0a</g>\x0a<g>\x0a<\
-/g>\x0a<g>\x0a</g>\x0a<g>\
-\x0a</g>\x0a<g>\x0a</g>\x0a<\
-g>\x0a</g>\x0a<g>\x0a</g>\
-\x0a<g>\x0a</g>\x0a<g>\x0a</\
-g>\x0a</svg>\x0a\
-\x00\x00\x06\xc5\
-<\
-svg height=\x22512\x22\
- viewBox=\x220 0 56\
- 59\x22 width=\x22512\x22\
- xmlns=\x22http://w\
-ww.w3.org/2000/s\
-vg\x22><g id=\x22Page-\
-1\x22 fill=\x22none\x22 f\
-ill-rule=\x22evenod\
-d\x22><g id=\x22047---\
-Delete\x22 fill-rul\
-e=\x22nonzero\x22><pat\
-h id=\x22Shape\x22 d=\x22\
-m52 12.89-.24 3.\
-11-3.21 41.09c-.\
-1867983 1.160868\
-4-1.2268257 1.98\
-85569-2.4 1.91h-\
-36.3c-1.17317431\
-.0785569-2.21320\
-168-.7491316-2.4\
--1.91l-3.21-41.0\
-9-.24-3.11z\x22 fil\
-l=\x22#547580\x22/><g \
-fill=\x22#3f5c6c\x22><\
-path id=\x22Shape\x22 \
-d=\x22m25 51c-.5522\
-847 0-1-.4477153\
--1-1v-27c0-2.209\
-139 1.790861-4 4\
--4s4 1.790861 4 \
-4c0 .5522847-.44\
-77153 1-1 1s-1-.\
-4477153-1-1c0-1.\
-1045695-.8954305\
--2-2-2s-2 .89543\
-05-2 2v27c0 .552\
-2847-.4477153 1-\
-1 1z\x22/><path id=\
-\x22Shape\x22 d=\x22m13 5\
-1c-.5522847 0-1-\
-.4477153-1-1v-27\
-c0-2.209139 1.79\
-0861-4 4-4s4 1.7\
-90861 4 4c0 .552\
-2847-.4477153 1-\
-1 1s-1-.4477153-\
-1-1c0-1.1045695-\
-.8954305-2-2-2s-\
-2 .8954305-2 2v2\
-7c0 .5522847-.44\
-77153 1-1 1z\x22/><\
-path id=\x22Shape\x22 \
-d=\x22m37 51c-.5522\
-847 0-1-.4477153\
--1-1v-27c0-2.209\
-139 1.790861-4 4\
--4s4 1.790861 4 \
-4c0 .5522847-.44\
-77153 1-1 1s-1-.\
-4477153-1-1c0-1.\
-1045695-.8954305\
--2-2-2s-2 .89543\
-05-2 2v27c0 .552\
-2847-.4477153 1-\
-1 1z\x22/></g><path\
- id=\x22Shape\x22 d=\x22m\
-41.001 7c-.30403\
-34.00086637-.591\
-795-.13725037-.7\
-813-.375l-.998-1\
-.2471c-1.7040924\
--2.14006308-4.29\
-26535-3.384162-7\
-.0283-3.3779h-8.\
-3868c-2.7354098-\
-.00645869-5.3237\
-468 1.23770954-7\
-.0273 3.3779l-.9\
-993 1.2471c-.350\
-7413.41075355-.9\
-642746.46875767-\
-1.3857798.131013\
-15-.4215051-.337\
-74451-.4986385-.\
-94916746-.174220\
-2-1.38101315l.99\
-81-1.2471c2.0820\
-596-2.61555298 5\
-.2454439-4.13597\
-375 8.5885-4.127\
-9h8.3868c3.34346\
-81-.00802985 6.5\
-072921 1.5123367\
-7 8.59 4.1279l.9\
-966 1.2471c.2401\
-148.29990225.287\
-1903.71084849.12\
-11157 1.05728133\
--.1660745.346432\
-84-.5159333.5670\
-9487-.9001157.56\
-771867z\x22 fill=\x22#\
-bdc3c7\x22/><rect i\
-d=\x22Rectangle-pat\
-h\x22 fill=\x22#95a5a5\
-\x22 height=\x228\x22 rx=\
-\x224\x22 width=\x2256\x22 y\
-=\x226\x22/></g></g></\
-svg>\
-\x00\x00\x04\xf4\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22iso\
--8859-1\x22?>\x0a<!-- \
-Generator: Adobe\
- Illustrator 18.\
-0.0, SVG Export \
-Plug-In . SVG Ve\
-rsion: 6.00 Buil\
-d 0)  -->\x0a<!DOCT\
-YPE svg PUBLIC \x22\
--//W3C//DTD SVG \
-1.1//EN\x22 \x22http:/\
-/www.w3.org/Grap\
-hics/SVG/1.1/DTD\
-/svg11.dtd\x22>\x0a<sv\
-g version=\x221.1\x22 \
-id=\x22Capa_1\x22 xmln\
-s=\x22http://www.w3\
-.org/2000/svg\x22 x\
-mlns:xlink=\x22http\
-://www.w3.org/19\
-99/xlink\x22 x=\x220px\
-\x22 y=\x220px\x22\x0a\x09 view\
-Box=\x220 0 52.519 \
-52.519\x22 style=\x22e\
-nable-background\
-:new 0 0 52.519 \
-52.519;\x22 xml:spa\
-ce=\x22preserve\x22>\x0a<\
-g>\x0a\x09<path style=\
-\x22fill:#26B99A;\x22 \
-d=\x22M16.049,31.13\
-7H4.001l20.08,19\
-.971l20.08-19.97\
-1H32.113c0,0-4.2\
-92-17.735,16.064\
--29.849\x0a\x09\x09c0,0-1\
-5.536-3.02-26.79\
-4,10.51C21.382,1\
-1.797,15.651,17.\
-927,16.049,31.13\
-7z\x22/>\x0a\x09<path sty\
-le=\x22fill:#26B99A\
-;\x22 d=\x22M24.081,52\
-.519L1.577,30.13\
-7H15.03c-0.092-1\
-2.759,5.383-18.7\
-67,5.622-19.022\x0a\
-\x09\x09C28.691,1.45,3\
-8.933,0,44.318,0\
-c2.446,0,3.985,0\
-.294,4.049,0.307\
-l2.574,0.5l-2.25\
-3,1.341C31.371,1\
-2.453,32.394,26.\
-663,32.94,30.137\
-\x0a\x09\x09h13.645L24.08\
-1,52.519z M6.425\
-,32.137l17.656,1\
-7.562l17.656-17.\
-562H31.326l-0.18\
-5-0.765c-0.043-0\
-.177-3.881-17.08\
-2,14.041-29.358\x0a\
-\x09\x09c-4.784-0.15-1\
-5.02,0.795-23.03\
-1,10.423c-0.091,\
-0.1-5.481,6.089-\
-5.103,18.67l0.03\
-,1.03H6.425z\x22/>\x0a\
-</g>\x0a<g>\x0a</g>\x0a<g\
->\x0a</g>\x0a<g>\x0a</g>\x0a\
-<g>\x0a</g>\x0a<g>\x0a</g\
->\x0a<g>\x0a</g>\x0a<g>\x0a<\
-/g>\x0a<g>\x0a</g>\x0a<g>\
-\x0a</g>\x0a<g>\x0a</g>\x0a<\
-g>\x0a</g>\x0a<g>\x0a</g>\
-\x0a<g>\x0a</g>\x0a<g>\x0a</\
-g>\x0a<g>\x0a</g>\x0a</sv\
-g>\x0a\
+\x00\x00\x01\xe8\
+Q\
+Widget#mainwindo\
+w {\x0a    backgrou\
+nd-color: #f0f0f\
+0;\x0a    border-bo\
+ttom-left-radius\
+: 10px;\x0a    bord\
+er-bottom-right-\
+radius: 10px;\x0a}\x0a\
+\x0aQWidget#mainwin\
+dow > QToolButto\
+n#tool {\x0a    bac\
+kground-color: #\
+f0f0f0;\x0a    bord\
+er: 1px solid bl\
+ack;\x0a    border-\
+radius: 10px;\x0a  \
+  padding: 5px;\x0a\
+}\x0a\x0aQWidget#mainw\
+indow > QToolBut\
+ton#tool:hover {\
+\x0a    border-colo\
+r: #507090;\x0a    \
+background-color\
+: #f8f8ff;\x0a}\x0a\x0aQW\
+idget#mainwindow\
+ > QToolButton#t\
+ool:pressed {\x0a  \
+  border-color: \
+gray;\x0a    backgr\
+ound-color: #e0e\
+0f0;\x0a}\x0a\
 \x00\x00\x01\xa1\
 \x89\
 PNG\x0d\x0a\x1a\x0a\x00\x00\x00\x0dIHDR\x00\
@@ -411,249 +185,6 @@ g>\x0a<g>\x0a</g>\x0a<g>\x0a\
 <g>\x0a</g>\x0a<g>\x0a</g\
 >\x0a<g>\x0a</g>\x0a</svg\
 >\x0a\
-\x00\x00\x06\x0a\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22iso\
--8859-1\x22?>\x0a<!-- \
-Generator: Adobe\
- Illustrator 19.\
-0.0, SVG Export \
-Plug-In . SVG Ve\
-rsion: 6.00 Buil\
-d 0)  -->\x0a<svg v\
-ersion=\x221.1\x22 id=\
-\x22Capa_1\x22 xmlns=\x22\
-http://www.w3.or\
-g/2000/svg\x22 xmln\
-s:xlink=\x22http://\
-www.w3.org/1999/\
-xlink\x22 x=\x220px\x22 y\
-=\x220px\x22\x0a\x09 viewBox\
-=\x220 0 58 58\x22 sty\
-le=\x22enable-backg\
-round:new 0 0 58\
- 58;\x22 xml:space=\
-\x22preserve\x22>\x0a<pat\
-h style=\x22fill:#E\
-FCE4A;\x22 d=\x22M46.3\
-24,58H1.565c-1.0\
-3,0-1.779-0.978-\
-1.51-1.973l10.16\
-6-27.871C10.405,\
-27.474,11.024,27\
-,11.731,27\x0a\x09H56.\
-49c1.03,0,1.51,0\
-.984,1.51,1.973L\
-47.834,56.844C47\
-.65,57.526,47.03\
-1,58,46.324,58z\x22\
-/>\x0a<path style=\x22\
-fill:#EBBA16;\x22 d\
-=\x22M50.268,18H48v\
-9h4v-7.268C52,18\
-.775,51.224,18,5\
-0.268,18z\x22/>\x0a<pa\
-th style=\x22fill:#\
-EBBA16;\x22 d=\x22M4,1\
-1H1.732C0.776,11\
-,0,11.775,0,12.7\
-32V55.46c0.069,0\
-.002,0.138,0.006\
-,0.205,0.01L4,45\
-.122V11z\x22/>\x0a<pat\
-h style=\x22fill:#F\
-4EFDC;\x22 d=\x22M10.2\
-21,28.156C10.405\
-,27.474,11.024,2\
-7,11.731,27h2H48\
-V15V0H33H10v28.7\
-61L10.221,28.156\
-z\x22/>\x0a<g>\x0a\x09<path \
-style=\x22fill:#CEC\
-9AE;\x22 d=\x22M17,16h\
-24c0.552,0,1-0.4\
-47,1-1s-0.448-1-\
-1-1H17c-0.552,0-\
-1,0.447-1,1S16.4\
-48,16,17,16z\x22/>\x0a\
-\x09<path style=\x22fi\
-ll:#CEC9AE;\x22 d=\x22\
-M17,9h10c0.552,0\
-,1-0.447,1-1s-0.\
-448-1-1-1H17c-0.\
-552,0-1,0.447-1,\
-1S16.448,9,17,9z\
-\x22/>\x0a\x09<path style\
-=\x22fill:#CEC9AE;\x22\
- d=\x22M41,21H17c-0\
-.552,0-1,0.447-1\
-,1s0.448,1,1,1h2\
-4c0.552,0,1-0.44\
-7,1-1S41.552,21,\
-41,21z\x22/>\x0a</g>\x0a<\
-polygon style=\x22f\
-ill:#CEC9AE;\x22 po\
-ints=\x2210,28.761 \
-10,2 7,2 7,36.98\
-6 \x22/>\x0a<polygon s\
-tyle=\x22fill:#D1BF\
-86;\x22 points=\x227,3\
-6.986 7,4 4,4 4,\
-45.211 \x22/>\x0a<g>\x0a<\
-/g>\x0a<g>\x0a</g>\x0a<g>\
-\x0a</g>\x0a<g>\x0a</g>\x0a<\
-g>\x0a</g>\x0a<g>\x0a</g>\
-\x0a<g>\x0a</g>\x0a<g>\x0a</\
-g>\x0a<g>\x0a</g>\x0a<g>\x0a\
-</g>\x0a<g>\x0a</g>\x0a<g\
->\x0a</g>\x0a<g>\x0a</g>\x0a\
-<g>\x0a</g>\x0a<g>\x0a</g\
->\x0a</svg>\x0a\
-\x00\x00\x05\xcd\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22iso\
--8859-1\x22?>\x0a<!-- \
-Generator: Adobe\
- Illustrator 19.\
-0.0, SVG Export \
-Plug-In . SVG Ve\
-rsion: 6.00 Buil\
-d 0)  -->\x0a<svg v\
-ersion=\x221.1\x22 id=\
-\x22Capa_1\x22 xmlns=\x22\
-http://www.w3.or\
-g/2000/svg\x22 xmln\
-s:xlink=\x22http://\
-www.w3.org/1999/\
-xlink\x22 x=\x220px\x22 y\
-=\x220px\x22\x0a\x09 viewBox\
-=\x220 0 47 47\x22 sty\
-le=\x22enable-backg\
-round:new 0 0 47\
- 47;\x22 xml:space=\
-\x22preserve\x22>\x0a<pol\
-ygon style=\x22fill\
-:#424A60;\x22 point\
-s=\x2246.5,8 46.5,4\
-7 0.5,47 0.5,0 3\
-8.5,0 \x22/>\x0a<rect \
-x=\x227.5\x22 y=\x2226\x22 s\
-tyle=\x22fill:#E7EC\
-ED;\x22 width=\x2231\x22 \
-height=\x2221\x22/>\x0a<r\
-ect x=\x227.5\x22 y=\x222\
-6\x22 style=\x22fill:#\
-EBBA16;\x22 width=\x22\
-31\x22 height=\x2212.0\
-37\x22/>\x0a<rect x=\x229\
-.5\x22 style=\x22fill:\
-#C7CAC7;\x22 width=\
-\x2226\x22 height=\x2216\x22\
-/>\x0a<g>\x0a\x09<path st\
-yle=\x22fill:#FFFFF\
-F;\x22 d=\x22M12.5,31h\
-7c0.553,0,1-0.44\
-7,1-1s-0.447-1-1\
--1h-7c-0.553,0-1\
-,0.447-1,1S11.94\
-7,31,12.5,31z\x22/>\
-\x0a\x09<path style=\x22f\
-ill:#FFFFFF;\x22 d=\
-\x22M22.5,33h-10c-0\
-.553,0-1,0.447-1\
-,1s0.447,1,1,1h1\
-0c0.553,0,1-0.44\
-7,1-1S23.053,33,\
-22.5,33z\x22/>\x0a\x09<pa\
-th style=\x22fill:#\
-FFFFFF;\x22 d=\x22M26.\
-21,33.29c-0.37-0\
-.37-1.04-0.37-1.\
-41,0c-0.19,0.189\
--0.3,0.439-0.3,0\
-.71\x0a\x09\x09c0,0.27,0.\
-109,0.52,0.29,0.\
-71C24.979,34.89,\
-25.229,35,25.5,3\
-5c0.27,0,0.52-0.\
-11,0.71-0.29c0.1\
-8-0.19,0.29-0.45\
-,0.29-0.71\x0a\x09\x09S26\
-.39,33.479,26.21\
-,33.29z\x22/>\x0a</g>\x0a\
-<rect x=\x2227.5\x22 y\
-=\x224\x22 style=\x22fill\
-:none;stroke:#42\
-4A60;stroke-widt\
-h:2;stroke-linec\
-ap:round;stroke-\
-miterlimit:10;\x22 \
-width=\x224\x22 height\
-=\x228\x22/>\x0a<polygon \
-style=\x22fill:#E7E\
-CED;\x22 points=\x2224\
-.5,16 9.5,16 9.5\
-,0 16.5,0 \x22/>\x0a<g\
->\x0a</g>\x0a<g>\x0a</g>\x0a\
-<g>\x0a</g>\x0a<g>\x0a</g\
->\x0a<g>\x0a</g>\x0a<g>\x0a<\
-/g>\x0a<g>\x0a</g>\x0a<g>\
-\x0a</g>\x0a<g>\x0a</g>\x0a<\
-g>\x0a</g>\x0a<g>\x0a</g>\
-\x0a<g>\x0a</g>\x0a<g>\x0a</\
-g>\x0a<g>\x0a</g>\x0a<g>\x0a\
-</g>\x0a</svg>\x0a\
-\x00\x00\x02\xea\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22iso\
--8859-1\x22?>\x0a<!-- \
-Generator: Adobe\
- Illustrator 19.\
-0.0, SVG Export \
-Plug-In . SVG Ve\
-rsion: 6.00 Buil\
-d 0)  -->\x0a<svg v\
-ersion=\x221.1\x22 id=\
-\x22Capa_1\x22 xmlns=\x22\
-http://www.w3.or\
-g/2000/svg\x22 xmln\
-s:xlink=\x22http://\
-www.w3.org/1999/\
-xlink\x22 x=\x220px\x22 y\
-=\x220px\x22\x0a\x09 viewBox\
-=\x220 0 42 42\x22 sty\
-le=\x22enable-backg\
-round:new 0 0 42\
- 42;\x22 xml:space=\
-\x22preserve\x22>\x0a<pat\
-h style=\x22fill:#2\
-3A24D;\x22 d=\x22M37.0\
-59,16H26V4.941C2\
-6,2.224,23.718,0\
-,21,0s-5,2.224-5\
-,4.941V16H4.941C\
-2.224,16,0,18.28\
-2,0,21\x0a\x09s2.224,5\
-,4.941,5H16v11.0\
-59C16,39.776,18.\
-282,42,21,42s5-2\
-.224,5-4.941V26h\
-11.059C39.776,26\
-,42,23.718,42,21\
-S39.776,16,37.05\
-9,16z\x22\x0a\x09/>\x0a<g>\x0a<\
-/g>\x0a<g>\x0a</g>\x0a<g>\
-\x0a</g>\x0a<g>\x0a</g>\x0a<\
-g>\x0a</g>\x0a<g>\x0a</g>\
-\x0a<g>\x0a</g>\x0a<g>\x0a</\
-g>\x0a<g>\x0a</g>\x0a<g>\x0a\
-</g>\x0a<g>\x0a</g>\x0a<g\
->\x0a</g>\x0a<g>\x0a</g>\x0a\
-<g>\x0a</g>\x0a<g>\x0a</g\
->\x0a</svg>\x0a\
 \x00\x00\x03,\
 <\
 ?xml version=\x221.\
@@ -707,296 +238,6 @@ g>\x0a<g>\x0a</g>\x0a<g>\x0a\
 <g>\x0a</g>\x0a<g>\x0a</g\
 >\x0a<g>\x0a</g>\x0a<g>\x0a<\
 /g>\x0a</svg>\x0a\
-\x00\x00\x03\xba\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22iso\
--8859-1\x22?>\x0a<!-- \
-Generator: Adobe\
- Illustrator 18.\
-0.0, SVG Export \
-Plug-In . SVG Ve\
-rsion: 6.00 Buil\
-d 0)  -->\x0a<!DOCT\
-YPE svg PUBLIC \x22\
--//W3C//DTD SVG \
-1.1//EN\x22 \x22http:/\
-/www.w3.org/Grap\
-hics/SVG/1.1/DTD\
-/svg11.dtd\x22>\x0a<sv\
-g version=\x221.1\x22 \
-id=\x22Capa_1\x22 xmln\
-s=\x22http://www.w3\
-.org/2000/svg\x22 x\
-mlns:xlink=\x22http\
-://www.w3.org/19\
-99/xlink\x22 x=\x220px\
-\x22 y=\x220px\x22\x0a\x09 view\
-Box=\x220 0 49.656 \
-49.656\x22 style=\x22e\
-nable-background\
-:new 0 0 49.656 \
-49.656;\x22 xml:spa\
-ce=\x22preserve\x22>\x0a<\
-g>\x0a\x09<polygon sty\
-le=\x22fill:#00AD97\
-;\x22 points=\x221.414\
-,14.535 4.242,11\
-.707 24.828,32.2\
-92 45.414,11.707\
- 48.242,14.535 2\
-4.828,37.95 \x09\x22/>\
-\x0a\x09<path style=\x22f\
-ill:#00AD97;\x22 d=\
-\x22M24.828,39.364L\
-0,14.536l4.242-4\
-.242l20.586,20.5\
-85l20.586-20.586\
-l4.242,4.242L24.\
-828,39.364z\x0a\x09\x09 M\
-2.828,14.536l22,\
-22l22-22.001l-1.\
-414-1.414L24.828\
-,33.707L4.242,13\
-.122L2.828,14.53\
-6z\x22/>\x0a</g>\x0a<g>\x0a<\
-/g>\x0a<g>\x0a</g>\x0a<g>\
-\x0a</g>\x0a<g>\x0a</g>\x0a<\
-g>\x0a</g>\x0a<g>\x0a</g>\
-\x0a<g>\x0a</g>\x0a<g>\x0a</\
-g>\x0a<g>\x0a</g>\x0a<g>\x0a\
-</g>\x0a<g>\x0a</g>\x0a<g\
->\x0a</g>\x0a<g>\x0a</g>\x0a\
-<g>\x0a</g>\x0a<g>\x0a</g\
->\x0a</svg>\x0a\
-\x00\x00\x05&\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22iso\
--8859-1\x22?>\x0a<!-- \
-Generator: Adobe\
- Illustrator 19.\
-0.0, SVG Export \
-Plug-In . SVG Ve\
-rsion: 6.00 Buil\
-d 0)  -->\x0a<svg v\
-ersion=\x221.1\x22 id=\
-\x22Layer_1\x22 xmlns=\
-\x22http://www.w3.o\
-rg/2000/svg\x22 xml\
-ns:xlink=\x22http:/\
-/www.w3.org/1999\
-/xlink\x22 x=\x220px\x22 \
-y=\x220px\x22\x0a\x09 viewBo\
-x=\x220 0 496.158 4\
-96.158\x22 style=\x22e\
-nable-background\
-:new 0 0 496.158\
- 496.158;\x22 xml:s\
-pace=\x22preserve\x22>\
-\x0a<path style=\x22fi\
-ll:#56B48C;\x22 d=\x22\
-M248.082,0.003C1\
-11.07,0.003,0,11\
-1.061,0,248.085c\
-0,137,111.07,248\
-.07,248.082,248.\
-07\x0a\x09c137.006,0,2\
-48.076-111.07,24\
-8.076-248.07C496\
-.158,111.061,385\
-.088,0.003,248.0\
-82,0.003z\x22/>\x0a<pa\
-th style=\x22fill:#\
-FFFFFF;\x22 d=\x22M278\
-.767,145.419c-3.\
-126-4.003-7.276-\
-6.006-12.451-6.0\
-06c-4.591,0-7.71\
-6,0.879-9.375,2.\
-637\x0a\x09c-1.662,1.7\
-58-5.226,6.445-1\
-0.693,14.063c-5.\
-47,7.617-11.744,\
-14.502-18.823,20\
-.654c-7.082,6.15\
-2-16.53,12.012-2\
-8.345,17.578\x0a\x09c-\
-7.91,3.712-13.42\
-9,6.738-16.553,9\
-.082c-3.126,2.34\
-4-4.688,6.006-4.\
-688,10.986c0,4.2\
-98,1.586,8.082,4\
-.761,11.353\x0a\x09c3.\
-172,3.273,6.812,\
-4.907,10.913,4.9\
-07c8.592,0,25.29\
-2-9.521,50.098-2\
-8.564V335.41c0,7\
-.814,1.806,13.72\
-2,5.42,17.725\x0a\x09c\
-3.612,4.003,8.39\
-7,6.006,14.355,6\
-.006c13.378,0,20\
-.068-9.814,20.06\
-8-29.443V161.972\
-\x0a\x09C283.455,154.9\
-41,281.892,149.4\
-25,278.767,145.4\
-19z\x22/>\x0a<g>\x0a</g>\x0a\
-<g>\x0a</g>\x0a<g>\x0a</g\
->\x0a<g>\x0a</g>\x0a<g>\x0a<\
-/g>\x0a<g>\x0a</g>\x0a<g>\
-\x0a</g>\x0a<g>\x0a</g>\x0a<\
-g>\x0a</g>\x0a<g>\x0a</g>\
-\x0a<g>\x0a</g>\x0a<g>\x0a</\
-g>\x0a<g>\x0a</g>\x0a<g>\x0a\
-</g>\x0a<g>\x0a</g>\x0a</\
-svg>\x0a\
-\x00\x00\x03\xb8\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22iso\
--8859-1\x22?>\x0a<!-- \
-Generator: Adobe\
- Illustrator 18.\
-0.0, SVG Export \
-Plug-In . SVG Ve\
-rsion: 6.00 Buil\
-d 0)  -->\x0a<!DOCT\
-YPE svg PUBLIC \x22\
--//W3C//DTD SVG \
-1.1//EN\x22 \x22http:/\
-/www.w3.org/Grap\
-hics/SVG/1.1/DTD\
-/svg11.dtd\x22>\x0a<sv\
-g version=\x221.1\x22 \
-id=\x22Capa_1\x22 xmln\
-s=\x22http://www.w3\
-.org/2000/svg\x22 x\
-mlns:xlink=\x22http\
-://www.w3.org/19\
-99/xlink\x22 x=\x220px\
-\x22 y=\x220px\x22\x0a\x09 view\
-Box=\x220 0 49.656 \
-49.656\x22 style=\x22e\
-nable-background\
-:new 0 0 49.656 \
-49.656;\x22 xml:spa\
-ce=\x22preserve\x22>\x0a<\
-g>\x0a\x09<polygon sty\
-le=\x22fill:#00AD97\
-;\x22 points=\x2248.24\
-2,35.122 45.414,\
-37.95 24.828,17.\
-364 4.242,37.95 \
-1.414,35.122 24.\
-828,11.707 \x09\x22/>\x0a\
-\x09<path style=\x22fi\
-ll:#00AD97;\x22 d=\x22\
-M45.414,39.363L2\
-4.828,18.778L4.2\
-42,39.363L0,35.1\
-21l24.828-24.828\
-l24.828,24.828L4\
-5.414,39.363z\x0a\x09\x09\
- M24.828,15.95l2\
-0.586,20.585l1.4\
-14-1.414l-22-22l\
--22,22l1.414,1.4\
-14L24.828,15.95z\
-\x22/>\x0a</g>\x0a<g>\x0a</g\
->\x0a<g>\x0a</g>\x0a<g>\x0a<\
-/g>\x0a<g>\x0a</g>\x0a<g>\
-\x0a</g>\x0a<g>\x0a</g>\x0a<\
-g>\x0a</g>\x0a<g>\x0a</g>\
-\x0a<g>\x0a</g>\x0a<g>\x0a</\
-g>\x0a<g>\x0a</g>\x0a<g>\x0a\
-</g>\x0a<g>\x0a</g>\x0a<g\
->\x0a</g>\x0a<g>\x0a</g>\x0a\
-</svg>\x0a\
-\x00\x00\x04\xee\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22iso\
--8859-1\x22?>\x0a<!-- \
-Generator: Adobe\
- Illustrator 19.\
-0.0, SVG Export \
-Plug-In . SVG Ve\
-rsion: 6.00 Buil\
-d 0)  -->\x0a<svg v\
-ersion=\x221.1\x22 id=\
-\x22Capa_1\x22 xmlns=\x22\
-http://www.w3.or\
-g/2000/svg\x22 xmln\
-s:xlink=\x22http://\
-www.w3.org/1999/\
-xlink\x22 x=\x220px\x22 y\
-=\x220px\x22\x0a\x09 viewBox\
-=\x220 0 58 58\x22 sty\
-le=\x22enable-backg\
-round:new 0 0 58\
- 58;\x22 xml:space=\
-\x22preserve\x22>\x0a<pol\
-ygon style=\x22fill\
-:#EDEADA;\x22 point\
-s=\x2251.5,14 37.5,\
-0 6.5,0 6.5,58 5\
-1.5,58 \x22/>\x0a<g>\x0a\x09\
-<path style=\x22fil\
-l:#CEC9AE;\x22 d=\x22M\
-16.5,23h25c0.552\
-,0,1-0.447,1-1s-\
-0.448-1-1-1h-25c\
--0.552,0-1,0.447\
--1,1S15.948,23,1\
-6.5,23z\x22/>\x0a\x09<pat\
-h style=\x22fill:#C\
-EC9AE;\x22 d=\x22M16.5\
-,15h10c0.552,0,1\
--0.447,1-1s-0.44\
-8-1-1-1h-10c-0.5\
-52,0-1,0.447-1,1\
-S15.948,15,16.5,\
-15z\x22/>\x0a\x09<path st\
-yle=\x22fill:#CEC9A\
-E;\x22 d=\x22M41.5,29h\
--25c-0.552,0-1,0\
-.447-1,1s0.448,1\
-,1,1h25c0.552,0,\
-1-0.447,1-1S42.0\
-52,29,41.5,29z\x22/\
->\x0a\x09<path style=\x22\
-fill:#CEC9AE;\x22 d\
-=\x22M41.5,37h-25c-\
-0.552,0-1,0.447-\
-1,1s0.448,1,1,1h\
-25c0.552,0,1-0.4\
-47,1-1S42.052,37\
-,41.5,37z\x22/>\x0a\x09<p\
-ath style=\x22fill:\
-#CEC9AE;\x22 d=\x22M41\
-.5,45h-25c-0.552\
-,0-1,0.447-1,1s0\
-.448,1,1,1h25c0.\
-552,0,1-0.447,1-\
-1S42.052,45,41.5\
-,45z\x22/>\x0a</g>\x0a<po\
-lygon style=\x22fil\
-l:#CEC9AE;\x22 poin\
-ts=\x2237.5,0 37.5,\
-14 51.5,14 \x22/>\x0a<\
-g>\x0a</g>\x0a<g>\x0a</g>\
-\x0a<g>\x0a</g>\x0a<g>\x0a</\
-g>\x0a<g>\x0a</g>\x0a<g>\x0a\
-</g>\x0a<g>\x0a</g>\x0a<g\
->\x0a</g>\x0a<g>\x0a</g>\x0a\
-<g>\x0a</g>\x0a<g>\x0a</g\
->\x0a<g>\x0a</g>\x0a<g>\x0a<\
-/g>\x0a<g>\x0a</g>\x0a<g>\
-\x0a</g>\x0a</svg>\x0a\
 \x00\x00\x14\xe3\
 <\
 svg height=\x22512p\
@@ -1334,62 +575,813 @@ d=\x22m79.449219 32\
 3.875zm0 0\x22 fill\
 =\x22#d1d4d1\x22/></sv\
 g>\
-\x00\x00\x01\xe8\
-Q\
-Widget#mainwindo\
-w {\x0a    backgrou\
-nd-color: #f0f0f\
-0;\x0a    border-bo\
-ttom-left-radius\
-: 10px;\x0a    bord\
-er-bottom-right-\
-radius: 10px;\x0a}\x0a\
-\x0aQWidget#mainwin\
-dow > QToolButto\
-n#tool {\x0a    bac\
-kground-color: #\
-f0f0f0;\x0a    bord\
-er: 1px solid bl\
-ack;\x0a    border-\
-radius: 10px;\x0a  \
-  padding: 5px;\x0a\
-}\x0a\x0aQWidget#mainw\
-indow > QToolBut\
-ton#tool:hover {\
-\x0a    border-colo\
-r: #507090;\x0a    \
-background-color\
-: #f8f8ff;\x0a}\x0a\x0aQW\
-idget#mainwindow\
- > QToolButton#t\
-ool:pressed {\x0a  \
-  border-color: \
-gray;\x0a    backgr\
-ound-color: #e0e\
-0f0;\x0a}\x0a\
+\x00\x00\x04\xee\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?>\x0a<!-- \
+Generator: Adobe\
+ Illustrator 19.\
+0.0, SVG Export \
+Plug-In . SVG Ve\
+rsion: 6.00 Buil\
+d 0)  -->\x0a<svg v\
+ersion=\x221.1\x22 id=\
+\x22Capa_1\x22 xmlns=\x22\
+http://www.w3.or\
+g/2000/svg\x22 xmln\
+s:xlink=\x22http://\
+www.w3.org/1999/\
+xlink\x22 x=\x220px\x22 y\
+=\x220px\x22\x0a\x09 viewBox\
+=\x220 0 58 58\x22 sty\
+le=\x22enable-backg\
+round:new 0 0 58\
+ 58;\x22 xml:space=\
+\x22preserve\x22>\x0a<pol\
+ygon style=\x22fill\
+:#EDEADA;\x22 point\
+s=\x2251.5,14 37.5,\
+0 6.5,0 6.5,58 5\
+1.5,58 \x22/>\x0a<g>\x0a\x09\
+<path style=\x22fil\
+l:#CEC9AE;\x22 d=\x22M\
+16.5,23h25c0.552\
+,0,1-0.447,1-1s-\
+0.448-1-1-1h-25c\
+-0.552,0-1,0.447\
+-1,1S15.948,23,1\
+6.5,23z\x22/>\x0a\x09<pat\
+h style=\x22fill:#C\
+EC9AE;\x22 d=\x22M16.5\
+,15h10c0.552,0,1\
+-0.447,1-1s-0.44\
+8-1-1-1h-10c-0.5\
+52,0-1,0.447-1,1\
+S15.948,15,16.5,\
+15z\x22/>\x0a\x09<path st\
+yle=\x22fill:#CEC9A\
+E;\x22 d=\x22M41.5,29h\
+-25c-0.552,0-1,0\
+.447-1,1s0.448,1\
+,1,1h25c0.552,0,\
+1-0.447,1-1S42.0\
+52,29,41.5,29z\x22/\
+>\x0a\x09<path style=\x22\
+fill:#CEC9AE;\x22 d\
+=\x22M41.5,37h-25c-\
+0.552,0-1,0.447-\
+1,1s0.448,1,1,1h\
+25c0.552,0,1-0.4\
+47,1-1S42.052,37\
+,41.5,37z\x22/>\x0a\x09<p\
+ath style=\x22fill:\
+#CEC9AE;\x22 d=\x22M41\
+.5,45h-25c-0.552\
+,0-1,0.447-1,1s0\
+.448,1,1,1h25c0.\
+552,0,1-0.447,1-\
+1S42.052,45,41.5\
+,45z\x22/>\x0a</g>\x0a<po\
+lygon style=\x22fil\
+l:#CEC9AE;\x22 poin\
+ts=\x2237.5,0 37.5,\
+14 51.5,14 \x22/>\x0a<\
+g>\x0a</g>\x0a<g>\x0a</g>\
+\x0a<g>\x0a</g>\x0a<g>\x0a</\
+g>\x0a<g>\x0a</g>\x0a<g>\x0a\
+</g>\x0a<g>\x0a</g>\x0a<g\
+>\x0a</g>\x0a<g>\x0a</g>\x0a\
+<g>\x0a</g>\x0a<g>\x0a</g\
+>\x0a<g>\x0a</g>\x0a<g>\x0a<\
+/g>\x0a<g>\x0a</g>\x0a<g>\
+\x0a</g>\x0a</svg>\x0a\
+\x00\x00\x02\xea\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?>\x0a<!-- \
+Generator: Adobe\
+ Illustrator 19.\
+0.0, SVG Export \
+Plug-In . SVG Ve\
+rsion: 6.00 Buil\
+d 0)  -->\x0a<svg v\
+ersion=\x221.1\x22 id=\
+\x22Capa_1\x22 xmlns=\x22\
+http://www.w3.or\
+g/2000/svg\x22 xmln\
+s:xlink=\x22http://\
+www.w3.org/1999/\
+xlink\x22 x=\x220px\x22 y\
+=\x220px\x22\x0a\x09 viewBox\
+=\x220 0 42 42\x22 sty\
+le=\x22enable-backg\
+round:new 0 0 42\
+ 42;\x22 xml:space=\
+\x22preserve\x22>\x0a<pat\
+h style=\x22fill:#2\
+3A24D;\x22 d=\x22M37.0\
+59,16H26V4.941C2\
+6,2.224,23.718,0\
+,21,0s-5,2.224-5\
+,4.941V16H4.941C\
+2.224,16,0,18.28\
+2,0,21\x0a\x09s2.224,5\
+,4.941,5H16v11.0\
+59C16,39.776,18.\
+282,42,21,42s5-2\
+.224,5-4.941V26h\
+11.059C39.776,26\
+,42,23.718,42,21\
+S39.776,16,37.05\
+9,16z\x22\x0a\x09/>\x0a<g>\x0a<\
+/g>\x0a<g>\x0a</g>\x0a<g>\
+\x0a</g>\x0a<g>\x0a</g>\x0a<\
+g>\x0a</g>\x0a<g>\x0a</g>\
+\x0a<g>\x0a</g>\x0a<g>\x0a</\
+g>\x0a<g>\x0a</g>\x0a<g>\x0a\
+</g>\x0a<g>\x0a</g>\x0a<g\
+>\x0a</g>\x0a<g>\x0a</g>\x0a\
+<g>\x0a</g>\x0a<g>\x0a</g\
+>\x0a</svg>\x0a\
+\x00\x00\x03\xb8\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?>\x0a<!-- \
+Generator: Adobe\
+ Illustrator 18.\
+0.0, SVG Export \
+Plug-In . SVG Ve\
+rsion: 6.00 Buil\
+d 0)  -->\x0a<!DOCT\
+YPE svg PUBLIC \x22\
+-//W3C//DTD SVG \
+1.1//EN\x22 \x22http:/\
+/www.w3.org/Grap\
+hics/SVG/1.1/DTD\
+/svg11.dtd\x22>\x0a<sv\
+g version=\x221.1\x22 \
+id=\x22Capa_1\x22 xmln\
+s=\x22http://www.w3\
+.org/2000/svg\x22 x\
+mlns:xlink=\x22http\
+://www.w3.org/19\
+99/xlink\x22 x=\x220px\
+\x22 y=\x220px\x22\x0a\x09 view\
+Box=\x220 0 49.656 \
+49.656\x22 style=\x22e\
+nable-background\
+:new 0 0 49.656 \
+49.656;\x22 xml:spa\
+ce=\x22preserve\x22>\x0a<\
+g>\x0a\x09<polygon sty\
+le=\x22fill:#00AD97\
+;\x22 points=\x2248.24\
+2,35.122 45.414,\
+37.95 24.828,17.\
+364 4.242,37.95 \
+1.414,35.122 24.\
+828,11.707 \x09\x22/>\x0a\
+\x09<path style=\x22fi\
+ll:#00AD97;\x22 d=\x22\
+M45.414,39.363L2\
+4.828,18.778L4.2\
+42,39.363L0,35.1\
+21l24.828-24.828\
+l24.828,24.828L4\
+5.414,39.363z\x0a\x09\x09\
+ M24.828,15.95l2\
+0.586,20.585l1.4\
+14-1.414l-22-22l\
+-22,22l1.414,1.4\
+14L24.828,15.95z\
+\x22/>\x0a</g>\x0a<g>\x0a</g\
+>\x0a<g>\x0a</g>\x0a<g>\x0a<\
+/g>\x0a<g>\x0a</g>\x0a<g>\
+\x0a</g>\x0a<g>\x0a</g>\x0a<\
+g>\x0a</g>\x0a<g>\x0a</g>\
+\x0a<g>\x0a</g>\x0a<g>\x0a</\
+g>\x0a<g>\x0a</g>\x0a<g>\x0a\
+</g>\x0a<g>\x0a</g>\x0a<g\
+>\x0a</g>\x0a<g>\x0a</g>\x0a\
+</svg>\x0a\
+\x00\x00\x03\xfb\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?>\x0a<!-- \
+Generator: Adobe\
+ Illustrator 18.\
+0.0, SVG Export \
+Plug-In . SVG Ve\
+rsion: 6.00 Buil\
+d 0)  -->\x0a<!DOCT\
+YPE svg PUBLIC \x22\
+-//W3C//DTD SVG \
+1.1//EN\x22 \x22http:/\
+/www.w3.org/Grap\
+hics/SVG/1.1/DTD\
+/svg11.dtd\x22>\x0a<sv\
+g version=\x221.1\x22 \
+id=\x22Capa_1\x22 xmln\
+s=\x22http://www.w3\
+.org/2000/svg\x22 x\
+mlns:xlink=\x22http\
+://www.w3.org/19\
+99/xlink\x22 x=\x220px\
+\x22 y=\x220px\x22\x0a\x09 view\
+Box=\x220 0 58 58\x22 \
+style=\x22enable-ba\
+ckground:new 0 0\
+ 58 58;\x22 xml:spa\
+ce=\x22preserve\x22>\x0a<\
+g>\x0a\x09<rect x=\x2228\x22\
+ y=\x2217\x22 style=\x22f\
+ill:#556080;\x22 wi\
+dth=\x222\x22 height=\x22\
+24\x22/>\x0a\x09<polygon \
+style=\x22fill:#556\
+080;\x22 points=\x2252\
+,41 50,41 50,30 \
+8,30 8,41 6,41 6\
+,28 52,28 \x09\x22/>\x0a\x09\
+<rect y=\x2241\x22 sty\
+le=\x22fill:#F0C419\
+;\x22 width=\x2214\x22 he\
+ight=\x2214\x22/>\x0a\x09<re\
+ct x=\x2244\x22 y=\x2241\x22\
+ style=\x22fill:#F1\
+8D46;\x22 width=\x2214\
+\x22 height=\x2214\x22/>\x0a\
+\x09<rect x=\x2222\x22 y=\
+\x2241\x22 style=\x22fill\
+:#F29C1F;\x22 width\
+=\x2214\x22 height=\x2214\
+\x22/>\x0a\x09<rect x=\x2222\
+\x22 y=\x223\x22 style=\x22f\
+ill:#0096E6;\x22 wi\
+dth=\x2214\x22 height=\
+\x2214\x22/>\x0a</g>\x0a<g>\x0a\
+</g>\x0a<g>\x0a</g>\x0a<g\
+>\x0a</g>\x0a<g>\x0a</g>\x0a\
+<g>\x0a</g>\x0a<g>\x0a</g\
+>\x0a<g>\x0a</g>\x0a<g>\x0a<\
+/g>\x0a<g>\x0a</g>\x0a<g>\
+\x0a</g>\x0a<g>\x0a</g>\x0a<\
+g>\x0a</g>\x0a<g>\x0a</g>\
+\x0a<g>\x0a</g>\x0a<g>\x0a</\
+g>\x0a</svg>\x0a\
+\x00\x00\x06\x0a\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?>\x0a<!-- \
+Generator: Adobe\
+ Illustrator 19.\
+0.0, SVG Export \
+Plug-In . SVG Ve\
+rsion: 6.00 Buil\
+d 0)  -->\x0a<svg v\
+ersion=\x221.1\x22 id=\
+\x22Capa_1\x22 xmlns=\x22\
+http://www.w3.or\
+g/2000/svg\x22 xmln\
+s:xlink=\x22http://\
+www.w3.org/1999/\
+xlink\x22 x=\x220px\x22 y\
+=\x220px\x22\x0a\x09 viewBox\
+=\x220 0 58 58\x22 sty\
+le=\x22enable-backg\
+round:new 0 0 58\
+ 58;\x22 xml:space=\
+\x22preserve\x22>\x0a<pat\
+h style=\x22fill:#E\
+FCE4A;\x22 d=\x22M46.3\
+24,58H1.565c-1.0\
+3,0-1.779-0.978-\
+1.51-1.973l10.16\
+6-27.871C10.405,\
+27.474,11.024,27\
+,11.731,27\x0a\x09H56.\
+49c1.03,0,1.51,0\
+.984,1.51,1.973L\
+47.834,56.844C47\
+.65,57.526,47.03\
+1,58,46.324,58z\x22\
+/>\x0a<path style=\x22\
+fill:#EBBA16;\x22 d\
+=\x22M50.268,18H48v\
+9h4v-7.268C52,18\
+.775,51.224,18,5\
+0.268,18z\x22/>\x0a<pa\
+th style=\x22fill:#\
+EBBA16;\x22 d=\x22M4,1\
+1H1.732C0.776,11\
+,0,11.775,0,12.7\
+32V55.46c0.069,0\
+.002,0.138,0.006\
+,0.205,0.01L4,45\
+.122V11z\x22/>\x0a<pat\
+h style=\x22fill:#F\
+4EFDC;\x22 d=\x22M10.2\
+21,28.156C10.405\
+,27.474,11.024,2\
+7,11.731,27h2H48\
+V15V0H33H10v28.7\
+61L10.221,28.156\
+z\x22/>\x0a<g>\x0a\x09<path \
+style=\x22fill:#CEC\
+9AE;\x22 d=\x22M17,16h\
+24c0.552,0,1-0.4\
+47,1-1s-0.448-1-\
+1-1H17c-0.552,0-\
+1,0.447-1,1S16.4\
+48,16,17,16z\x22/>\x0a\
+\x09<path style=\x22fi\
+ll:#CEC9AE;\x22 d=\x22\
+M17,9h10c0.552,0\
+,1-0.447,1-1s-0.\
+448-1-1-1H17c-0.\
+552,0-1,0.447-1,\
+1S16.448,9,17,9z\
+\x22/>\x0a\x09<path style\
+=\x22fill:#CEC9AE;\x22\
+ d=\x22M41,21H17c-0\
+.552,0-1,0.447-1\
+,1s0.448,1,1,1h2\
+4c0.552,0,1-0.44\
+7,1-1S41.552,21,\
+41,21z\x22/>\x0a</g>\x0a<\
+polygon style=\x22f\
+ill:#CEC9AE;\x22 po\
+ints=\x2210,28.761 \
+10,2 7,2 7,36.98\
+6 \x22/>\x0a<polygon s\
+tyle=\x22fill:#D1BF\
+86;\x22 points=\x227,3\
+6.986 7,4 4,4 4,\
+45.211 \x22/>\x0a<g>\x0a<\
+/g>\x0a<g>\x0a</g>\x0a<g>\
+\x0a</g>\x0a<g>\x0a</g>\x0a<\
+g>\x0a</g>\x0a<g>\x0a</g>\
+\x0a<g>\x0a</g>\x0a<g>\x0a</\
+g>\x0a<g>\x0a</g>\x0a<g>\x0a\
+</g>\x0a<g>\x0a</g>\x0a<g\
+>\x0a</g>\x0a<g>\x0a</g>\x0a\
+<g>\x0a</g>\x0a<g>\x0a</g\
+>\x0a</svg>\x0a\
+\x00\x00\x03\xba\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?>\x0a<!-- \
+Generator: Adobe\
+ Illustrator 18.\
+0.0, SVG Export \
+Plug-In . SVG Ve\
+rsion: 6.00 Buil\
+d 0)  -->\x0a<!DOCT\
+YPE svg PUBLIC \x22\
+-//W3C//DTD SVG \
+1.1//EN\x22 \x22http:/\
+/www.w3.org/Grap\
+hics/SVG/1.1/DTD\
+/svg11.dtd\x22>\x0a<sv\
+g version=\x221.1\x22 \
+id=\x22Capa_1\x22 xmln\
+s=\x22http://www.w3\
+.org/2000/svg\x22 x\
+mlns:xlink=\x22http\
+://www.w3.org/19\
+99/xlink\x22 x=\x220px\
+\x22 y=\x220px\x22\x0a\x09 view\
+Box=\x220 0 49.656 \
+49.656\x22 style=\x22e\
+nable-background\
+:new 0 0 49.656 \
+49.656;\x22 xml:spa\
+ce=\x22preserve\x22>\x0a<\
+g>\x0a\x09<polygon sty\
+le=\x22fill:#00AD97\
+;\x22 points=\x221.414\
+,14.535 4.242,11\
+.707 24.828,32.2\
+92 45.414,11.707\
+ 48.242,14.535 2\
+4.828,37.95 \x09\x22/>\
+\x0a\x09<path style=\x22f\
+ill:#00AD97;\x22 d=\
+\x22M24.828,39.364L\
+0,14.536l4.242-4\
+.242l20.586,20.5\
+85l20.586-20.586\
+l4.242,4.242L24.\
+828,39.364z\x0a\x09\x09 M\
+2.828,14.536l22,\
+22l22-22.001l-1.\
+414-1.414L24.828\
+,33.707L4.242,13\
+.122L2.828,14.53\
+6z\x22/>\x0a</g>\x0a<g>\x0a<\
+/g>\x0a<g>\x0a</g>\x0a<g>\
+\x0a</g>\x0a<g>\x0a</g>\x0a<\
+g>\x0a</g>\x0a<g>\x0a</g>\
+\x0a<g>\x0a</g>\x0a<g>\x0a</\
+g>\x0a<g>\x0a</g>\x0a<g>\x0a\
+</g>\x0a<g>\x0a</g>\x0a<g\
+>\x0a</g>\x0a<g>\x0a</g>\x0a\
+<g>\x0a</g>\x0a<g>\x0a</g\
+>\x0a</svg>\x0a\
+\x00\x00\x05\xcd\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?>\x0a<!-- \
+Generator: Adobe\
+ Illustrator 19.\
+0.0, SVG Export \
+Plug-In . SVG Ve\
+rsion: 6.00 Buil\
+d 0)  -->\x0a<svg v\
+ersion=\x221.1\x22 id=\
+\x22Capa_1\x22 xmlns=\x22\
+http://www.w3.or\
+g/2000/svg\x22 xmln\
+s:xlink=\x22http://\
+www.w3.org/1999/\
+xlink\x22 x=\x220px\x22 y\
+=\x220px\x22\x0a\x09 viewBox\
+=\x220 0 47 47\x22 sty\
+le=\x22enable-backg\
+round:new 0 0 47\
+ 47;\x22 xml:space=\
+\x22preserve\x22>\x0a<pol\
+ygon style=\x22fill\
+:#424A60;\x22 point\
+s=\x2246.5,8 46.5,4\
+7 0.5,47 0.5,0 3\
+8.5,0 \x22/>\x0a<rect \
+x=\x227.5\x22 y=\x2226\x22 s\
+tyle=\x22fill:#E7EC\
+ED;\x22 width=\x2231\x22 \
+height=\x2221\x22/>\x0a<r\
+ect x=\x227.5\x22 y=\x222\
+6\x22 style=\x22fill:#\
+EBBA16;\x22 width=\x22\
+31\x22 height=\x2212.0\
+37\x22/>\x0a<rect x=\x229\
+.5\x22 style=\x22fill:\
+#C7CAC7;\x22 width=\
+\x2226\x22 height=\x2216\x22\
+/>\x0a<g>\x0a\x09<path st\
+yle=\x22fill:#FFFFF\
+F;\x22 d=\x22M12.5,31h\
+7c0.553,0,1-0.44\
+7,1-1s-0.447-1-1\
+-1h-7c-0.553,0-1\
+,0.447-1,1S11.94\
+7,31,12.5,31z\x22/>\
+\x0a\x09<path style=\x22f\
+ill:#FFFFFF;\x22 d=\
+\x22M22.5,33h-10c-0\
+.553,0-1,0.447-1\
+,1s0.447,1,1,1h1\
+0c0.553,0,1-0.44\
+7,1-1S23.053,33,\
+22.5,33z\x22/>\x0a\x09<pa\
+th style=\x22fill:#\
+FFFFFF;\x22 d=\x22M26.\
+21,33.29c-0.37-0\
+.37-1.04-0.37-1.\
+41,0c-0.19,0.189\
+-0.3,0.439-0.3,0\
+.71\x0a\x09\x09c0,0.27,0.\
+109,0.52,0.29,0.\
+71C24.979,34.89,\
+25.229,35,25.5,3\
+5c0.27,0,0.52-0.\
+11,0.71-0.29c0.1\
+8-0.19,0.29-0.45\
+,0.29-0.71\x0a\x09\x09S26\
+.39,33.479,26.21\
+,33.29z\x22/>\x0a</g>\x0a\
+<rect x=\x2227.5\x22 y\
+=\x224\x22 style=\x22fill\
+:none;stroke:#42\
+4A60;stroke-widt\
+h:2;stroke-linec\
+ap:round;stroke-\
+miterlimit:10;\x22 \
+width=\x224\x22 height\
+=\x228\x22/>\x0a<polygon \
+style=\x22fill:#E7E\
+CED;\x22 points=\x2224\
+.5,16 9.5,16 9.5\
+,0 16.5,0 \x22/>\x0a<g\
+>\x0a</g>\x0a<g>\x0a</g>\x0a\
+<g>\x0a</g>\x0a<g>\x0a</g\
+>\x0a<g>\x0a</g>\x0a<g>\x0a<\
+/g>\x0a<g>\x0a</g>\x0a<g>\
+\x0a</g>\x0a<g>\x0a</g>\x0a<\
+g>\x0a</g>\x0a<g>\x0a</g>\
+\x0a<g>\x0a</g>\x0a<g>\x0a</\
+g>\x0a<g>\x0a</g>\x0a<g>\x0a\
+</g>\x0a</svg>\x0a\
+\x00\x00\x06\xc5\
+<\
+svg height=\x22512\x22\
+ viewBox=\x220 0 56\
+ 59\x22 width=\x22512\x22\
+ xmlns=\x22http://w\
+ww.w3.org/2000/s\
+vg\x22><g id=\x22Page-\
+1\x22 fill=\x22none\x22 f\
+ill-rule=\x22evenod\
+d\x22><g id=\x22047---\
+Delete\x22 fill-rul\
+e=\x22nonzero\x22><pat\
+h id=\x22Shape\x22 d=\x22\
+m52 12.89-.24 3.\
+11-3.21 41.09c-.\
+1867983 1.160868\
+4-1.2268257 1.98\
+85569-2.4 1.91h-\
+36.3c-1.17317431\
+.0785569-2.21320\
+168-.7491316-2.4\
+-1.91l-3.21-41.0\
+9-.24-3.11z\x22 fil\
+l=\x22#547580\x22/><g \
+fill=\x22#3f5c6c\x22><\
+path id=\x22Shape\x22 \
+d=\x22m25 51c-.5522\
+847 0-1-.4477153\
+-1-1v-27c0-2.209\
+139 1.790861-4 4\
+-4s4 1.790861 4 \
+4c0 .5522847-.44\
+77153 1-1 1s-1-.\
+4477153-1-1c0-1.\
+1045695-.8954305\
+-2-2-2s-2 .89543\
+05-2 2v27c0 .552\
+2847-.4477153 1-\
+1 1z\x22/><path id=\
+\x22Shape\x22 d=\x22m13 5\
+1c-.5522847 0-1-\
+.4477153-1-1v-27\
+c0-2.209139 1.79\
+0861-4 4-4s4 1.7\
+90861 4 4c0 .552\
+2847-.4477153 1-\
+1 1s-1-.4477153-\
+1-1c0-1.1045695-\
+.8954305-2-2-2s-\
+2 .8954305-2 2v2\
+7c0 .5522847-.44\
+77153 1-1 1z\x22/><\
+path id=\x22Shape\x22 \
+d=\x22m37 51c-.5522\
+847 0-1-.4477153\
+-1-1v-27c0-2.209\
+139 1.790861-4 4\
+-4s4 1.790861 4 \
+4c0 .5522847-.44\
+77153 1-1 1s-1-.\
+4477153-1-1c0-1.\
+1045695-.8954305\
+-2-2-2s-2 .89543\
+05-2 2v27c0 .552\
+2847-.4477153 1-\
+1 1z\x22/></g><path\
+ id=\x22Shape\x22 d=\x22m\
+41.001 7c-.30403\
+34.00086637-.591\
+795-.13725037-.7\
+813-.375l-.998-1\
+.2471c-1.7040924\
+-2.14006308-4.29\
+26535-3.384162-7\
+.0283-3.3779h-8.\
+3868c-2.7354098-\
+.00645869-5.3237\
+468 1.23770954-7\
+.0273 3.3779l-.9\
+993 1.2471c-.350\
+7413.41075355-.9\
+642746.46875767-\
+1.3857798.131013\
+15-.4215051-.337\
+74451-.4986385-.\
+94916746-.174220\
+2-1.38101315l.99\
+81-1.2471c2.0820\
+596-2.61555298 5\
+.2454439-4.13597\
+375 8.5885-4.127\
+9h8.3868c3.34346\
+81-.00802985 6.5\
+072921 1.5123367\
+7 8.59 4.1279l.9\
+966 1.2471c.2401\
+148.29990225.287\
+1903.71084849.12\
+11157 1.05728133\
+-.1660745.346432\
+84-.5159333.5670\
+9487-.9001157.56\
+771867z\x22 fill=\x22#\
+bdc3c7\x22/><rect i\
+d=\x22Rectangle-pat\
+h\x22 fill=\x22#95a5a5\
+\x22 height=\x228\x22 rx=\
+\x224\x22 width=\x2256\x22 y\
+=\x226\x22/></g></g></\
+svg>\
+\x00\x00\x04\xf4\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?>\x0a<!-- \
+Generator: Adobe\
+ Illustrator 18.\
+0.0, SVG Export \
+Plug-In . SVG Ve\
+rsion: 6.00 Buil\
+d 0)  -->\x0a<!DOCT\
+YPE svg PUBLIC \x22\
+-//W3C//DTD SVG \
+1.1//EN\x22 \x22http:/\
+/www.w3.org/Grap\
+hics/SVG/1.1/DTD\
+/svg11.dtd\x22>\x0a<sv\
+g version=\x221.1\x22 \
+id=\x22Capa_1\x22 xmln\
+s=\x22http://www.w3\
+.org/2000/svg\x22 x\
+mlns:xlink=\x22http\
+://www.w3.org/19\
+99/xlink\x22 x=\x220px\
+\x22 y=\x220px\x22\x0a\x09 view\
+Box=\x220 0 52.519 \
+52.519\x22 style=\x22e\
+nable-background\
+:new 0 0 52.519 \
+52.519;\x22 xml:spa\
+ce=\x22preserve\x22>\x0a<\
+g>\x0a\x09<path style=\
+\x22fill:#26B99A;\x22 \
+d=\x22M16.049,31.13\
+7H4.001l20.08,19\
+.971l20.08-19.97\
+1H32.113c0,0-4.2\
+92-17.735,16.064\
+-29.849\x0a\x09\x09c0,0-1\
+5.536-3.02-26.79\
+4,10.51C21.382,1\
+1.797,15.651,17.\
+927,16.049,31.13\
+7z\x22/>\x0a\x09<path sty\
+le=\x22fill:#26B99A\
+;\x22 d=\x22M24.081,52\
+.519L1.577,30.13\
+7H15.03c-0.092-1\
+2.759,5.383-18.7\
+67,5.622-19.022\x0a\
+\x09\x09C28.691,1.45,3\
+8.933,0,44.318,0\
+c2.446,0,3.985,0\
+.294,4.049,0.307\
+l2.574,0.5l-2.25\
+3,1.341C31.371,1\
+2.453,32.394,26.\
+663,32.94,30.137\
+\x0a\x09\x09h13.645L24.08\
+1,52.519z M6.425\
+,32.137l17.656,1\
+7.562l17.656-17.\
+562H31.326l-0.18\
+5-0.765c-0.043-0\
+.177-3.881-17.08\
+2,14.041-29.358\x0a\
+\x09\x09c-4.784-0.15-1\
+5.02,0.795-23.03\
+1,10.423c-0.091,\
+0.1-5.481,6.089-\
+5.103,18.67l0.03\
+,1.03H6.425z\x22/>\x0a\
+</g>\x0a<g>\x0a</g>\x0a<g\
+>\x0a</g>\x0a<g>\x0a</g>\x0a\
+<g>\x0a</g>\x0a<g>\x0a</g\
+>\x0a<g>\x0a</g>\x0a<g>\x0a<\
+/g>\x0a<g>\x0a</g>\x0a<g>\
+\x0a</g>\x0a<g>\x0a</g>\x0a<\
+g>\x0a</g>\x0a<g>\x0a</g>\
+\x0a<g>\x0a</g>\x0a<g>\x0a</\
+g>\x0a<g>\x0a</g>\x0a</sv\
+g>\x0a\
+\x00\x00\x05&\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22iso\
+-8859-1\x22?>\x0a<!-- \
+Generator: Adobe\
+ Illustrator 19.\
+0.0, SVG Export \
+Plug-In . SVG Ve\
+rsion: 6.00 Buil\
+d 0)  -->\x0a<svg v\
+ersion=\x221.1\x22 id=\
+\x22Layer_1\x22 xmlns=\
+\x22http://www.w3.o\
+rg/2000/svg\x22 xml\
+ns:xlink=\x22http:/\
+/www.w3.org/1999\
+/xlink\x22 x=\x220px\x22 \
+y=\x220px\x22\x0a\x09 viewBo\
+x=\x220 0 496.158 4\
+96.158\x22 style=\x22e\
+nable-background\
+:new 0 0 496.158\
+ 496.158;\x22 xml:s\
+pace=\x22preserve\x22>\
+\x0a<path style=\x22fi\
+ll:#56B48C;\x22 d=\x22\
+M248.082,0.003C1\
+11.07,0.003,0,11\
+1.061,0,248.085c\
+0,137,111.07,248\
+.07,248.082,248.\
+07\x0a\x09c137.006,0,2\
+48.076-111.07,24\
+8.076-248.07C496\
+.158,111.061,385\
+.088,0.003,248.0\
+82,0.003z\x22/>\x0a<pa\
+th style=\x22fill:#\
+FFFFFF;\x22 d=\x22M278\
+.767,145.419c-3.\
+126-4.003-7.276-\
+6.006-12.451-6.0\
+06c-4.591,0-7.71\
+6,0.879-9.375,2.\
+637\x0a\x09c-1.662,1.7\
+58-5.226,6.445-1\
+0.693,14.063c-5.\
+47,7.617-11.744,\
+14.502-18.823,20\
+.654c-7.082,6.15\
+2-16.53,12.012-2\
+8.345,17.578\x0a\x09c-\
+7.91,3.712-13.42\
+9,6.738-16.553,9\
+.082c-3.126,2.34\
+4-4.688,6.006-4.\
+688,10.986c0,4.2\
+98,1.586,8.082,4\
+.761,11.353\x0a\x09c3.\
+172,3.273,6.812,\
+4.907,10.913,4.9\
+07c8.592,0,25.29\
+2-9.521,50.098-2\
+8.564V335.41c0,7\
+.814,1.806,13.72\
+2,5.42,17.725\x0a\x09c\
+3.612,4.003,8.39\
+7,6.006,14.355,6\
+.006c13.378,0,20\
+.068-9.814,20.06\
+8-29.443V161.972\
+\x0a\x09C283.455,154.9\
+41,281.892,149.4\
+25,278.767,145.4\
+19z\x22/>\x0a<g>\x0a</g>\x0a\
+<g>\x0a</g>\x0a<g>\x0a</g\
+>\x0a<g>\x0a</g>\x0a<g>\x0a<\
+/g>\x0a<g>\x0a</g>\x0a<g>\
+\x0a</g>\x0a<g>\x0a</g>\x0a<\
+g>\x0a</g>\x0a<g>\x0a</g>\
+\x0a<g>\x0a</g>\x0a<g>\x0a</\
+g>\x0a<g>\x0a</g>\x0a<g>\x0a\
+</g>\x0a<g>\x0a</g>\x0a</\
+svg>\x0a\
 "
 
 qt_resource_name = b"\
 \x00\x06\
-\x07\xac\x02\xc3\
-\x00s\
-\x00t\x00y\x00l\x00e\x00s\
-\x00\x06\
 \x07\x03}\xc3\
 \x00i\
 \x00m\x00a\x00g\x00e\x00s\
-\x00\x0d\
-\x0d\x94\x89\xc7\
-\x00d\
-\x00a\x00s\x00h\x00b\x00o\x00a\x00r\x00d\x00.\x00s\x00v\x00g\
-\x00\x0a\
-\x06\xcbBG\
-\x00r\
-\x00e\x00m\x00o\x00v\x00e\x00.\x00s\x00v\x00g\
-\x00\x0a\
-\x06\x9a\xc4'\
-\x00e\
-\x00x\x00p\x00o\x00r\x00t\x00.\x00s\x00v\x00g\
+\x00\x06\
+\x07\xac\x02\xc3\
+\x00s\
+\x00t\x00y\x00l\x00e\x00s\
+\x00\x09\
+\x00(\xad#\
+\x00s\
+\x00t\x00y\x00l\x00e\x00.\x00q\x00s\x00s\
 \x00\x08\
 \x0aaZ\xa7\
 \x00i\
@@ -1398,67 +1390,75 @@ qt_resource_name = b"\
 \x08\xc8U\xe7\
 \x00s\
 \x00a\x00v\x00e\x00.\x00s\x00v\x00g\
-\x00\x0d\
-\x05\x00|\x87\
-\x00o\
-\x00p\x00e\x00n\x00-\x00f\x00i\x00l\x00e\x00.\x00s\x00v\x00g\
-\x00\x0b\
-\x03yC\xc7\
-\x00s\
-\x00a\x00v\x00e\x00-\x00a\x00s\x00.\x00s\x00v\x00g\
-\x00\x07\
-\x07\xa7Z\x07\
-\x00a\
-\x00d\x00d\x00.\x00s\x00v\x00g\
 \x00\x08\
 \x0c\x07U\xc7\
 \x00q\
 \x00u\x00i\x00t\x00.\x00s\x00v\x00g\
-\x00\x0e\
-\x06\x0c\x07\x87\
-\x00a\
-\x00r\x00r\x00o\x00w\x00-\x00d\x00o\x00w\x00n\x00.\x00s\x00v\x00g\
-\x00\x0d\
-\x05\xe3%\x87\
-\x00m\
-\x00o\x00d\x00e\x00l\x00-\x00v\x00r\x003\x00.\x00s\x00v\x00g\
-\x00\x0c\
-\x09\xd0w\x87\
-\x00a\
-\x00r\x00r\x00o\x00w\x00-\x00u\x00p\x00.\x00s\x00v\x00g\
-\x00\x0c\
-\x02\xc1\x1dG\
-\x00n\
-\x00e\x00w\x00-\x00f\x00i\x00l\x00e\x00.\x00s\x00v\x00g\
 \x00\x0a\
 \x00xo\xe7\
 \x00s\
 \x00c\x00r\x00i\x00p\x00t\x00.\x00s\x00v\x00g\
-\x00\x09\
-\x00(\xad#\
+\x00\x0c\
+\x02\xc1\x1dG\
+\x00n\
+\x00e\x00w\x00-\x00f\x00i\x00l\x00e\x00.\x00s\x00v\x00g\
+\x00\x07\
+\x07\xa7Z\x07\
+\x00a\
+\x00d\x00d\x00.\x00s\x00v\x00g\
+\x00\x0c\
+\x09\xd0w\x87\
+\x00a\
+\x00r\x00r\x00o\x00w\x00-\x00u\x00p\x00.\x00s\x00v\x00g\
+\x00\x0d\
+\x0d\x94\x89\xc7\
+\x00d\
+\x00a\x00s\x00h\x00b\x00o\x00a\x00r\x00d\x00.\x00s\x00v\x00g\
+\x00\x0d\
+\x05\x00|\x87\
+\x00o\
+\x00p\x00e\x00n\x00-\x00f\x00i\x00l\x00e\x00.\x00s\x00v\x00g\
+\x00\x0e\
+\x06\x0c\x07\x87\
+\x00a\
+\x00r\x00r\x00o\x00w\x00-\x00d\x00o\x00w\x00n\x00.\x00s\x00v\x00g\
+\x00\x0b\
+\x03yC\xc7\
 \x00s\
-\x00t\x00y\x00l\x00e\x00.\x00q\x00s\x00s\
+\x00a\x00v\x00e\x00-\x00a\x00s\x00.\x00s\x00v\x00g\
+\x00\x0a\
+\x06\xcbBG\
+\x00r\
+\x00e\x00m\x00o\x00v\x00e\x00.\x00s\x00v\x00g\
+\x00\x0a\
+\x06\x9a\xc4'\
+\x00e\
+\x00x\x00p\x00o\x00r\x00t\x00.\x00s\x00v\x00g\
+\x00\x0d\
+\x05\xe3%\x87\
+\x00m\
+\x00o\x00d\x00e\x00l\x00-\x00v\x00r\x003\x00.\x00s\x00v\x00g\
 "
 
 qt_resource_struct = b"\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\x01\
-\x00\x00\x00\x12\x00\x02\x00\x00\x00\x0e\x00\x00\x00\x04\
-\x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x03\
-\x00\x00\x01\xa2\x00\x00\x00\x00\x00\x01\x00\x00P\xc6\
-\x00\x00\x01\x88\x00\x00\x00\x00\x00\x01\x00\x00;\xdf\
-\x00\x00\x01j\x00\x00\x00\x00\x00\x01\x00\x006\xed\
-\x00\x00\x00\xc4\x00\x00\x00\x00\x00\x01\x00\x00\x1eZ\
-\x00\x00\x00\xa4\x00\x00\x00\x00\x00\x01\x00\x00\x18L\
-\x00\x00\x01,\x00\x00\x00\x00\x00\x01\x00\x00.\x07\
-\x00\x00\x01\x0a\x00\x00\x00\x00\x00\x01\x00\x00*I\
-\x00\x00\x00^\x00\x00\x00\x00\x00\x01\x00\x00\x0a\xc8\
-\x00\x00\x00D\x00\x00\x00\x00\x00\x01\x00\x00\x03\xff\
-\x00\x00\x00\xe0\x00\x00\x00\x00\x00\x01\x00\x00$+\
-\x00\x00\x00\x8e\x00\x00\x00\x00\x00\x01\x00\x00\x11e\
-\x00\x00\x01L\x00\x00\x00\x00\x00\x01\x00\x0031\
-\x00\x00\x00x\x00\x00\x00\x00\x00\x01\x00\x00\x0f\xc0\
-\x00\x00\x00\xf4\x00\x00\x00\x00\x00\x01\x00\x00'\x19\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x0e\x00\x00\x00\x04\
+\x00\x00\x00\x12\x00\x02\x00\x00\x00\x01\x00\x00\x00\x03\
 \x00\x00\x00$\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
+\x00\x00\x00~\x00\x00\x00\x00\x00\x01\x00\x00\x0d\xa8\
+\x00\x00\x00\x98\x00\x00\x00\x00\x00\x01\x00\x00\x22\x8f\
+\x00\x00\x01J\x00\x00\x00\x00\x00\x01\x00\x00;\xf6\
+\x00\x00\x01\x08\x00\x00\x00\x00\x00\x01\x00\x002*\
+\x00\x00\x01\x9a\x00\x00\x00\x00\x00\x01\x00\x00M\x88\
+\x00\x00\x01(\x00\x00\x00\x00\x00\x01\x00\x0088\
+\x00\x00\x01\x80\x00\x00\x00\x00\x00\x01\x00\x00H\x90\
+\x00\x00\x01f\x00\x00\x00\x00\x00\x01\x00\x00A\xc7\
+\x00\x00\x00\xb6\x00\x00\x00\x00\x00\x01\x00\x00'\x81\
+\x00\x00\x00R\x00\x00\x00\x00\x00\x01\x00\x00\x03\x91\
+\x00\x00\x00\xca\x00\x00\x00\x00\x00\x01\x00\x00*o\
+\x00\x00\x00<\x00\x00\x00\x00\x00\x01\x00\x00\x01\xec\
+\x00\x00\x00h\x00\x00\x00\x00\x00\x01\x00\x00\x0ax\
+\x00\x00\x00\xe8\x00\x00\x00\x00\x00\x01\x00\x00.+\
 "
 
 def qInitResources():

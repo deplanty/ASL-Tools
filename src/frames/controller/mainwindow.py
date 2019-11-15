@@ -3,6 +3,7 @@ from PySide2.QtWidgets import (
 )
 
 from src.frames.controller import (
+    ModelVr3,
     Script,
     Dashboard
 )
@@ -14,6 +15,7 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
 
         self.ui = Ui_MainWindow(self)
+        self.model_vr3 = ModelVr3(self)
         self.script = Script(self)
         self.dashboard = Dashboard(self)
 
@@ -22,7 +24,7 @@ class MainWindow(QMainWindow):
         self.ui.btn_dashboard.clicked.connect(self.btn_dashboard)
 
     def btn_model_vr3(self):
-        ...
+        self.model_vr3.show()
 
     def btn_script(self):
         self.script.show()
