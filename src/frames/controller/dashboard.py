@@ -24,9 +24,15 @@ class Dashboard(QWidget):
 
         self.ui = Ui_Dashboard(self)
 
-        self.ui.btn_open.clicked.connect(self.btn_open)
-        self.ui.btn_save.clicked.connect(self.btn_save)
-        self.ui.btn_export.clicked.connect(self.btn_export)
+        # Menu
+        self.ui.action_file_new.triggered.connect(self.menu_file_new)
+        self.ui.action_file_open.triggered.connect(self.menu_file_open)
+        self.ui.action_file_save.triggered.connect(self.menu_file_save)
+        self.ui.action_file_saveas.triggered.connect(self.menu_file_saveas)
+        self.ui.action_file_export.triggered.connect(self.menu_file_export)
+        self.ui.action_file_quit.triggered.connect(self.destroy)
+        self.ui.action_edit_copy.triggered.connect(self.menu_edit_copy)
+        self.ui.action_edit_paste.triggered.connect(self.menu_edit_paste)
 
         # Setup items in the list
         for i in range(25):
@@ -47,10 +53,23 @@ class Dashboard(QWidget):
         self.ui.list.itemSelectionChanged.connect(self.evt_list_click)
 
     # =========================================================================
-    # = Buttons
+    # = Menu
     # =========================================================================
 
-    def btn_open(self):
+    def menu_file_new(self):
+        """
+        Reset all the elements to their default values
+        """
+
+        for item in qt_utils.iter_list(self.ui.list):
+            data = item.get_data()
+            data.load_new()
+
+    def menu_file_open(self):
+        """
+        Open an existing dashboard file
+        """
+
         file_dash, _ = QFileDialog.getOpenFileName(
             self,
             "Save ASL custom dashboard file",
@@ -77,7 +96,29 @@ class Dashboard(QWidget):
         self.file_current = file_dash
         self.file_to_title(file_dash)
 
-    def btn_save(self):
+    def menu_file_save(self):
+        """
+        Save the current dashboard to the current file
+        """
+
+        if os.path.exists(self.file_current):
+            try:
+                # Save the dashboard
+                self.save_dashboard()
+                # Notify end of save
+                qt_utils.popup.done(self, message="Sauvegarde terminée")
+            except Exception as e:
+                # Notify error
+                # TODO: Popup error
+                qt_utils.popup.done(self, message=str(e))
+        else:
+            self.menu_file_saveas()
+
+    def menu_file_saveas(self):
+        """
+        Ask where to save the current dashboard
+        """
+
         file_dash, _ = QFileDialog.getSaveFileName(
             self,
             "Save ASL custom dashboard file",
@@ -86,20 +127,24 @@ class Dashboard(QWidget):
         )
         if not file_dash:
             return
-        # Get all item data
-        data = list()
-        for item in qt_utils.iter_list(self.ui.list):
-            vr3 = item.get_data()
-            data.append(vr3.to_dict())
-        # Save them
-        io.json_save(data, file_dash)
         # Update the title
         self.file_current = file_dash
-        self.file_to_title(file_dash)
+        self.file_to_title(file_script)
+        try:
+            # Save the script
+            self.save_dashboard()
+            # Notify end of save
+            qt_utils.popup.done(self, message="Sauvegarde terminée")
+        except Exception as e:
+            # Notify error
+            # TODO: Popup error
+            qt_utils.popup.done(self, message=str(e))
 
-        qt_utils.popup.done(self, message="Sauvegarde terminée")
+    def menu_file_export(self):
+        """
+        Ask where to export the dashboard
+        """
 
-    def btn_export(self):
         dir_dash = QFileDialog.getExistingDirectory(
             self,
             "Save ASL dashboard files",
@@ -163,6 +208,31 @@ class Dashboard(QWidget):
 
         popup.done(self, message="Exportation terminée")
 
+    def menu_edit_copy(self):
+        """
+        Copy the settings for the current event
+        """
+
+        self.vr3_copy.from_ui(self.ui, self.item_current.text())
+
+    def menu_edit_paste(self):
+        """
+        Paste the saved settings to the current event
+        """
+
+        # If there is a copied vr3
+        if self.vr3_copy.n > 0:
+            vr3 = self.item_current.get_data()
+            name = vr3.name
+            vr3.from_dict(self.vr3_copy.to_dict())
+            vr3.name = name
+            vr3.setup_ui(self.ui)
+            self.item_current.set_data(vr3)
+
+    # =========================================================================
+    # = Events
+    # =========================================================================
+
     def evt_list_click(self):
         """
         When clicking on item in list
@@ -179,6 +249,24 @@ class Dashboard(QWidget):
         vr3.setup_ui(self.ui)
         # Selected is now the current
         self.item_current = item
+
+    # =========================================================================
+    # = Save
+    # =========================================================================
+
+    def save_dashboard(self):
+        """
+        Save the current dashboad at the current file
+        """
+
+        # Get all item data
+        data = list()
+        self.save_current_item()
+        for item in qt_utils.iter_list(self.ui.list):
+            vr3 = item.get_data()
+            data.append(vr3.to_dict())
+        # Save them
+        io.json_save(data, self.file_current)
 
     # =========================================================================
     # = Misc

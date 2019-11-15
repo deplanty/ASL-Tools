@@ -61,7 +61,7 @@ if __name__ == '__main__':
     os.makedirs(dirpath, exist_ok=True)
     with open(f"{dirpath}/traceback.log", "w") as log:
         log.write(time.strftime("Start application the %d/%m/%Y at %H:%M:%S\n"))
-        sys.stderr = log
+        # sys.stderr = log
 
         # Start application
         app = Application(sys.argv)
