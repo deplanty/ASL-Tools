@@ -1,5 +1,3 @@
-# ASL-Tools
-
 <p align="center"><img src="resources/images/logo-big.png?raw=true" alt="Logo"></p>
 
 ## What's the ASL?
