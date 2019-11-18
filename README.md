@@ -1,5 +1,7 @@
 # ASL-Tools
 
+<p align="center"><img src="resources/images/logo-big.png?raw=true" alt="Logo"></p>
+
 ## What's the ASL?
 
 The __ASL 5000&trade;__ is a breathing simulator capable of simulating a wide range of patients, produced by __IngMar Medical&copy;__.
