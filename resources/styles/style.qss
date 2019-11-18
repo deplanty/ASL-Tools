@@ -20,3 +20,9 @@ QWidget#mainwindow > QToolButton#tool:pressed {
     border-color: gray;
     background-color: #e0e0f0;
 }
+
+#label_file {
+    font-size: 14px;
+    font-weight: bold;
+    color: #343a40;
+}
