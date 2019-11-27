@@ -10,6 +10,7 @@ from PySide2.QtWidgets import (
     QAction,
     QDesktopWidget,
     QHBoxLayout,
+    QMainWindow,
     QMenu,
     QMenuBar,
     QSizePolicy,
@@ -19,7 +20,7 @@ from PySide2.QtWidgets import (
 
 
 class Ui_Script:
-    def __init__(self, Script:QWidget):
+    def __init__(self, Script:QMainWindow):
 
         # Set window parameters
         Script.setWindowTitle("ASL Tools - Script")
@@ -136,7 +137,7 @@ class Ui_Script:
         self.respi_rate.setMaximum(500)
         self.grid_layout_form.addWidget(self.respi_rate, 2, 1, 1, 1)
         # Spacer
-        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem1 = QtWidgets.QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
         self.grid_layout_form.addItem(spacerItem1, 4, 0, 1, 1)
         # Pmus insp
         self.label_i_pmus = QtWidgets.QLabel(frame)
@@ -163,7 +164,7 @@ class Ui_Script:
         self.i_pmus_rel.setMaximum(100)
         self.grid_layout_form.addWidget(self.i_pmus_rel, 8, 1, 1, 1)
         # Spacer
-        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem4 = QtWidgets.QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
         self.grid_layout_form.addItem(spacerItem4, 9, 0, 1, 1)
         # Pmus exp
         self.label_e_pmus = QtWidgets.QLabel(frame)
@@ -190,7 +191,7 @@ class Ui_Script:
         self.e_pmus_rel.setMaximum(100)
         self.grid_layout_form.addWidget(self.e_pmus_rel, 13, 1, 1, 1)
         # Spacer
-        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
         self.grid_layout_form.addItem(spacerItem3, 14, 0, 1, 1)
         # CRF
         self.label_crf = QtWidgets.QLabel(frame)
@@ -200,7 +201,7 @@ class Ui_Script:
         self.crf.setSingleStep(0.1)
         self.grid_layout_form.addWidget(self.crf, 15, 1, 1, 1)
         # Spacer
-        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
         self.grid_layout_form.addItem(spacerItem2, 16, 0, 1, 1)
         # Repetions
         self.label_repetitions = QtWidgets.QLabel(frame)
@@ -211,6 +212,9 @@ class Ui_Script:
         self.label_repetitions_total = QtWidgets.QLabel(frame)
         self.label_repetitions_total.setMinimumWidth(30)
         self.grid_layout_form.addWidget(self.label_repetitions_total, 17, 2, 1, 1)
+        # Spacer
+        spacerItem2 = QtWidgets.QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.grid_layout_form.addItem(spacerItem2, 18, 0, 1, 1)
         # Set form layout in the main grid
         self.grid_layout.addLayout(self.grid_layout_form, 2, 1, 1, 1)
         self.h_layout.addLayout(self.grid_layout)
@@ -221,10 +225,11 @@ class Ui_Script:
 
         # Set size and position
         w, h = self.h_layout.sizeHint().toTuple()
-        frame.resize(w, h)
         w_s, h_s = QDesktopWidget().size().toTuple()
         x = round(w_s/2 - w/2)
         y = round(h_s/2 - h/2)
+        Script.setCentralWidget(frame)
+        Script.resize(w, h)
         Script.move(x, y)
 
         self.retranslateUi(Script)

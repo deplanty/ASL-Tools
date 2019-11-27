@@ -30,7 +30,6 @@ class Ui_ModelVr3:
         # Main frame
         frame = QtWidgets.QWidget(ModelVr3)
         frame.setObjectName("mainwidget")
-        frame.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.h_layout = QHBoxLayout(frame)
 
         # Menubar

@@ -6,6 +6,7 @@ from PySide2.QtCore import (
 from PySide2.QtWidgets import (
     QFileDialog,
     QListWidgetItem,
+    QMainWindow,
     QMessageBox,
     QWidget
 )
@@ -18,9 +19,9 @@ from src.common.objects import ScriptVr3
 from src.frames.ui import Ui_Script
 
 
-class Script(QWidget):
+class Script(QMainWindow):
     def __init__(self, parent:QWidget=None):
-        QWidget.__init__(self, parent)
+        QMainWindow.__init__(self, parent)
 
         self.ui = Ui_Script(self)
 
