@@ -1,44 +1,142 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
-<g>
-	<rect x="28" y="17" style="fill:#556080;" width="2" height="24"/>
-	<polygon style="fill:#556080;" points="52,41 50,41 50,30 8,30 8,41 6,41 6,28 52,28 	"/>
-	<rect y="41" style="fill:#F0C419;" width="14" height="14"/>
-	<rect x="44" y="41" style="fill:#F18D46;" width="14" height="14"/>
-	<rect x="22" y="41" style="fill:#F29C1F;" width="14" height="14"/>
-	<rect x="22" y="3" style="fill:#0096E6;" width="14" height="14"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000.0001"
+   height="1000"
+   viewBox="0 0 264.58331 264.58335"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="dashboard.svg">
+  <title
+     id="title29">ASL-Tools-Logo</title>
+  <defs
+     id="defs2">
+    <linearGradient
+       osb:paint="gradient"
+       id="linearGradient1534">
+      <stop
+         id="stop1530"
+         offset="0"
+         style="stop-color:#91aaff;stop-opacity:1;" />
+      <stop
+         id="stop1532"
+         offset="1"
+         style="stop-color:#91aaff;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6025">
+      <stop
+         style="stop-color:#003cff;stop-opacity:1"
+         offset="0"
+         id="stop6023" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-12.294396 : 234.5608 : 1"
+       inkscape:vp_y="0 : 1000.0001 : 0"
+       inkscape:vp_z="209.99997 : 148.50001 : 1"
+       inkscape:persp3d-origin="105 : 99.000003 : 1"
+       id="perspective15" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-620.30034"
+     inkscape:cy="705.03087"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>ASL-Tools-Logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-40.483612,73.476936)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot6062"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,43.479319,28.897532)"><flowRegion
+         id="flowRegion6064"><rect
+           id="rect6066"
+           width="1286.9343"
+           height="521.23871"
+           x="531.34021"
+           y="30.273968" /></flowRegion><flowPara
+         id="flowPara6068" /></flowRoot>    <rect
+       style="opacity:1;fill:#003cff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.94055057;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect824"
+       width="264.58334"
+       height="218.28125"
+       x="40.483612"
+       y="-27.17485"
+       ry="0.94223899" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.03785896;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 169.04746,29.049108 v 14.267475 c 0,0 -0.17232,8.444091 -5.51937,9.390753 -0.41159,-3.820209 -2.39443,-13.846232 -9.23857,-13.846232 -10.61616,0 -23.2806,22.473293 -28.03639,34.667814 -1.25442,3.269836 -6.39451,13.615353 -6.39451,31.958172 0,13.81981 1.80669,29.39535 11.05136,29.39535 5.11468,0 9.69744,-5.60022 18.73427,-11.4243 27.78202,-17.90507 19.95669,-27.637169 14.85431,-63.733328 3.28861,-3.003508 5.49371,-4.300883 8.27674,-4.300883 2.48288,0 4.98811,1.297375 8.27672,4.300883 -5.10237,36.096159 -12.92771,45.828258 14.85431,63.733328 9.03684,5.82408 13.61958,11.4243 18.73427,11.4243 9.24467,0 11.05135,-15.57554 11.05135,-29.39535 0,-18.342819 -5.14008,-28.688336 -6.3945,-31.958172 -4.7558,-12.194521 -17.42022,-34.667814 -28.03639,-34.667814 -6.84413,0 -8.82698,10.026023 -9.23857,13.846232 -5.34704,-0.946662 -5.51936,-9.390753 -5.51936,-9.390753 V 29.049108 l -3.72783,0.0061 z"
+       id="path21"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccscssscccssscsccccc" />
+    <rect
+       style="opacity:1;fill:#f02828;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.87329823;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect828"
+       width="85.475113"
+       height="41.892361"
+       x="40.483612"
+       y="-73.476936"
+       ry="0.94329238" />
+    <rect
+       style="opacity:1;fill:#003cff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.87329835;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect828-1"
+       width="85.475113"
+       height="41.892361"
+       x="130.36844"
+       y="-73.476936"
+       ry="0.9432925" />
+    <rect
+       style="opacity:1;fill:#003cff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.87329787;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect828-1-5"
+       width="85.475098"
+       height="41.892319"
+       x="219.59181"
+       y="-73.476891"
+       ry="0.9432916" />
+  </g>
 </svg>

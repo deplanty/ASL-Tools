@@ -24,6 +24,8 @@ class Ui_MainWindow():
         MainWindow.setAttribute(Qt.WA_QuitOnClose)
         MainWindow.setAttribute(Qt.WA_TranslucentBackground)
 
+        icon_size = QSize(48, 48)
+
         # Main frame
         frame = QWidget()
         frame.setObjectName("mainwindow")
@@ -31,21 +33,21 @@ class Ui_MainWindow():
         # Button create vr3 model
         self.btn_model_vr3 = QToolButton()
         self.btn_model_vr3.setIcon(QIcon(":/images/model-vr3.svg"))
-        self.btn_model_vr3.setIconSize(QSize(32, 32))
+        self.btn_model_vr3.setIconSize(icon_size)
         self.btn_model_vr3.setObjectName("tool")
         self.btn_model_vr3.setCursor(Qt.CursorShape.PointingHandCursor)
         self.v_layout.addWidget(self.btn_model_vr3)
         # Create script
         self.btn_script = QToolButton()
         self.btn_script.setIcon(QIcon(":/images/script.svg"))
-        self.btn_script.setIconSize(QSize(32, 32))
+        self.btn_script.setIconSize(icon_size)
         self.btn_script.setObjectName("tool")
         self.btn_script.setCursor(Qt.CursorShape.PointingHandCursor)
         self.v_layout.addWidget(self.btn_script)
         # Create dashboard
         self.btn_dashboard = QToolButton()
         self.btn_dashboard.setIcon(QIcon(":/images/dashboard.svg"))
-        self.btn_dashboard.setIconSize(QSize(32, 32))
+        self.btn_dashboard.setIconSize(icon_size)
         self.btn_dashboard.setObjectName("tool")
         self.btn_dashboard.setCursor(Qt.CursorShape.PointingHandCursor)
         self.v_layout.addWidget(self.btn_dashboard)
