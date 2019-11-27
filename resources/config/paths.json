@@ -8,6 +8,7 @@
     },
     "files": {
         "new_dash": ["r_files", "new_dash.json"],
+        "new_model": ["r_files", "new_model.json"],
         "new_script": ["r_files", "new_script.json"],
         "template_rsp": ["r_files", "template.rsp"],
         "template_vr3": ["r_files", "template.vr3"],

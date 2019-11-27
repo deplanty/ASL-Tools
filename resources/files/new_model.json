@@ -1,0 +1,42 @@
+{
+	"files": {
+		"extpmus": ""
+	},
+	"flags": {
+		"extpmus": false,
+		"timevar": true
+	},
+	"parameters": {
+		"varying": {
+			"C": [
+				[60, 60, 20],
+				[60, 30, 5]
+			],
+			"R": [
+				[5, 5, 20]
+			],
+			"BR": [
+				[25, 25, 20]
+			],
+			"I_Pmus": [
+				[5, 5, 20]
+			],
+			"I_increase": [
+				[30, 30, 20]
+			],
+			"I_hold": [
+				[0, 0, 20]
+			],
+			"I_release": [
+				[15, 15, 20]
+			]
+		},
+		"constant": {
+			"E_Pmus": 0,
+			"E_increase": 0,
+			"E_hold": 0,
+			"E_release": 0,
+			"CRF": 0.500
+		}
+	}
+}
