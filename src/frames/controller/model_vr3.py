@@ -15,11 +15,12 @@ from PySide2.QtWidgets import (
 
 from src.common import io
 from src.common import qt_utils
+from src.common.objects import ModelVr3
 from src.config import Paths
 from src.frames.ui import Ui_ModelVr3
 
 
-class ModelVr3(QMainWindow):
+class LungModel(QMainWindow):
     def __init__(self, parent:QWidget=None):
         QMainWindow.__init__(self, parent)
 
@@ -43,8 +44,9 @@ class ModelVr3(QMainWindow):
         self.ui.check_time_constant.clicked.connect(self.evt_time_constant)
         self.ui.tree.itemClicked.connect(self.evt_select_item)
 
+        self.vr3 = ModelVr3()
+
         self.file_current = self.ui.label_file.text()
-        self.current_data = dict()
         self.menu_file_new()
 
     # =========================================================================
@@ -60,9 +62,8 @@ class ModelVr3(QMainWindow):
         self.file_to_title(self.file_current)
 
         # Load data
-        data = io.json_load(Paths.file("new_model"))
-        # Set data in the ui
-        self.set_in_ui(data)
+        self.vr3.load_new()
+        self.vr3.setup_ui(self.ui)
 
     def menu_file_open(self):
         """
@@ -80,7 +81,8 @@ class ModelVr3(QMainWindow):
         # Get data from file
         data = io.json_load(file_vr3)
         # Fill the ui
-        self.set_in_ui(data)
+        self.vr3.from_dict(data)
+        self.vr3.setup_ui(self.ui)
         # Update the title
         self.file_current = "<aucun>"
         self.file_to_title(self.file_current)
@@ -151,7 +153,7 @@ class ModelVr3(QMainWindow):
 
         key = item.text(0)
         # Only for time varying parameters
-        if key in self.current_data["parameters"]["constant"]:
+        if key not in self.vr3.get_varying():
             return
 
         # If select toplevel item
@@ -166,7 +168,6 @@ class ModelVr3(QMainWindow):
         else:
             # Add a new item to the parent
             parent:QTreeWidgetItem = item.parent()
-            print("add")
             # Add item at the end
             new = QTreeWidgetItem(parent)
             new.setText(1, "0")
@@ -175,7 +176,6 @@ class ModelVr3(QMainWindow):
             parent.addChild(new)
 
         new.setFlags(new.flags() | Qt.ItemIsEditable)
-
         self.evt_select_item()
 
     def btn_remove(self):
@@ -269,26 +269,28 @@ class ModelVr3(QMainWindow):
     # =========================================================================
 
     def evt_time_constant(self):
+        """
+        When clicking on time constant checkbox
+        Setup the ui as constant or varying
+        Define the state of the buttons
+        """
+
         constant = self.ui.check_time_constant.isChecked()
+        self.ui.btn_add.setEnabled(constant is False)
+        self.ui.btn_remove.setEnabled(constant is False)
+        self.ui.btn_move_up.setEnabled(constant is False)
+        self.ui.btn_move_down.setEnabled(constant is False)
 
-        buttons = (
-            self.ui.btn_add,
-            self.ui.btn_remove,
-            self.ui.btn_move_up,
-            self.ui.btn_move_down
-        )
-        for btn in buttons:
-            btn.setEnabled(constant is False)
-
-        data = self.as_dict()
-        self.set_in_ui(data)
+        # Save ui
+        self.vr3.from_ui(self.ui)
+        # Setup ui with correct parameters
+        self.vr3.setup_ui(self.ui)
 
     def evt_select_item(self):
         """
         When an item is selected
+        Define the state of the buttons
         """
-
-        print("Trigger event")
 
         items = self.ui.tree.selectedItems()
         if not items:
@@ -297,8 +299,8 @@ class ModelVr3(QMainWindow):
 
         # If its a toplevel
         if selected.text(0):
-            self.disable_btns("remove", "move_up", "move_down")
-            self.enable_btns("add")
+            self.disable_buttons("remove", "move_up", "move_down")
+            self.enable_buttons("add")
         # If its a child
         else:
             parent:QTreeWidgetItem = selected.parent()
@@ -306,19 +308,19 @@ class ModelVr3(QMainWindow):
             row = parent.indexOfChild(selected)
             # If only child
             if n_children == 1:
-                self.disable_btns("remove", "move_up", "move_down")
-                self.enable_btns("add")
+                self.disable_buttons("remove", "move_up", "move_down")
+                self.enable_buttons("add")
             # If first child
             elif row == 0:
-                self.disable_btns("move_up")
-                self.enable_btns("add", "remove", "move_down")
+                self.disable_buttons("move_up")
+                self.enable_buttons("add", "remove", "move_down")
             # If last child
             elif row == n_children - 1:
-                self.disable_btns("move_down")
-                self.enable_btns("add", "remove", "move_up")
+                self.disable_buttons("move_down")
+                self.enable_buttons("add", "remove", "move_up")
             # Else
             else:
-                self.enable_btns("add", "remove", "move_up", "move_down")
+                self.enable_buttons("add", "remove", "move_up", "move_down")
 
     # =========================================================================
     # = Save
@@ -329,99 +331,12 @@ class ModelVr3(QMainWindow):
         Save the current script at the current file
         """
 
-        data = self.as_dict()
+        data = self.vr3.to_dict()
         io.json_save(data, self.file_current)
 
     # =========================================================================
     # = Misc
     # =========================================================================
-
-    def set_in_ui(self, data:dict):
-        """
-        Set the data in the ui
-
-        Args:
-            data (dict): vr3 model as a dict
-        """
-
-        self.current_data = data
-
-        # Is time varying enabled
-        timevar = data["flags"]["timevar"]
-        self.ui.check_time_constant.setChecked(timevar is False)
-
-        # Set in tree
-        tree = self.ui.tree
-        tree.clear()
-        if timevar:
-            tree.setColumnCount(4)
-            tree.setHeaderLabels(["Variable", "Début", "Fin", "Répétitions"])
-        else:
-            tree.setColumnCount(2)
-            tree.setHeaderLabels(["Variable", "Valeur"])
-
-        # Set varying parameters
-        varying = data["parameters"]["varying"]
-        for label, values in varying.items():
-            item_main = QTreeWidgetItem()
-            item_main.setText(0, label)
-            if timevar:
-                for endpoints in values:
-                    item = QTreeWidgetItem(item_main)
-                    for i, x in enumerate(endpoints, 1):
-                        item.setText(i, str(x))
-                    item.setFlags(item.flags() | Qt.ItemIsEditable)
-                    tree.addTopLevelItem(item)
-            else:
-                value = values[0][0]
-                item_main.setText(1, str(value))
-                item_main.setFlags(item_main.flags() | Qt.ItemIsEditable)
-            tree.addTopLevelItem(item_main)
-
-        # Set constant parameters
-        constants = data["parameters"]["constant"]
-        for label, value in constants.items():
-            item_main = QTreeWidgetItem()
-            item_main.setText(0, label)
-            item_main.setText(1, str(value))
-            item_main.setFlags(item_main.flags() | Qt.ItemIsEditable)
-            tree.addTopLevelItem(item_main)
-
-    def as_dict(self):
-        """
-        Return the ui data as a dict
-        """
-
-        data = copy.deepcopy(self.current_data)
-        constant = not data["flags"]["timevar"]
-
-        var = data["parameters"]["varying"]
-        con = data["parameters"]["constant"]
-        for i in range(self.ui.tree.topLevelItemCount()):
-            item:QTreeWidgetItem = self.ui.tree.topLevelItem(i)
-            key = item.text(0)
-
-            # If it's a constant parameter
-            if key in con:
-                tp = float if key == "CRF" else int
-                con[key] = tp(item.text(1))
-            # A varying parameter
-            else:
-                # Constant is set
-                if constant:
-                    var[key][0][0] = int(item.text(1))
-                # Time varying is set
-                else:
-                    for j in range(item.childCount()):
-                        child = item.child(j)
-                        var[key][j][0] = int(child.text(1))
-                        var[key][j][1] = int(child.text(2))
-                        var[key][j][2] = int(child.text(3))
-
-        constant = self.ui.check_time_constant.isChecked()
-        data["flags"]["timevar"] = constant is False
-
-        return data
 
     def file_to_title(self, path:str):
         """
@@ -434,7 +349,7 @@ class ModelVr3(QMainWindow):
         title = os.path.basename(path)
         self.ui.label_file.setText(title)
 
-    def enable_btns(self, *btns):
+    def enable_buttons(self, *btns):
         """
         Enable the given buttons
 
@@ -451,7 +366,7 @@ class ModelVr3(QMainWindow):
         if "move_down" in btns:
             self.ui.btn_move_down.setEnabled(True)
 
-    def disable_btns(self, *btns):
+    def disable_buttons(self, *btns):
         """
         Disable the given buttons
 

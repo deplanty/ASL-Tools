@@ -3,7 +3,7 @@ from PySide2.QtWidgets import (
 )
 
 from src.frames.controller import (
-    ModelVr3,
+    LungModel,
     Script,
     Dashboard
 )
@@ -15,7 +15,7 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
 
         self.ui = Ui_MainWindow(self)
-        self.model_vr3 = ModelVr3(self)
+        self.model_vr3 = LungModel(self)
         self.script = Script(self)
         self.dashboard = Dashboard(self)
 

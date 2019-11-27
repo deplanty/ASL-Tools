@@ -5,12 +5,14 @@ A script object to load, save and show data
 import os
 import re
 
+from PySide2 import QtCore, QtWidgets
+
 from src.common import io
 from src.config import Paths
 from .vr3 import Vr3Var
 
 
-class ScriptVr3(Vr3Var):
+class ModelVr3(Vr3Var):
     def __init__(self):
         Vr3Var.__init__(self)
 
@@ -35,46 +37,52 @@ class ScriptVr3(Vr3Var):
         Setup the values in the ui
 
         Args:
-            ui (Ui_Script): Qt UI
+            ui (Ui_ModelVr3): Qt UI
         """
 
-        item = ui.list.currentItem()
-        if not item:
-            return
+        # Is time varying enabled
+        ui.check_time_constant.setChecked(self.time_var is False)
 
-        item.setText(self.name)
-        ui.repetitions.setValue(self.n)
+        # Set in tree
+        ui.tree.clear()
+        if self.time_var:
+            ui.tree.setColumnCount(4)
+            ui.tree.setHeaderLabels(["Variable", "Début", "Fin", "Répétitions"])
+        else:
+            ui.tree.setColumnCount(2)
+            ui.tree.setHeaderLabels(["Variable", "Valeur"])
 
-        ui.compliance.setValue(self.c)
-        ui.resistance.setValue(self.r)
-        ui.respi_rate.setValue(self.br)
-        ui.i_pmus.setValue(self.i_pmus)
-        ui.i_pmus_inc.setValue(self.i_pmus_inc)
-        ui.i_pmus_hld.setValue(self.i_pmus_hld)
-        ui.i_pmus_rel.setValue(self.i_pmus_rel)
-        ui.e_pmus.setValue(self.e_pmus)
-        ui.e_pmus_inc.setValue(self.e_pmus_inc)
-        ui.e_pmus_hld.setValue(self.e_pmus_hld)
-        ui.e_pmus_rel.setValue(self.e_pmus_rel)
-        ui.crf.setValue(self.crf)
+        # Set varying parameters
+        for label, values in self.get_varying().items():
+            item_main = QtWidgets.QTreeWidgetItem()
+            item_main.setText(0, label)
+            if self.time_var:
+                for endpoints in values:
+                    item = QtWidgets.QTreeWidgetItem(item_main)
+                    for i, x in enumerate(endpoints, 1):
+                        item.setText(i, str(x))
+                    item.setFlags(item.flags() | QtCore.Qt.ItemIsEditable)
+                    ui.tree.addTopLevelItem(item)
+            else:
+                value = values[0][0]
+                item_main.setText(1, str(value))
+                item_main.setFlags(item_main.flags() | QtCore.Qt.ItemIsEditable)
+            ui.tree.addTopLevelItem(item_main)
 
-    def from_ui(self, ui, name):
-        item = ui.list.currentItem()
-        if not item:
-            return
+        # Set constant parameters
+        for label, value in self.get_constant().items():
+            item_main = QtWidgets.QTreeWidgetItem()
+            item_main.setText(0, label)
+            item_main.setText(1, str(value))
+            item_main.setFlags(item_main.flags() | QtCore.Qt.ItemIsEditable)
+            ui.tree.addTopLevelItem(item_main)
 
-        # self.name = name
-        # self.n = ui.repetitions.value()
+    def from_ui(self, ui):
+        """
+        Get data from the ui
 
-        # self.c = ui.compliance.value()
-        # self.r = ui.resistance.value()
-        # self.br = ui.respi_rate.value()
-        # self.i_pmus = ui.i_pmus.value()
-        # self.i_pmus_inc = ui.i_pmus_inc.value()
-        # self.i_pmus_hld = ui.i_pmus_hld.value()
-        # self.i_pmus_rel = ui.i_pmus_rel.value()
-        # self.e_pmus = ui.e_pmus.value()
-        # self.e_pmus_inc = ui.e_pmus_inc.value()
-        # self.e_pmus_hld = ui.e_pmus_hld.value()
-        # self.e_pmus_rel = ui.e_pmus_rel.value()
-        # self.crf = ui.crf.value()
+        Args:
+            ui (Ui_ModelVr3): Qt UI
+        """
+
+        self.time_var = not ui.check_time_constant.isChecked()

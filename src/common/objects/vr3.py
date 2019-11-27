@@ -251,3 +251,37 @@ class Vr3Var:
 
         with open(path, "w") as f:
             f.write(template.format(**export))
+
+    def get_varying(self) -> dict:
+        """
+        Return a dict with the varying parameters
+
+        Returns:
+            dict: varying parameters
+        """
+
+        return {
+            "R": self.r,
+            "C": self.c,
+            "BR": self.br,
+            "I_Pmus": self.i_pmus,
+            "I_increase": self.i_pmus_inc,
+            "I_hold": self.i_pmus_hld,
+            "I_release": self.i_pmus_rel
+        }
+
+    def get_constant(self) -> dict:
+        """
+        Return a dict with the varying parameters
+
+        Returns:
+            dict: varying parameters
+        """
+
+        return {
+            "E_Pmus": self.e_pmus,
+            "E_increase": self.e_pmus_inc,
+            "E_hold": self.e_pmus_hld,
+            "E_release": self.e_pmus_rel,
+            "CRF": self.crf
+        }
