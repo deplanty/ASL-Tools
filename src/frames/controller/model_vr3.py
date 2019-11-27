@@ -7,8 +7,9 @@ from PySide2.QtCore import (
 )
 from PySide2.QtWidgets import (
     QFileDialog,
-    QTreeWidgetItem,
     QMessageBox,
+    QMainWindow,
+    QTreeWidgetItem,
     QWidget
 )
 
@@ -18,9 +19,9 @@ from src.config import Paths
 from src.frames.ui import Ui_ModelVr3
 
 
-class ModelVr3(QWidget):
+class ModelVr3(QMainWindow):
     def __init__(self, parent:QWidget=None):
-        QWidget.__init__(self, parent)
+        QMainWindow.__init__(self, parent)
 
         self.ui = Ui_ModelVr3(self)
 

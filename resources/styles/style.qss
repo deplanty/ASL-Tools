@@ -21,6 +21,10 @@ QWidget#mainwindow > QToolButton#tool:pressed {
     background-color: #e0e0f0;
 }
 
+/* QWidget#mainwidget {
+    background-color: #ff0000;
+} */
+
 #label_file {
     font-size: 14px;
     font-weight: bold;

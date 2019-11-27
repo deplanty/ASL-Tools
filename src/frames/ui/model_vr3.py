@@ -10,14 +10,17 @@ from PySide2.QtWidgets import (
     QAction,
     QDesktopWidget,
     QHBoxLayout,
+    QMainWindow,
     QMenu,
     QMenuBar,
+    QSizePolicy,
     QSpacerItem,
     QWidget
 )
 
+
 class Ui_ModelVr3:
-    def __init__(self, ModelVr3):
+    def __init__(self, ModelVr3:QMainWindow):
 
         # Set Window parameters
         ModelVr3.setWindowTitle("ASL Tools - Tableau de bord")
@@ -26,10 +29,12 @@ class Ui_ModelVr3:
 
         # Main frame
         frame = QtWidgets.QWidget(ModelVr3)
+        frame.setObjectName("mainwidget")
+        frame.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.h_layout = QHBoxLayout(frame)
 
         # Menubar
-        menubar = QMenuBar()
+        menubar = ModelVr3.menuBar()
         menu_file:QMenu = menubar.addMenu("Fichier")
         self.action_file_new = QAction("Nouveau", menubar)
         self.action_file_new.setIcon(QIcon(":/images/new-file.svg"))
@@ -55,10 +60,10 @@ class Ui_ModelVr3:
         self.action_file_quit = QAction("Quitter", menubar)
         self.action_file_quit.setIcon(QIcon(":/images/quit.svg"))
         menu_file.addAction(self.action_file_quit)
-        self.h_layout.setMenuBar(menubar)
+        # self.h_layout.setMenuBar(menubar)
 
         # Spacer
-        spacerItem = QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem = QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.h_layout.addItem(spacerItem)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -112,22 +117,26 @@ class Ui_ModelVr3:
         self.btn_move_down.setAutoRaise(True)
         self.btn_move_down.setObjectName("btn_move_down")
         self.horizontalLayout.addWidget(self.btn_move_down)
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacerItem = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.tree = QtWidgets.QTreeWidget(frame)
-        self.tree.setFixedSize(QtCore.QSize(400, 400))
+        self.tree.setMinimumSize(QtCore.QSize(420, 500))
+        self.tree.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.verticalLayout.addWidget(self.tree)
+        spacerItem = QSpacerItem(20, 20, QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        self.verticalLayout.addItem(spacerItem)
         self.h_layout.addLayout(self.verticalLayout)
-        spacer = QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        spacer = QSpacerItem(20, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.h_layout.addItem(spacer)
 
         # Set size and position
         w, h = self.h_layout.sizeHint().toTuple()
-        frame.resize(w, h)
         w_s, h_s = QDesktopWidget().size().toTuple()
         x = round(w_s/2 - w/2)
         y = round(h_s/2 - h/2)
+        ModelVr3.setCentralWidget(frame)
+        ModelVr3.resize(w, h)
         ModelVr3.move(x, y)
 
         self.retranslateUi(ModelVr3)
