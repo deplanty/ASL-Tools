@@ -4,13 +4,12 @@
 	},
 	"flags": {
 		"extpmus": false,
-		"timevar": true
+		"timevar": false
 	},
 	"parameters": {
 		"varying": {
 			"C": [
-				[60, 60, 20],
-				[60, 30, 5]
+				[60, 60, 20]
 			],
 			"R": [
 				[5, 5, 20]
