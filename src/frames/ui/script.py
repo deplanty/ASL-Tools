@@ -32,7 +32,7 @@ class Ui_Script:
         self.h_layout = QHBoxLayout(frame)
 
         # Menubar
-        menubar = QMenuBar()
+        menubar = Script.menuBar()
         menu_file:QMenu = menubar.addMenu("Fichier")
         self.action_file_new = QAction("Nouveau", menubar)
         self.action_file_new.setIcon(QIcon(":/images/new-file.svg"))
@@ -65,7 +65,6 @@ class Ui_Script:
         self.action_edit_paste = QAction("Coller", menubar)
         self.action_edit_paste.setShortcut("Alt+V")
         menu_edit.addAction(self.action_edit_paste)
-        self.h_layout.setMenuBar(menubar)
 
         # Spacer
         spacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)

@@ -10,6 +10,7 @@ from PySide2.QtWidgets import (
     QAction,
     QDesktopWidget,
     QHBoxLayout,
+    QMainWindow,
     QMenu,
     QMenuBar,
     QSpacerItem,
@@ -18,7 +19,7 @@ from PySide2.QtWidgets import (
 
 
 class Ui_Dashboard:
-    def __init__(self, Dashboard:QWidget):
+    def __init__(self, Dashboard:QMainWindow):
 
         # Set Window parameters
         Dashboard.setWindowTitle("ASL Tools - Tableau de bord")
@@ -30,7 +31,7 @@ class Ui_Dashboard:
         self.h_layout = QHBoxLayout(frame)
 
         # Menubar
-        menubar = QMenuBar()
+        menubar = Dashboard.menuBar()
         menu_file:QMenu = menubar.addMenu("Fichier")
         self.action_file_new = QAction("Nouveau", menubar)
         self.action_file_new.setIcon(QIcon(":/images/new-file.svg"))
@@ -114,7 +115,7 @@ class Ui_Dashboard:
         self.enabled.setText("")
         self.enabled.setObjectName("enabled")
         self.gridLayout_4.addWidget(self.enabled, 0, 1, 1, 1)
-        spacerItem1 = QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem1 = QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_4.addItem(spacerItem1, 16, 0, 1, 1)
         self.label_i_pmus_inc = QtWidgets.QLabel(frame)
         self.label_i_pmus_inc.setMinimumSize(QtCore.QSize(0, 20))
@@ -128,13 +129,13 @@ class Ui_Dashboard:
         self.label_i_pmus.setMinimumSize(QtCore.QSize(0, 20))
         self.label_i_pmus.setObjectName("label_i_pmus")
         self.gridLayout_4.addWidget(self.label_i_pmus, 7, 0, 1, 1)
-        spacerItem2 = QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem2 = QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_4.addItem(spacerItem2, 6, 0, 1, 1)
         self.i_pmus_inc = QtWidgets.QSpinBox(frame)
         self.i_pmus_inc.setMaximum(100)
         self.i_pmus_inc.setObjectName("i_pmus_inc")
         self.gridLayout_4.addWidget(self.i_pmus_inc, 8, 1, 1, 1)
-        spacerItem3 = QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem3 = QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_4.addItem(spacerItem3, 11, 0, 1, 1)
         self.i_pmus_rel = QtWidgets.QSpinBox(frame)
         self.i_pmus_rel.setMaximum(100)
@@ -185,8 +186,10 @@ class Ui_Dashboard:
         self.label_compliance.setMinimumSize(QtCore.QSize(0, 20))
         self.label_compliance.setObjectName("label_compliance")
         self.gridLayout_4.addWidget(self.label_compliance, 2, 0, 1, 1)
-        spacerItem4 = QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem4 = QSpacerItem(20, 30, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_4.addItem(spacerItem4, 1, 0, 1, 1)
+        spacerItem4 = QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_4.addItem(spacerItem4, 18, 0, 1, 1)
         self.gridLayout.addLayout(self.gridLayout_4, 2, 1, 1, 1)
         self.label_file = QtWidgets.QLabel(frame)
         self.label_file.setTextFormat(QtCore.Qt.PlainText)
@@ -208,10 +211,11 @@ class Ui_Dashboard:
 
         # Set size and position
         w, h = self.h_layout.sizeHint().toTuple()
-        frame.resize(w, h)
         w_s, h_s = QDesktopWidget().size().toTuple()
         x = round(w_s/2 - w/2)
         y = round(h_s/2 - h/2)
+        Dashboard.setCentralWidget(frame)
+        Dashboard.resize(w, h)
         Dashboard.move(x, y)
 
         self.retranslateUi(Dashboard)
