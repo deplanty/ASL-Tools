@@ -81,7 +81,7 @@ class LungModel(QMainWindow):
         if not file_vr3:
             return
         # Update the title
-        self.file_current = "<aucun>"
+        self.file_current = file_vr3
         self.file_to_title(self.file_current)
         # Get data from file
         data = io.json_load(file_vr3)
@@ -274,12 +274,12 @@ class LungModel(QMainWindow):
         Define the state of the buttons
         """
 
-        self.set_buttons_state()
-
         # Save ui
         self.vr3.from_ui(self.ui)
         # Setup ui with correct parameters
         self.vr3.setup_ui(self.ui)
+
+        self.set_buttons_state()
 
     def evt_select_item(self):
         """
@@ -297,7 +297,7 @@ class LungModel(QMainWindow):
         """
         Save the current script at the current file
         """
-
+        self.vr3.from_ui(self.ui)
         data = self.vr3.to_dict()
         io.json_save(data, self.file_current)
 

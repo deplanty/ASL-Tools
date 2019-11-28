@@ -1,5 +1,8 @@
 from PySide2.QtWidgets import (
-    QListWidget, QListWidgetItem
+    QListWidget,
+    QListWidgetItem,
+    QTreeWidget,
+    QTreeWidgetItem
 )
 
 
@@ -33,3 +36,33 @@ def enumer_list(qt_list:QListWidget, start:int=0) -> QListWidgetItem:
 
     for row in range(qt_list.count()):
         yield row+start, qt_list.item(row)
+
+
+def iter_tree(qt_tree:QTreeWidget) -> QTreeWidgetItem:
+    """
+    Generator to iterate through the toplevel items in a Qt tree widget
+
+    Args:
+        qt_tree (QTreeWidget): the Qt tree to process
+
+    Returns:
+        QTreeWidgetItem: Qt tree toplevel item
+    """
+
+    for row in range(qt_tree.topLevelItemCount()):
+        yield qt_tree.topLevelItem(row)
+
+
+def iter_treeitem(qt_item:QTreeWidgetItem) -> QTreeWidgetItem:
+    """
+    Generator to iterate through the children of an item in a Qt tree widget
+
+    Args:
+        qt_item (QTreeWidgetItem): the Qt tree item
+
+    Returns:
+        QTreeWidgetItem: Qt tree child item
+    """
+
+    for row in range(qt_item.childCount()):
+        yield qt_item.child(row)
