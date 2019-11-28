@@ -58,12 +58,14 @@ class LungModel(QMainWindow):
         Open a new lung model
         """
 
+        # Set current filename
         self.file_current = "<aucun>"
         self.file_to_title(self.file_current)
-
         # Load data
         self.vr3.load_new()
         self.vr3.setup_ui(self.ui)
+        # Set the buttons state
+        self.set_buttons_state()
 
     def menu_file_open(self):
         """
@@ -78,14 +80,16 @@ class LungModel(QMainWindow):
         )
         if not file_vr3:
             return
+        # Update the title
+        self.file_current = "<aucun>"
+        self.file_to_title(self.file_current)
         # Get data from file
         data = io.json_load(file_vr3)
         # Fill the ui
         self.vr3.from_dict(data)
         self.vr3.setup_ui(self.ui)
-        # Update the title
-        self.file_current = "<aucun>"
-        self.file_to_title(self.file_current)
+        # Set the buttons state
+        self.set_buttons_state()
 
     def menu_file_save(self):
         """
@@ -153,30 +157,25 @@ class LungModel(QMainWindow):
 
         key = item.text(0)
         # Only for time varying parameters
-        if key not in self.vr3.get_varying():
+        if key and key not in self.vr3.get_varying():
             return
 
         # If select toplevel item
         if key:
-            # Add item at the end
-            new = QTreeWidgetItem(item)
-            new.setText(1, "0")
-            new.setText(2, "0")
-            new.setText(3, "0")
-            item.addChild(new)
+            parent = item
         # If its a child
         else:
-            # Add a new item to the parent
-            parent:QTreeWidgetItem = item.parent()
-            # Add item at the end
-            new = QTreeWidgetItem(parent)
-            new.setText(1, "0")
-            new.setText(2, "0")
-            new.setText(3, "0")
-            parent.addChild(new)
+            parent = item.parent()
 
+        # Add item at the end
+        new = QTreeWidgetItem(parent)
+        new.setText(1, "0")
+        new.setText(2, "0")
+        new.setText(3, "0")
         new.setFlags(new.flags() | Qt.ItemIsEditable)
-        self.evt_select_item()
+        parent.addChild(new)
+
+        self.set_buttons_state()
 
     def btn_remove(self):
         """
@@ -209,7 +208,7 @@ class LungModel(QMainWindow):
             self.ui.tree.clearSelection()
             next_item.setSelected(True)
 
-        self.evt_select_item()
+        self.set_buttons_state()
 
     def btn_move_up(self):
         """
@@ -235,7 +234,7 @@ class LungModel(QMainWindow):
             self.ui.tree.clearSelection()
             item.setSelected(True)
 
-        self.evt_select_item()
+        self.set_buttons_state()
 
     def btn_move_down(self):
         """
@@ -262,7 +261,7 @@ class LungModel(QMainWindow):
             self.ui.tree.clearSelection()
             item.setSelected(True)
 
-        self.evt_select_item()
+        self.set_buttons_state()
 
     # =========================================================================
     # = Events
@@ -275,11 +274,7 @@ class LungModel(QMainWindow):
         Define the state of the buttons
         """
 
-        constant = self.ui.check_time_constant.isChecked()
-        self.ui.btn_add.setEnabled(constant is False)
-        self.ui.btn_remove.setEnabled(constant is False)
-        self.ui.btn_move_up.setEnabled(constant is False)
-        self.ui.btn_move_down.setEnabled(constant is False)
+        self.set_buttons_state()
 
         # Save ui
         self.vr3.from_ui(self.ui)
@@ -292,35 +287,7 @@ class LungModel(QMainWindow):
         Define the state of the buttons
         """
 
-        items = self.ui.tree.selectedItems()
-        if not items:
-            return
-        selected:QTreeWidgetItem = items[0]
-
-        # If its a toplevel
-        if selected.text(0):
-            self.disable_buttons("remove", "move_up", "move_down")
-            self.enable_buttons("add")
-        # If its a child
-        else:
-            parent:QTreeWidgetItem = selected.parent()
-            n_children = parent.childCount()
-            row = parent.indexOfChild(selected)
-            # If only child
-            if n_children == 1:
-                self.disable_buttons("remove", "move_up", "move_down")
-                self.enable_buttons("add")
-            # If first child
-            elif row == 0:
-                self.disable_buttons("move_up")
-                self.enable_buttons("add", "remove", "move_down")
-            # If last child
-            elif row == n_children - 1:
-                self.disable_buttons("move_down")
-                self.enable_buttons("add", "remove", "move_up")
-            # Else
-            else:
-                self.enable_buttons("add", "remove", "move_up", "move_down")
+        self.set_buttons_state()
 
     # =========================================================================
     # = Save
@@ -349,21 +316,65 @@ class LungModel(QMainWindow):
         title = os.path.basename(path)
         self.ui.label_file.setText(title)
 
+    def set_buttons_state(self):
+        """
+        Set the state of the buttons according to the item selected and the time varying
+        """
+
+        constant = self.ui.check_time_constant.isChecked()
+
+        # If the parameters are constants
+        if constant:
+            # Disable the buttons
+            self.disable_buttons("all")
+        # Else look at the selected item
+        else:
+            items = self.ui.tree.selectedItems()
+            if not items:
+                self.disable_buttons("all")
+                return
+            selected:QTreeWidgetItem = items[0]
+
+            # If its a toplevel
+            if selected.text(0):
+                self.disable_buttons("remove", "move_up", "move_down")
+                self.enable_buttons("add")
+            # If its a child
+            else:
+                parent:QTreeWidgetItem = selected.parent()
+                n_children = parent.childCount()
+                row = parent.indexOfChild(selected)
+                # If only child
+                if n_children == 1:
+                    self.disable_buttons("remove", "move_up", "move_down")
+                    self.enable_buttons("add")
+                # If first child
+                elif row == 0:
+                    self.disable_buttons("move_up")
+                    self.enable_buttons("add", "remove", "move_down")
+                # If last child
+                elif row == n_children - 1:
+                    self.disable_buttons("move_down")
+                    self.enable_buttons("add", "remove", "move_up")
+                # Else
+                else:
+                    self.enable_buttons("all")
+
     def enable_buttons(self, *btns):
         """
         Enable the given buttons
 
         Args:
-            *btns (str): [add, remove, move_up, move_down]
+            *btns (str): [add, remove, move_up, move_down, all]
         """
 
-        if "add" in btns:
+        if "add" in btns or "all" in btns:
             self.ui.btn_add.setEnabled(True)
-        if "remove" in btns:
+        if "remove" in btns or "all" in btns:
             self.ui.btn_remove.setEnabled(True)
-        if "move_up" in btns:
+        if "move_up" in btns or "all" in btns:
             self.ui.btn_move_up.setEnabled(True)
-        if "move_down" in btns:
+        if "move_down" in btns or "all" in btns:
             self.ui.btn_move_down.setEnabled(True)
 
     def disable_buttons(self, *btns):
@@ -371,14 +382,14 @@ class LungModel(QMainWindow):
         Disable the given buttons
 
         Args:
-            *btns (str): [add, remove, move_up, move_down]
+            *btns (str): [add, remove, move_up, move_down, all]
         """
 
-        if "add" in btns:
+        if "add" in btns or "all" in btns:
             self.ui.btn_add.setEnabled(False)
-        if "remove" in btns:
+        if "remove" in btns or "all" in btns:
             self.ui.btn_remove.setEnabled(False)
-        if "move_up" in btns:
+        if "move_up" in btns or "all" in btns:
             self.ui.btn_move_up.setEnabled(False)
-        if "move_down" in btns:
+        if "move_down" in btns or "all" in btns:
             self.ui.btn_move_down.setEnabled(False)
