@@ -137,9 +137,19 @@ class LungModel(QMainWindow):
             qt_utils.popup.done(self, message=str(e))
 
     def menu_file_export(self):
-        ...
+        file_vr3, _ = QFileDialog.getSaveFileName(
+            self,
+            "Save ASL lung model file",
+            os.path.dirname(self.file_current),
+            "ASL lung model file (*.vr3)"
+        )
+        if not file_vr3:
+            return
 
-        # TODO: export Vr3 model
+        # Get the data from ui
+        self.vr3.from_ui(self.ui)
+        # Export the data
+        self.vr3.export(file_vr3)
 
     # =========================================================================
     # = Buttons

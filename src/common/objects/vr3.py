@@ -211,9 +211,10 @@ class Vr3Var:
             return "&".join(txt)
 
         def from_points(points):
-            return points[0][0]
+            return float(points[0][0])
 
-        C = round(float(self.c)/2, 6)  # Compliance
+        C = from_points(self.c)
+        C = round(C/2, 6)  # Compliance
         E = round(1000/C, 6)  # Elastance
 
         export = {
