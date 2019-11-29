@@ -21,6 +21,11 @@ QWidget#mainwindow > QToolButton#tool:pressed {
     background-color: #e0e0f0;
 }
 
+QSpinBox {
+    padding: 2 2;
+    margin: 2 2;
+}
+
 #label_file {
     font-size: 14px;
     font-weight: bold;
