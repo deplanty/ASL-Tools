@@ -53,6 +53,10 @@ class Dashboard(QMainWindow):
         # Events
         self.ui.list.itemSelectionChanged.connect(self.evt_list_click)
 
+        # Copy
+        self.vr3_copy = DashVr3()
+        self.vr3_copy.has_copied_data = False
+
     # =========================================================================
     # = Menu
     # =========================================================================
@@ -214,7 +218,8 @@ class Dashboard(QMainWindow):
         Copy the settings for the current event
         """
 
-        self.vr3_copy.from_ui(self.ui, self.item_current.text())
+        self.vr3_copy.from_ui(self.ui)
+        self.vr3_copy.has_copied_data = True
 
     def menu_edit_paste(self):
         """
@@ -222,11 +227,9 @@ class Dashboard(QMainWindow):
         """
 
         # If there is a copied vr3
-        if self.vr3_copy.n > 0:
+        if self.vr3_copy.has_copied_data:
             vr3 = self.item_current.get_data()
-            name = vr3.name
             vr3.from_dict(self.vr3_copy.to_dict())
-            vr3.name = name
             vr3.setup_ui(self.ui)
             self.item_current.set_data(vr3)
 
