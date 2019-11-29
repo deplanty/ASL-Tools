@@ -17,14 +17,14 @@ from src.common import io
 from src.common import qt_utils
 from src.common.objects import ModelVr3
 from src.config import Paths
-from src.frames.ui import Ui_ModelVr3
+from src.frames.ui import Ui_LungModel
 
 
 class LungModel(QMainWindow):
     def __init__(self, parent:QWidget=None):
         QMainWindow.__init__(self, parent)
 
-        self.ui = Ui_ModelVr3(self)
+        self.ui = Ui_LungModel(self)
 
         # Menu
         self.ui.action_file_new.triggered.connect(self.menu_file_new)

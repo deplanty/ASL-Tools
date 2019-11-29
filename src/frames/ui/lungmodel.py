@@ -19,7 +19,7 @@ from PySide2.QtWidgets import (
 )
 
 
-class Ui_ModelVr3:
+class Ui_LungModel:
     def __init__(self, ModelVr3:QMainWindow):
 
         # Set Window parameters
