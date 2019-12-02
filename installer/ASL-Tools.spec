@@ -6,16 +6,16 @@ import shutil
 import PyInstaller.config
 
 # Create and set working directories
-os.makedirs("./target/PyInstaller", exist_ok=True)
-PyInstaller.config.CONF["workpath"] = "./target/PyInstaller"
-PyInstaller.config.CONF["distpath"] = "./target/"
+os.makedirs("../target/PyInstaller", exist_ok=True)
+PyInstaller.config.CONF["workpath"] = "../target/PyInstaller"
+PyInstaller.config.CONF["distpath"] = "../target/"
 PyInstaller.config.CONF["noconfirm"] = True
 
 # Specs
 block_cipher = None
 
 a = Analysis(
-    ['./main.py'],
+    ['../main.py'],
     pathex=['./'],
     binaries=[],
     datas=[],
@@ -27,7 +27,7 @@ a = Analysis(
     win_private_assemblies=False,
     cipher=block_cipher
 )
-a.datas += Tree("./resources", prefix="resources")
+a.datas += Tree("../resources", prefix="resources")
 
 pyz = PYZ(
     a.pure,
@@ -44,7 +44,7 @@ exe = EXE(
     strip=False,
     upx=True,
     console=False,
-    icon="./resources/images/icon.ico"
+    icon="../resources/images/icon.ico"
 )
 
 coll = COLLECT(

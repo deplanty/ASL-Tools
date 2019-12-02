@@ -41,7 +41,7 @@ FunctionEnd
 ;--------------------------------
 ;Pages
 
-  !define MUI_WELCOMEPAGE_TEXT "This wizard will guide you through the installation of ASL-Tools.$\r$\n$\r$\n$\r$\nClick Next to continue."
+    !define MUI_WELCOMEPAGE_TEXT "This wizard will guide you through the installation of ASL-Tools.$\r$\n$\r$\n$\r$\nClick Next to continue."
   !insertmacro MUI_PAGE_WELCOME
   !insertmacro MUI_PAGE_DIRECTORY
   !insertmacro MUI_PAGE_INSTFILES
