@@ -16,7 +16,7 @@ Function .onInit
   ;Do not use InstallDir at all so we can detect empty $InstDir!
   ${If} $InstDir == "" ; /D not used
       ${If} $MultiUser.InstallMode == "AllUsers"
-          StrCpy $InstDir "$PROGRAMFILES\ASL-Tools"
+          StrCpy $InstDir "$PROGRAMFILES64\ASL-Tools"
       ${Else}
           StrCpy $InstDir "$LOCALAPPDATA\ASL-Tools"
       ${EndIf}
@@ -92,7 +92,6 @@ Section "Uninstall"
   DeleteRegKey /ifempty SHCTX "Software\ASL-Tools"
   DeleteRegKey SHCTX "${UNINST_KEY}"
   SetShellVarContext current
-  RMDir /r "$LOCALAPPDATA\ASL-Tools"
 SectionEnd
 
 Function LaunchLink
