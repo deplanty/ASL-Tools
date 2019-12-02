@@ -1,3 +1,5 @@
+from PySide2 import QtCore, QtGui, QtWidgets
+
 from PySide2.QtCore import (
     QSize,
     Qt
@@ -18,7 +20,6 @@ class Ui_MainWindow():
 
         # Set main window parameters
         MainWindow.setWindowTitle("ASL Tools")
-        MainWindow.setWindowIcon(QIcon(":/images/icon.png"))
         MainWindow.setWindowFlag(Qt.Tool)
         MainWindow.setWindowFlag(Qt.WindowStaysOnTopHint)
         MainWindow.setAttribute(Qt.WA_QuitOnClose)

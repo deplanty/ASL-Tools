@@ -24,7 +24,6 @@ class Ui_Script:
 
         # Set window parameters
         Script.setWindowTitle("ASL Tools - Script")
-        Script.setWindowIcon(QIcon(":/images/icon.png"))
         Script.setWindowFlag(Qt.Window)
 
         # Main frame

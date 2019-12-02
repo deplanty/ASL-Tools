@@ -24,7 +24,6 @@ class Ui_BigScript:
 
         # Set Window parameters
         BigScript.setWindowTitle("ASL Tools - Big Script")
-        BigScript.setWindowIcon(QIcon(":/images/icon.png"))
         BigScript.setWindowFlag(Qt.Window)
 
         # Main frame

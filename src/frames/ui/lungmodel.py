@@ -24,7 +24,6 @@ class Ui_LungModel:
 
         # Set Window parameters
         ModelVr3.setWindowTitle("ASL Tools - Tableau de bord")
-        ModelVr3.setWindowIcon(QIcon(":/images/icon.png"))
         ModelVr3.setWindowFlag(Qt.Window)
 
         # Main frame

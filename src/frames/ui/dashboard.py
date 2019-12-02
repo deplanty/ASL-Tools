@@ -23,7 +23,6 @@ class Ui_Dashboard:
 
         # Set Window parameters
         Dashboard.setWindowTitle("ASL Tools - Tableau de bord")
-        Dashboard.setWindowIcon(QIcon(":/images/icon.png"))
         Dashboard.setWindowFlag(Qt.Window)
 
         # Main frame

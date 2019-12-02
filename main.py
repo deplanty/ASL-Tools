@@ -2,6 +2,7 @@ import os
 import sys
 
 from PySide2.QtCore import QFile
+from PySide2.QtGui import QIcon
 from PySide2.QtWidgets import QApplication
 
 import src.common.resources  # Register resources
@@ -19,6 +20,7 @@ class Application(QApplication):
         # Load configs and styles
         self.load_configs()
         self.load_style()
+        self.setWindowIcon(QIcon(":/images/icon.png"))
         # Create the mainwindow
         self.window = MainWindow()
 
