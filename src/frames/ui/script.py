@@ -8,7 +8,6 @@ from PySide2.QtGui import (
 )
 from PySide2.QtWidgets import (
     QAction,
-    QDesktopWidget,
     QHBoxLayout,
     QMainWindow,
     QMenu,
@@ -223,7 +222,7 @@ class Ui_Script:
 
         # Set size and position
         w, h = self.h_layout.sizeHint().toTuple()
-        w_s, h_s = QDesktopWidget().size().toTuple()
+        w_s, h_s = QApplication.primaryScreen().size().toTuple()
         x = round(w_s/2 - w/2)
         y = round(h_s/2 - h/2)
         Script.setCentralWidget(frame)

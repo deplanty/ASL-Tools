@@ -8,7 +8,7 @@ from PySide2.QtGui import (
     QIcon
 )
 from PySide2.QtWidgets import (
-    QDesktopWidget,
+    QApplication,
     QMainWindow,
     QToolButton,
     QVBoxLayout,
@@ -20,7 +20,7 @@ class Ui_MainWindow():
 
         # Set main window parameters
         MainWindow.setWindowTitle("ASL Tools")
-        MainWindow.setWindowFlag(Qt.Tool)
+        # MainWindow.setWindowFlag(Qt.Tool)
         MainWindow.setWindowFlag(Qt.WindowStaysOnTopHint)
         MainWindow.setAttribute(Qt.WA_QuitOnClose)
         MainWindow.setAttribute(Qt.WA_TranslucentBackground)
@@ -65,6 +65,6 @@ class Ui_MainWindow():
 
         # Set the window in the top right corner
         w_w, _ = MainWindow.size().toTuple()
-        w_s, _ = QDesktopWidget().size().toTuple()
-        x_left = w_s - w_w
-        MainWindow.move(x_left, 0)
+        w_s, _ = QApplication.primaryScreen().size().toTuple()
+        x_right = w_s - w_w
+        MainWindow.move(x_right, 0)
