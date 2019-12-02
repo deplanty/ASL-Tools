@@ -20,7 +20,7 @@ class Ui_MainWindow():
 
         # Set main window parameters
         MainWindow.setWindowTitle("ASL Tools")
-        # MainWindow.setWindowFlag(Qt.Tool)
+        MainWindow.setWindowFlag(Qt.Tool)
         MainWindow.setWindowFlag(Qt.WindowStaysOnTopHint)
         MainWindow.setAttribute(Qt.WA_QuitOnClose)
         MainWindow.setAttribute(Qt.WA_TranslucentBackground)

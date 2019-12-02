@@ -19,6 +19,7 @@ from src.common.objects import ScriptVr3
 from src.frames.ui import Ui_Script
 
 
+# TODO: Buttons are enabled or disabled according to the selected element
 class Script(QMainWindow):
     def __init__(self, parent:QWidget=None):
         QMainWindow.__init__(self, parent)
