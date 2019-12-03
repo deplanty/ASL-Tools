@@ -45,6 +45,7 @@ class Script(QMainWindow):
         # Events
         self.ui.list.itemSelectionChanged.connect(self.evt_list_click)
         self.ui.list.itemChanged.connect(self.evt_list_change)
+        self.ui.list.itemClicked.connect(self.evt_list_select)
         self.ui.repetitions.valueChanged.connect(self.evt_rep_change)
 
         # Init variables
@@ -217,6 +218,8 @@ class Script(QMainWindow):
         if ans == QMessageBox.Yes:
             self.ui.list.takeItem(self.ui.list.row(item))
 
+        self.set_buttons_state()
+
     def btn_move_up(self):
         """
         Move an item on step up
@@ -284,6 +287,13 @@ class Script(QMainWindow):
         # Set the item as current
         self.item_current = item
 
+    def evt_list_select(self):
+        """
+        When item in list is selected
+        """
+
+        self.set_buttons_state()
+
     def evt_rep_change(self):
         """
         When the number of repetition change
@@ -312,6 +322,8 @@ class Script(QMainWindow):
         else:
             new.load_new()
         new.setup_ui(self.ui)
+
+        self.set_buttons_state()
 
     # =========================================================================
     # = Save
@@ -403,3 +415,68 @@ class Script(QMainWindow):
 
         title = os.path.basename(path)
         self.ui.label_file.setText(title)
+
+    def set_buttons_state(self):
+        """
+        Set the state of the buttons according to the item selected
+        """
+
+        n_items = self.ui.list.count()
+        # If there is only on element
+        if n_items == 1:
+            self.disable_buttons("remove", "move_up", "move_down")
+            self.enable_buttons("add")
+        # If there are several items
+        else:
+            # Get the selected one
+            items = self.ui.list.selectedItems()
+            if not items:
+                self.disable_buttons("all")
+                return
+
+            row = self.ui.list.indexFromItem(items[0]).row()
+            # If first item
+            if row == 0:
+                self.disable_buttons("move_up")
+                self.enable_buttons("add", "remove", "move_down")
+            # If last item
+            elif row == n_items - 1:
+                self.disable_buttons("move_down")
+                self.enable_buttons("add", "remove", "move_up")
+            # Else
+            else:
+                self.enable_buttons("all")
+
+    def enable_buttons(self, *btns):
+        """
+        Enable the given buttons
+
+        Args:
+            *btns (str): [add, remove, move_up, move_down, all]
+        """
+
+        if "add" in btns or "all" in btns:
+            self.ui.btn_add.setEnabled(True)
+        if "remove" in btns or "all" in btns:
+            self.ui.btn_remove.setEnabled(True)
+        if "move_up" in btns or "all" in btns:
+            self.ui.btn_move_up.setEnabled(True)
+        if "move_down" in btns or "all" in btns:
+            self.ui.btn_move_down.setEnabled(True)
+
+    def disable_buttons(self, *btns):
+        """
+        Disable the given buttons
+
+        Args:
+            *btns (str): [add, remove, move_up, move_down, all]
+        """
+
+        if "add" in btns or "all" in btns:
+            self.ui.btn_add.setEnabled(False)
+        if "remove" in btns or "all" in btns:
+            self.ui.btn_remove.setEnabled(False)
+        if "move_up" in btns or "all" in btns:
+            self.ui.btn_move_up.setEnabled(False)
+        if "move_down" in btns or "all" in btns:
+            self.ui.btn_move_down.setEnabled(False)
