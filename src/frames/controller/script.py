@@ -105,8 +105,7 @@ class Script(QMainWindow):
                 qt_utils.popup.done(self, message="Sauvegarde terminée")
             except Exception as e:
                 # Notify error
-                # TODO: Popup error
-                qt_utils.popup.done(self, message=str(e))
+                qt_utils.popup.error(self, message=str(e))
             finally:
                 self.ui.progress.setValue(0)
         else:
@@ -135,8 +134,7 @@ class Script(QMainWindow):
             qt_utils.popup.done(self, message="Sauvegarde terminée")
         except Exception as e:
             # Notify error
-            # TODO: Popup error
-            qt_utils.popup.done(self, message=str(e))
+            qt_utils.popup.error(self, message=str(e))
         finally:
             self.ui.progress.setValue(0)
 
@@ -161,8 +159,7 @@ class Script(QMainWindow):
             qt_utils.popup.done(self, message="Exportation terminée")
         except Exception as e:
             # Notify error
-            # TODO: Popup error
-            qt_utils.popup.done(self, message=str(e))
+            qt_utils.popup.error(self, message=str(e))
         finally:
             self.ui.progress.setValue(0)
 

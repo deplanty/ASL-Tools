@@ -105,8 +105,7 @@ class LungModel(QMainWindow):
                 qt_utils.popup.done(self, message="Sauvegarde terminée")
             except Exception as e:
                 # Notify error
-                # TODO: Popup error
-                qt_utils.popup.done(self, message=str(e))
+                qt_utils.popup.error(self, message=str(e))
         else:
             self.menu_file_saveas()
 
@@ -133,8 +132,7 @@ class LungModel(QMainWindow):
             qt_utils.popup.done(self, message="Sauvegarde terminée")
         except Exception as e:
             # Notify error
-            # TODO: Popup error
-            qt_utils.popup.done(self, message=str(e))
+            qt_utils.popup.error(self, message=str(e))
 
     def menu_file_export(self):
         file_vr3, _ = QFileDialog.getSaveFileName(
