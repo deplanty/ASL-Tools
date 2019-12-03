@@ -113,7 +113,7 @@ class BigScript(QMainWindow):
                 # TODO: Popup error
                 qt_utils.popup.done(self, message=str(e))
             finally:
-                self.ui.hide_progress()
+                self.ui.progress.setValue(0)
         else:
             self.menu_file_saveas()
 
@@ -143,7 +143,7 @@ class BigScript(QMainWindow):
             # TODO: Popup error
             qt_utils.popup.done(self, message=str(e))
         finally:
-            self.ui.hide_progress()
+            self.ui.progress.setValue(0)
 
     def menu_file_export(self):
         """
@@ -170,7 +170,6 @@ class BigScript(QMainWindow):
             n = len(comb)
             vr3 = ScriptVr3()
             vr3.load_new()
-            self.ui.show_progress()
             for i, line in enumerate(comb, 1):
                 vr3.name = "%05d" % i
                 vr3.n = self.ui.n_cycles.value()
@@ -192,7 +191,7 @@ class BigScript(QMainWindow):
                 self.ui.progress.setValue(percent)
 
         qt_utils.popup.done(self, "Terminé", "Exportation terminée")
-        self.ui.hide_progress()
+        self.ui.progress.setValue(0)
 
     # =========================================================================
     # = Events
@@ -232,7 +231,6 @@ class BigScript(QMainWindow):
         script = list()
         vr3 = ScriptVr3()
         vr3.load_new()
-        self.ui.show_progress()
         for i, line in enumerate(comb):
             vr3.name = "%05d" % i
             vr3.n = self.ui.n_cycles.value()

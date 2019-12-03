@@ -235,11 +235,7 @@ class Ui_BigScript:
         y = round(h_s/2 - h/2)
         BigScript.setCentralWidget(frame)
         BigScript.resize(w, h)
-        BigScript.setMinimumSize(w, h)
         BigScript.move(x, y)
-
-        # Hide the progress bar
-        self.progress.setVisible(False)
 
         self.retranslateUi(BigScript)
         QtCore.QMetaObject.connectSlotsByName(BigScript)
@@ -261,27 +257,3 @@ class Ui_BigScript:
 
         self.label_tot_simus.setText(QtWidgets.QApplication.translate("BigScript", "Nombre de simulations", None, -1))
         self.label_tot_time.setText(QtWidgets.QApplication.translate("BigScript", "Temps total", None, -1))
-
-    def hide_progress(self, reset=True):
-        """
-        Hide the progressbar
-
-        Args:
-            reset (bool): set the value to zero
-        """
-
-        if reset:
-            self.progress.setValue(0)
-        self.progress.setVisible(False)
-
-    def show_progress(self, reset=True):
-        """
-        Show the progressbar
-
-        Args:
-            reset (bool): set the value to zero
-        """
-
-        if reset:
-            self.progress.setValue(0)
-        self.progress.setVisible(True)
