@@ -215,7 +215,6 @@ class Ui_BigScript:
         self.tot_time = QLabel(frame)
         self.gridLayout.addWidget(self.tot_time, 12, 1, 1, 3)
 
-
         self.h_layout.addLayout(self.gridLayout)
         spacerItem5 = QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.h_layout.addItem(spacerItem5)

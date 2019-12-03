@@ -1,4 +1,5 @@
 import itertools
+import json
 import os
 
 from PySide2.QtCore import (
@@ -16,7 +17,7 @@ from src.common import io
 from src.common import qt_utils
 import src.common.qt_utils.popup
 from src.config import Paths
-from src.common.objects import DashVr3
+from src.common.objects import ScriptVr3
 from src.frames.ui import Ui_BigScript
 
 
@@ -172,11 +173,9 @@ class BigScript(QMainWindow):
 
         tot_time = float()
         list_br = self.get_range("br")
-        n_br = len(list_br)
+        n_br = len(list_br) - 1
         for br in list_br:
-            x = 60.0 / br * (n - n_br + 1) * self.ui.n_cycles.value()
-            tot_time += x
-
+            tot_time += 60.0 / br * (n - n_br) * self.ui.n_cycles.value()
 
         m, s = divmod(tot_time, 60)
         h, m = divmod(m, 60)
@@ -192,6 +191,24 @@ class BigScript(QMainWindow):
         """
 
         comb = self.get_combs()
+
+        script = list()
+        for i, line in enumerate(comb):
+            vr3 = ScriptVr3()
+            vr3.load_new()
+            vr3.name = "%05d" % i
+            vr3.n = self.ui.n_cycles.value()
+            vr3.r = line[0]
+            vr3.c = line[1]
+            vr3.br = line[2]
+            vr3.i_pmus = line[3]
+            vr3.i_pmus_inc = line[4]
+            vr3.i_pmus_hld = line[4]
+            vr3.i_pmus_rel = line[4]
+            script.append(vr3.to_dict())
+
+        with open(self.file_current, "w", encoding="utf-8") as f:
+            json.dump(script, f)
 
     # =========================================================================
     # = Misc
