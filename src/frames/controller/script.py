@@ -107,6 +107,8 @@ class Script(QMainWindow):
                 # Notify error
                 # TODO: Popup error
                 qt_utils.popup.done(self, message=str(e))
+            finally:
+                self.ui.progress.setValue(0)
         else:
             self.menu_file_saveas()
 
@@ -135,6 +137,8 @@ class Script(QMainWindow):
             # Notify error
             # TODO: Popup error
             qt_utils.popup.done(self, message=str(e))
+        finally:
+            self.ui.progress.setValue(0)
 
     def menu_file_export(self):
         """
@@ -150,19 +154,17 @@ class Script(QMainWindow):
         if not file_script:
             return
 
-        # Save current item
-        self.save_current_item()
-        # Get directory where vr3 are stored
-        dir_vr3, _ = os.path.splitext(file_script)
-        dirname = os.path.basename(dir_vr3)
-        os.makedirs(dir_vr3, exist_ok=True)
-        # Get directory where vr3 will be stored
-        scenario = f"<ASLVarsDirectory>\\scenarios\\{dirname}"
-        with open(file_script, "w") as f:
-            for i, item in qt_utils.enumer_list(self.ui.list, 1):
-                vr3:ScriptVr3 = item.get_data()
-                filename = vr3.export(dir_vr3, i)
-                f.write(f"{vr3.n}\t{scenario}\\{filename}\n")
+        try:
+            # Save the script
+            self.export_script(file_script)
+            # Notify end of save
+            qt_utils.popup.done(self, message="Exportation terminée")
+        except Exception as e:
+            # Notify error
+            # TODO: Popup error
+            qt_utils.popup.done(self, message=str(e))
+        finally:
+            self.ui.progress.setValue(0)
 
     def menu_edit_copy(self):
         """
@@ -326,11 +328,48 @@ class Script(QMainWindow):
         self.save_current_item()
         # Get all item data
         data = list()
-        for item in qt_utils.iter_list(self.ui.list):
+        n = self.ui.list.count()
+        for i, item in qt_utils.enumer_list(self.ui.list):
             vr3 = item.get_data()
             data.append(vr3.to_dict())
+
+            if n == 1:
+                percent = 100
+            else:
+                percent = int(100*i/(n-1))
+            self.ui.progress.setValue(percent)
+
         # Save them
         io.json_save(data, self.file_current)
+
+    def export_script(self, file_script:str):
+        """
+        Export the current script at the given file
+
+        Args:
+            file_script (str): File where the script will be exported
+        """
+
+        # Save current item
+        self.save_current_item()
+        # Get directory where vr3 are stored
+        dir_vr3, _ = os.path.splitext(file_script)
+        dirname = os.path.basename(dir_vr3)
+        os.makedirs(dir_vr3, exist_ok=True)
+        # Get directory where vr3 will be stored
+        scenario = f"<ASLVarsDirectory>\\scenarios\\{dirname}"
+        with open(file_script, "w") as f:
+            n = self.ui.list.count()
+            for i, item in qt_utils.enumer_list(self.ui.list, 1):
+                vr3:ScriptVr3 = item.get_data()
+                filename = vr3.export(dir_vr3, i)
+                f.write(f"{vr3.n}\t{scenario}\\{filename}\n")
+
+                if n == 1:
+                    percent = 100
+                else:
+                    percent = int(100*(i-1)/(n-1))
+                self.ui.progress.setValue(percent)
 
     # =========================================================================
     # = Misc

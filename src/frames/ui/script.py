@@ -13,6 +13,7 @@ from PySide2.QtWidgets import (
     QMainWindow,
     QMenu,
     QMenuBar,
+    QProgressBar,
     QSizePolicy,
     QSpacerItem,
     QWidget
@@ -114,7 +115,7 @@ class Ui_Script:
         self.list = QtWidgets.QListWidget(frame)
         self.grid_layout.addWidget(self.list, 2, 0, 1, 1)
 
-        # Form
+        # Grid
         self.grid_layout_form = QtWidgets.QGridLayout()
         # Compliance
         self.label_compliance = QtWidgets.QLabel(frame)
@@ -215,9 +216,16 @@ class Ui_Script:
         self.grid_layout_form.addItem(spacerItem2, 18, 0, 1, 1)
         # Set form layout in the main grid
         self.grid_layout.addLayout(self.grid_layout_form, 2, 1, 1, 1)
-        self.h_layout.addLayout(self.grid_layout)
-
+        # Progress bar
+        self.progress = QProgressBar(frame)
+        self.progress.setMaximumHeight(10)
+        self.progress.setTextVisible(False)
+        self.grid_layout.addWidget(self.progress, 3, 0, 1, 2)
         # Spacer
+        spacer = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.grid_layout.addItem(spacer, 4, 0, 1, 2)
+
+        self.h_layout.addLayout(self.grid_layout)
         spacer = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.h_layout.addItem(spacer)
 
