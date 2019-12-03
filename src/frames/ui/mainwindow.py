@@ -9,6 +9,8 @@ from PySide2.QtGui import (
 )
 from PySide2.QtWidgets import (
     QApplication,
+    QFrame,
+    QHBoxLayout,
     QMainWindow,
     QToolButton,
     QVBoxLayout,
@@ -20,10 +22,10 @@ class Ui_MainWindow():
 
         # Set main window parameters
         MainWindow.setWindowTitle("ASL Tools")
-        MainWindow.setWindowFlag(Qt.Tool)
+        MainWindow.setAttribute(Qt.WA_TranslucentBackground)
+        MainWindow.setWindowFlag(Qt.FramelessWindowHint)
         MainWindow.setWindowFlag(Qt.WindowStaysOnTopHint)
         MainWindow.setAttribute(Qt.WA_QuitOnClose)
-        MainWindow.setAttribute(Qt.WA_TranslucentBackground)
 
         icon_size = QSize(48, 48)
 
@@ -31,6 +33,23 @@ class Ui_MainWindow():
         frame = QWidget()
         frame.setObjectName("mainwindow")
         self.v_layout = QVBoxLayout(frame)
+        self.v_layout.setMargin(0)
+        self.v_layout.setSpacing(0)
+
+        # Top frame
+        self.frame_top = QFrame()
+        self.frame_top.setObjectName("topframe")
+        self.frame_top.setMaximumHeight(20)
+        self.v_layout.addWidget(self.frame_top)
+        self.h_layout = QHBoxLayout(self.frame_top)
+        self.h_layout.setMargin(0)
+        self.btn_quit = QToolButton()
+        self.btn_quit.setIcon(QIcon(":/images/quit.svg"))
+        self.btn_quit.setIconSize(QSize(16, 16))
+        self.btn_quit.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.btn_quit.setAutoRaise(True)
+        self.h_layout.addWidget(self.btn_quit, alignment=Qt.AlignRight)
+
         # Button create vr3 model
         self.btn_model_vr3 = QToolButton()
         self.btn_model_vr3.setIcon(QIcon(":/images/model-vr3.svg"))
