@@ -57,7 +57,7 @@ class Ui_MainWindow():
         self.btn_bigscript.setIcon(QIcon(":/images/big-script.svg"))
         self.btn_bigscript.setObjectName("tool")
         self.btn_bigscript.setIconSize(icon_size)
-        self.btn_dashboard.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.btn_bigscript.setCursor(Qt.CursorShape.PointingHandCursor)
         self.v_layout.addWidget(self.btn_bigscript)
         # # Window fit the layout
         MainWindow.setCentralWidget(frame)
