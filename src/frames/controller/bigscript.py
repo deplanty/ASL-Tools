@@ -86,12 +86,12 @@ class BigScript(QMainWindow):
         self.ui.i_pmus_inc_from.setValue(20)
         self.ui.i_pmus_inc_to.setValue(20)
         self.ui.i_pmus_inc_step.setValue(1)
-        self.ui.i_pmus_rel_from.setValue(20)
-        self.ui.i_pmus_rel_to.setValue(20)
-        self.ui.i_pmus_rel_step.setValue(1)
         self.ui.i_pmus_hld_from.setValue(0)
         self.ui.i_pmus_hld_to.setValue(0)
         self.ui.i_pmus_hld_step.setValue(1)
+        self.ui.i_pmus_rel_from.setValue(10)
+        self.ui.i_pmus_rel_to.setValue(10)
+        self.ui.i_pmus_rel_step.setValue(1)
         self.ui.n_cycles.setValue(4)
 
         self.file_current = "<aucun>"
@@ -176,8 +176,8 @@ class BigScript(QMainWindow):
                 vr3.br = line[2]
                 vr3.i_pmus = line[3]
                 vr3.i_pmus_inc = line[4]
-                vr3.i_pmus_hld = line[4]
-                vr3.i_pmus_rel = line[4]
+                vr3.i_pmus_hld = line[5]
+                vr3.i_pmus_rel = line[6]
 
                 filename = vr3.export(dir_vr3, i)
                 f.write(f"{vr3.n}\t{scenario}\\{filename}\n")
@@ -237,8 +237,8 @@ class BigScript(QMainWindow):
             vr3.br = line[2]
             vr3.i_pmus = line[3]
             vr3.i_pmus_inc = line[4]
-            vr3.i_pmus_hld = line[4]
-            vr3.i_pmus_rel = line[4]
+            vr3.i_pmus_hld = line[5]
+            vr3.i_pmus_rel = line[6]
             script.append(vr3.to_dict())
 
             if n == 1:
