@@ -112,6 +112,8 @@ class BigScript(QMainWindow):
                 # Notify error
                 # TODO: Popup error
                 qt_utils.popup.done(self, message=str(e))
+            finally:
+                self.ui.hide_progress()
         else:
             self.menu_file_saveas()
 
@@ -140,23 +142,57 @@ class BigScript(QMainWindow):
             # Notify error
             # TODO: Popup error
             qt_utils.popup.done(self, message=str(e))
+        finally:
+            self.ui.hide_progress()
 
     def menu_file_export(self):
         """
         Ask where to export the dashboard
         """
 
-        dir_dash = QFileDialog.getExistingDirectory(
+        file_script, _ = QFileDialog.getSaveFileName(
             self,
-            "Save ASL script files",
-            os.path.dirname(self.file_current)
+            "Save ASL script file",
+            os.path.dirname(self.file_current),
+            "ASL script file (*.sct)"
         )
-        if not dir_dash:
+        if not file_script:
             return
 
-        raise NotImplementedError()
+        # Get directory where vr3 are stored
+        dir_vr3, _ = os.path.splitext(file_script)
+        dirname = os.path.basename(dir_vr3)
+        os.makedirs(dir_vr3, exist_ok=True)
+        # Get directory where vr3 will be stored
+        scenario = f"<ASLVarsDirectory>\\scenarios\\{dirname}"
+        with open(file_script, "w") as f:
+            comb = self.get_combs()
+            n = len(comb)
+            vr3 = ScriptVr3()
+            vr3.load_new()
+            self.ui.show_progress()
+            for i, line in enumerate(comb, 1):
+                vr3.name = "%05d" % i
+                vr3.n = self.ui.n_cycles.value()
+                vr3.r = line[0]
+                vr3.c = line[1]
+                vr3.br = line[2]
+                vr3.i_pmus = line[3]
+                vr3.i_pmus_inc = line[4]
+                vr3.i_pmus_hld = line[4]
+                vr3.i_pmus_rel = line[4]
 
-        popup.done(self, message="Exportation terminée")
+                filename = vr3.export(dir_vr3, i)
+                f.write(f"{vr3.n}\t{scenario}\\{filename}\n")
+
+                if n == 1:
+                    percent = 100
+                else:
+                    percent = int(100*i/(n-1))
+                self.ui.progress.setValue(percent)
+
+        qt_utils.popup.done(self, "Terminé", "Exportation terminée")
+        self.ui.hide_progress()
 
     # =========================================================================
     # = Events
@@ -191,11 +227,13 @@ class BigScript(QMainWindow):
         """
 
         comb = self.get_combs()
+        n = len(comb)
 
         script = list()
+        vr3 = ScriptVr3()
+        vr3.load_new()
+        self.ui.show_progress()
         for i, line in enumerate(comb):
-            vr3 = ScriptVr3()
-            vr3.load_new()
             vr3.name = "%05d" % i
             vr3.n = self.ui.n_cycles.value()
             vr3.r = line[0]
@@ -206,6 +244,12 @@ class BigScript(QMainWindow):
             vr3.i_pmus_hld = line[4]
             vr3.i_pmus_rel = line[4]
             script.append(vr3.to_dict())
+
+            if n == 1:
+                percent = 100
+            else:
+                percent = int(100*i/(n-1))
+            self.ui.progress.setValue(percent)
 
         with open(self.file_current, "w", encoding="utf-8") as f:
             json.dump(script, f)

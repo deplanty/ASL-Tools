@@ -14,6 +14,7 @@ from PySide2.QtWidgets import (
     QMainWindow,
     QMenu,
     QMenuBar,
+    QProgressBar,
     QSpacerItem,
     QWidget
 )
@@ -214,6 +215,14 @@ class Ui_BigScript:
         self.gridLayout.addWidget(self.label_tot_time, 12, 0, 1, 3)
         self.tot_time = QLabel(frame)
         self.gridLayout.addWidget(self.tot_time, 12, 1, 1, 3)
+        # Progress
+        self.progress = QProgressBar(frame)
+        self.progress.setMaximumHeight(10)
+        self.progress.setTextVisible(False)
+        self.gridLayout.addWidget(self.progress, 13, 0, 1, 4)
+        # Spacer
+        spacerItem = QSpacerItem(40, 20, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem, 14, 0, 1, 4)
 
         self.h_layout.addLayout(self.gridLayout)
         spacerItem5 = QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -226,7 +235,11 @@ class Ui_BigScript:
         y = round(h_s/2 - h/2)
         BigScript.setCentralWidget(frame)
         BigScript.resize(w, h)
+        BigScript.setMinimumSize(w, h)
         BigScript.move(x, y)
+
+        # Hide the progress bar
+        self.progress.setVisible(False)
 
         self.retranslateUi(BigScript)
         QtCore.QMetaObject.connectSlotsByName(BigScript)
@@ -248,3 +261,27 @@ class Ui_BigScript:
 
         self.label_tot_simus.setText(QtWidgets.QApplication.translate("BigScript", "Nombre de simulations", None, -1))
         self.label_tot_time.setText(QtWidgets.QApplication.translate("BigScript", "Temps total", None, -1))
+
+    def hide_progress(self, reset=True):
+        """
+        Hide the progressbar
+
+        Args:
+            reset (bool): set the value to zero
+        """
+
+        if reset:
+            self.progress.setValue(0)
+        self.progress.setVisible(False)
+
+    def show_progress(self, reset=True):
+        """
+        Show the progressbar
+
+        Args:
+            reset (bool): set the value to zero
+        """
+
+        if reset:
+            self.progress.setValue(0)
+        self.progress.setVisible(True)
