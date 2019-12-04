@@ -7,11 +7,10 @@ QWidget#mainwindow {
 }
 
 QWidget#mainwindow > QWidget#topframe {
-    background-color: #ffffff;
+    background-color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid darkgray;
 }
 
 QWidget#mainwindow > QToolButton#tool {
@@ -32,6 +31,22 @@ QWidget#mainwindow > QToolButton#tool:pressed {
     background-color: #e0e0f0;
 }
 
+QToolButton#toolsmall {
+    background-color: #f0f0f0;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px 0px 0px 0px;
+}
+
+QWidget#mainwindow > QToolButton#toolsmall:hover {
+    background-color: #f8f8ff;
+}
+
+QWidget#mainwindow > QToolButton#toolsmall:pressed {
+    background-color: #e0e0f0;
+}
+
 QSpinBox#grid-spin {
     font-size: 12px;
 }
@@ -40,4 +55,8 @@ QSpinBox#grid-spin {
     font-size: 14px;
     font-weight: bold;
     color: #343a40;
+}
+
+QRadioButton::indicator {
+    width: 1px;
 }

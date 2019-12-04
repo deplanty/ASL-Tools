@@ -4,8 +4,13 @@
     <file>images/arrow-down.svg</file>
     <file>images/arrow-up.svg</file>
     <file>images/big-script.svg</file>
+    <file>images/corner-tl.svg</file>
+    <file>images/corner-tr.svg</file>
+    <file>images/corner-bl.svg</file>
+    <file>images/corner-br.svg</file>
     <file>images/dashboard.svg</file>
     <file>images/export.svg</file>
+    <file>images/help.svg</file>
     <file>images/icon.png</file>
     <file>images/model-vr3.svg</file>
     <file>images/new-file.svg</file>
@@ -14,6 +19,7 @@
     <file>images/remove.svg</file>
     <file>images/save.svg</file>
     <file>images/save-as.svg</file>
+    <file>images/settings.svg</file>
     <file>images/script.svg</file>
   </qresource>
   <qresource>

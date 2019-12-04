@@ -50,6 +50,25 @@ class Ui_MainWindow():
         self.btn_quit.setAutoRaise(True)
         self.h_layout.addWidget(self.btn_quit, alignment=Qt.AlignRight)
 
+        # Misc
+        self.h_layout_misc = QHBoxLayout()
+        self.h_layout_misc.setSpacing(0)
+        self.h_layout_misc.setMargin(0)
+        self.v_layout.addLayout(self.h_layout_misc)
+        # Help
+        self.btn_help = QToolButton()
+        self.btn_help.setIcon(QIcon(":/images/help.svg"))
+        self.btn_help.setObjectName("toolsmall")
+        self.btn_help.setIconSize(QSize(20, 20))
+        self.btn_help.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.h_layout_misc.addWidget(self.btn_help)
+        # Settings
+        self.btn_settings = QToolButton()
+        self.btn_settings.setIcon(QIcon(":/images/settings.svg"))
+        self.btn_settings.setObjectName("toolsmall")
+        self.btn_settings.setIconSize(QSize(20, 20))
+        self.btn_settings.setCursor(Qt.CursorShape.PointingHandCursor)
+        self.h_layout_misc.addWidget(self.btn_settings)
         # Button create vr3 model
         self.btn_model_vr3 = QToolButton()
         self.btn_model_vr3.setIcon(QIcon(":/images/model-vr3.svg"))
