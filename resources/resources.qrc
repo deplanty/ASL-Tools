@@ -1,5 +1,8 @@
 <RCC>
   <qresource>
+    <file>config/config.json</file>
+  </qresource>
+  <qresource>
     <file>images/add.svg</file>
     <file>images/arrow-down.svg</file>
     <file>images/arrow-up.svg</file>
