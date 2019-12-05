@@ -23,14 +23,14 @@ This toolbox is written using [Python3](https://www.python.org/downloads/).
 
 Initializing the environment:
 ```cmd
-ASL-Tools> pip install virtualenv
-ASL-Tools> virtualenv venv
-ASL-Tools> venv/Scripts/activate
+pip install virtualenv
+virtualenv venv
+venv/Scripts/activate
 ```
 
 Loading the packages:
 ```cmd
-ASL-Tools> pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 # Usage
@@ -42,19 +42,21 @@ python main.py
 
 If you want to "compile" this tool, you can use [PyInstaller](https://www.pyinstaller.org) on `ASL-Tools.spec`:
 ```cmd
-ASL-Tools> pip install PyInstaller
-ASL-Tools> pyinstaller ASL-Tools.spec
+pip install PyInstaller
+pyinstaller installer/ASL-Tools.spec
 ```
 
 # Creating an installer
 
-The installer is created using [NSIS](https://nsis.sourceforge.io/Download), so it should be installed and added in Windows `PATH` variable.
+The installer is created using [NSIS](https://nsis.sourceforge.io/Download), so it should be installed and added to Windows `PATH` variable.
 To create the installer, you can use the following command:
 ```cmd
-ASL-Tools> installer\install.bat
+installer\create_setup.bat
 ```
 
 This script will:
 - compile the Qt ressources;
-- compile the tool to `target\ASL-Tools`;
-- create the installer using NSIS;
+- compile the project to `target\ASL-Tools\`;
+- create the installer using NSIS to `target\`.
+
+A pre-compiled release is available [here](https://github.com/deplanty/ASL-Tools/releases).
