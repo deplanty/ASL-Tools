@@ -100,9 +100,3 @@ class Ui_MainWindow():
         # # Window fit the layout
         MainWindow.setCentralWidget(frame)
         MainWindow.setFixedSize(frame.sizeHint())
-
-        # Set the window in the top right corner
-        w_w, _ = MainWindow.size().toTuple()
-        w_s, _ = QApplication.primaryScreen().size().toTuple()
-        x_right = w_s - w_w
-        MainWindow.move(x_right, 0)

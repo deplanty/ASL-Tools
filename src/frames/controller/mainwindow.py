@@ -4,6 +4,7 @@ from PySide2.QtWidgets import (
     QMainWindow
 )
 
+from src.config import Config
 from src.frames.controller import (
     Settings,
     LungModel,
@@ -51,12 +52,42 @@ class MainWindow(QMainWindow):
             """
             Set the window in the top right corner
             """
-            w_w, _ = self.size().toTuple()
-            w_s, _ = QApplication.primaryScreen().size().toTuple()
-            x_right = w_s - w_w
-            self.move(x_right, 0)
+
+            position = Config.get("mainwindow/position")
+            self.set_window_position(position)
 
         self.old_pos = None
         self.ui.frame_top.mousePressEvent = mousePressEvent
         self.ui.frame_top.mouseMoveEvent = mouseMoveEvent
         self.ui.frame_top.mouseDoubleClickEvent = mouseDoubleClickEvent
+
+        mouseDoubleClickEvent(None)
+
+    def set_window_position(self, position):
+        """
+        Set the window at the given position
+
+        Args:
+            position (str): [top-right, top-left, bottom-right, bottom-left]
+        """
+
+        # Set the window in the top right corner
+        w_w, h_w = self.size().toTuple()
+        w_s, h_s = QApplication.primaryScreen().size().toTuple()
+
+        if position == "top-right":
+            x = w_s - w_w
+            y = 0
+        elif position == "top-left":
+            x = 0
+            y = 0
+        elif position == "bottom-right":
+            x = w_s - w_w
+            y = h_s - h_w
+        elif position == "bottom-left":
+            x = 0
+            y = h_s - h_w
+        else:
+            raise ValueError(f"Invalid window position: '{position}'")
+
+        self.move(x, y)
