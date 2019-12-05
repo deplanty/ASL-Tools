@@ -72,10 +72,8 @@ Section
   CreateShortCut "$SMPROGRAMS\ASL-Tools.lnk" "$InstDir\ASL-Tools.exe"
   CreateShortCut "$SMSTARTUP\ASL-Tools.lnk" "$InstDir\ASL-Tools.exe"
   WriteRegStr SHCTX "${UNINST_KEY}" "DisplayName" "ASL-Tools"
-  WriteRegStr SHCTX "${UNINST_KEY}" "UninstallString" \
-    "$\"$InstDir\uninstall.exe$\" /$MultiUser.InstallMode"
-  WriteRegStr SHCTX "${UNINST_KEY}" "QuietUninstallString" \
-    "$\"$InstDir\uninstall.exe$\" /$MultiUser.InstallMode /S"
+  WriteRegStr SHCTX "${UNINST_KEY}" "UninstallString" "$\"$InstDir\uninstall.exe$\" /$MultiUser.InstallMode"
+  WriteRegStr SHCTX "${UNINST_KEY}" "QuietUninstallString" "$\"$InstDir\uninstall.exe$\" /$MultiUser.InstallMode /S"
   WriteRegStr SHCTX "${UNINST_KEY}" "Publisher" "deplanty"
   ${GetSize} "$InstDir" "/S=0K" $0 $1 $2
   IntFmt $0 "0x%08X" $0
