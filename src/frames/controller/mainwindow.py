@@ -1,3 +1,5 @@
+import webbrowser
+
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import (
     Qt
@@ -7,7 +9,7 @@ from PySide2.QtWidgets import (
     QMainWindow
 )
 
-from src.config import Config
+from src.config import Config, Paths
 from src.frames.controller import (
     Settings,
     LungModel,
@@ -31,6 +33,7 @@ class MainWindow(QMainWindow):
         self.bigscript = BigScript(self)
 
         self.ui.btn_quit.clicked.connect(QtCore.qApp.quit)
+        self.ui.btn_help.clicked.connect(self.btn_help)
         self.ui.btn_settings.clicked.connect(self.settings.show)
         self.ui.btn_model_vr3.clicked.connect(self.lungmodel.show)
         self.ui.btn_script.clicked.connect(self.script.show)
@@ -44,6 +47,18 @@ class MainWindow(QMainWindow):
         self.ui.frame_top.mouseDoubleClickEvent = self.evt_mouseDoubleClickEvent
 
         self.evt_mouseDoubleClickEvent(None)
+
+    # =========================================================================
+    # = Buttons
+    # =========================================================================
+
+    def btn_help(self):
+        """
+        Show the help on the default browser
+        """
+
+        index_help = Paths.file("help")
+        webbrowser.open_new_tab(index_help)
 
     # =========================================================================
     # = Events
