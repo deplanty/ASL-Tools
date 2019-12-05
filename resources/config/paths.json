@@ -3,10 +3,12 @@
         "home": ["."],
         "resources": [".", "resources"],
         "r_config": [".", "resources", "config"],
+        "r_help": [".", "resources", "help"],
         "r_files": [".", "resources", "files"],
         "r_images": [".", "resouces", "images"]
     },
     "files": {
+        "help": ["r_help", "index.html"],
         "new_dash": ["r_files", "new_dash.json"],
         "new_model": ["r_files", "new_model.json"],
         "new_script": ["r_files", "new_script.json"],
