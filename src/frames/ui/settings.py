@@ -41,6 +41,7 @@ class Ui_Settings():
         self.grid_layout = QGridLayout()
         # Top left corner
         self.btn_corner_tl = QPushButton()
+        self.btn_corner_tl.setObjectName("top-left")
         self.btn_corner_tl.setIcon(QIcon(":/images/corner-tl.svg"))
         self.btn_corner_tl.setIconSize(QSize(32, 32))
         self.btn_corner_tl.setCheckable(True)
@@ -48,6 +49,7 @@ class Ui_Settings():
         self.grid_layout.addWidget(self.btn_corner_tl, 0, 1)
         # Top right corner
         self.btn_corner_tr = QPushButton()
+        self.btn_corner_tr.setObjectName("top-right")
         self.btn_corner_tr.setIcon(QIcon(":/images/corner-tr.svg"))
         self.btn_corner_tr.setIconSize(QSize(32, 32))
         self.btn_corner_tr.setCheckable(True)
@@ -55,6 +57,7 @@ class Ui_Settings():
         self.grid_layout.addWidget(self.btn_corner_tr, 0, 2)
         # bottom left corner
         self.btn_corner_bl = QPushButton()
+        self.btn_corner_bl.setObjectName("bottom-left")
         self.btn_corner_bl.setIcon(QIcon(":/images/corner-bl.svg"))
         self.btn_corner_bl.setIconSize(QSize(32, 32))
         self.btn_corner_bl.setCheckable(True)
@@ -62,6 +65,7 @@ class Ui_Settings():
         self.grid_layout.addWidget(self.btn_corner_bl, 1, 1)
         # Bottom right corner
         self.btn_corner_br = QPushButton()
+        self.btn_corner_br.setObjectName("bottom-right")
         self.btn_corner_br.setIcon(QIcon(":/images/corner-br.svg"))
         self.btn_corner_br.setIconSize(QSize(32, 32))
         self.btn_corner_br.setCheckable(True)
