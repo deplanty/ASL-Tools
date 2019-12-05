@@ -6,7 +6,7 @@ from PySide2.QtGui import QIcon
 from PySide2.QtWidgets import QApplication
 
 import src.common.resources  # Register resources
-from src.config import Paths
+from src.config import Config, Paths
 from src.frames.controller import MainWindow
 
 
@@ -42,6 +42,7 @@ class Application(QApplication):
         """
 
         Paths.initialize("resources/config/paths.json")
+        Config.initialize("resources/config/config.json")
 
     def run(self):
         """
