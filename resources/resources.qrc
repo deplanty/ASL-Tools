@@ -7,6 +7,7 @@
     <file>images/arrow-down.svg</file>
     <file>images/arrow-up.svg</file>
     <file>images/big-script.svg</file>
+    <file>images/copy.svg</file>
     <file>images/corner-tl.svg</file>
     <file>images/corner-tr.svg</file>
     <file>images/corner-bl.svg</file>
@@ -18,6 +19,7 @@
     <file>images/model-vr3.svg</file>
     <file>images/new-file.svg</file>
     <file>images/open-file.svg</file>
+    <file>images/paste.svg</file>
     <file>images/quit.svg</file>
     <file>images/remove.svg</file>
     <file>images/save.svg</file>

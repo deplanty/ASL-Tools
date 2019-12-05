@@ -60,9 +60,11 @@ class Ui_Script:
         menu_file.addAction(self.action_file_quit)
         menu_edit:QMenu = menubar.addMenu("Edition")
         self.action_edit_copy = QAction("Copier", menubar)
+        self.action_edit_copy.setIcon(QIcon(":/images/copy.svg"))
         self.action_edit_copy.setShortcut("Alt+C")
         menu_edit.addAction(self.action_edit_copy)
         self.action_edit_paste = QAction("Coller", menubar)
+        self.action_edit_paste.setIcon(QIcon(":/images/paste.svg"))
         self.action_edit_paste.setShortcut("Alt+V")
         menu_edit.addAction(self.action_edit_paste)
 
