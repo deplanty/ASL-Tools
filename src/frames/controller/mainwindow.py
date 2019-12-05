@@ -1,4 +1,7 @@
-from PySide2 import QtCore
+from PySide2 import QtCore, QtGui, QtWidgets
+from PySide2.QtCore import (
+    Qt
+)
 from PySide2.QtWidgets import (
     QApplication,
     QMainWindow
@@ -34,34 +37,53 @@ class MainWindow(QMainWindow):
         self.ui.btn_dashboard.clicked.connect(self.dashboard.show)
         self.ui.btn_bigscript.clicked.connect(self.bigscript.show)
 
-        def mousePressEvent(event):
-            """
-            Get current mouse position
-            """
-            self.old_pos = event.globalPos()
-
-        def mouseMoveEvent(event):
-            """
-            Move the window according to mouse motion
-            """
-            delta = QtCore.QPoint(event.globalPos() - self.old_pos)
-            self.move(self.x()+delta.x(), self.y()+delta.y())
-            self.old_pos = event.globalPos()
-
-        def mouseDoubleClickEvent(event):
-            """
-            Set the window in the top right corner
-            """
-
-            position = Config.get("mainwindow/position")
-            self.set_window_position(position)
-
         self.old_pos = None
-        self.ui.frame_top.mousePressEvent = mousePressEvent
-        self.ui.frame_top.mouseMoveEvent = mouseMoveEvent
-        self.ui.frame_top.mouseDoubleClickEvent = mouseDoubleClickEvent
+        self.ui.frame_top.mousePressEvent = self.evt_mousePressEvent
+        self.ui.frame_top.mouseMoveEvent = self.evt_mouseMoveEvent
+        self.ui.frame_top.mouseReleaseEvent = self.evt_mouseReleaseEvent
+        self.ui.frame_top.mouseDoubleClickEvent = self.evt_mouseDoubleClickEvent
 
-        mouseDoubleClickEvent(None)
+        self.evt_mouseDoubleClickEvent(None)
+
+    # =========================================================================
+    # = Events
+    # =========================================================================
+
+    def evt_mousePressEvent(self, event):
+        """
+        Get current mouse position
+        """
+
+        self.ui.frame_top.setCursor(Qt.ClosedHandCursor)
+        self.old_pos = event.globalPos()
+
+    def evt_mouseMoveEvent(self, event):
+        """
+        Move the window according to mouse motion
+        """
+
+        delta = QtCore.QPoint(event.globalPos() - self.old_pos)
+        self.move(self.x()+delta.x(), self.y()+delta.y())
+        self.old_pos = event.globalPos()
+
+    def evt_mouseReleaseEvent(self, event):
+        """
+        Set cursor back to open hand
+        """
+
+        self.ui.frame_top.setCursor(Qt.OpenHandCursor)
+
+    def evt_mouseDoubleClickEvent(self, event):
+        """
+        Set the window in the top right corner
+        """
+
+        position = Config.get("mainwindow/position")
+        self.set_window_position(position)
+
+    # =========================================================================
+    # = Misc
+    # =========================================================================
 
     def set_window_position(self, position):
         """

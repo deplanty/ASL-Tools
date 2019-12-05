@@ -40,7 +40,9 @@ class Ui_MainWindow():
         self.frame_top = QFrame()
         self.frame_top.setObjectName("topframe")
         self.frame_top.setMaximumHeight(20)
+        self.frame_top.setCursor(Qt.OpenHandCursor)
         self.v_layout.addWidget(self.frame_top)
+        # Ellements in top frame
         self.h_layout = QHBoxLayout(self.frame_top)
         self.h_layout.setMargin(0)
         self.btn_quit = QToolButton()
